@@ -114,18 +114,16 @@
         }
 
 
-    .mainMenu {
-        display: flex;
-        background-color: cornflowerblue;
-        flex-direction: row;
-        align-items: center;
-        padding: 1em 0;
-        gap: 20px;
-        width: 704px;
-        height: 24px;
-        left: calc(50% - 704px/2);
-        top: 110px;
-    }
+.mainMenu {
+    display: flex;
+    background-color: cornflowerblue;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em calc(50% - 704px/2);
+    gap: 20px;
+    width: 704px;
+    height: 24px;
+}
 
         .allReleases {
             width: 83px;
