@@ -116,9 +116,10 @@
 
     .mainMenu {
         display: flex;
+        background-color: cornflowerblue;
         flex-direction: row;
         align-items: center;
-        padding: 0px;
+        padding: 1em 0;
         gap: 20px;
         width: 704px;
         height: 24px;
@@ -255,7 +256,6 @@
         }
 
 .searchQuery {
-    /*position: absolute;*/
     width: 860px;
     height: 44px;
     left: 290px;
@@ -263,7 +263,6 @@
 }
 
 .homeButton {
-    /*position: absolute;*/
     width: 60px;
     height: 44px;
     left: 0px;
@@ -274,26 +273,19 @@
 
 .searchTextBox {
     box-sizing: border-box;
-    /*position: absolute;*/
     height: 44px;
     left: 0px;
-    right: 0px;
-    top: 0px;
     background: #FFFFFF;
     border: 1px solid #CCCCCC;
 }
 
 .searchFilter {
-    /*position: absolute;*/
     left: 0%;
     right: 0%;
-    top: 3.12%;
-    bottom: 3.12%;
     background: #3A8544;
 }
 
 .searchButton {
-    /*position: absolute;*/
     width: 60px;
     height: 44px;
     right: 0px;
@@ -304,7 +296,6 @@
 
 .leftMenu {
     background-color: blue;
-    /*position: absolute;*/
     width: 270px;
     height: 940px;
     left: 135px;
