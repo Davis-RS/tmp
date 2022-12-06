@@ -1,0 +1,45 @@
+﻿body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+a {
+    color: black;
+}
+    a:hover {
+        cursor: pointer;
+    }
+    a.selected {
+        color: green;
+        font-weight: bold;
+    }
+
+.banner {
+    position: absolute;
+    width: 900px;
+    height: 60px;
+    top: 208px;
+    left: 270px;
+    background: #FEFAF3;
+    border: 1px solid #FFAC1C;
+    border-radius: 3px;
+}
+
+    .bannerText {
+    }
+
+    .bannerExpand {
+    }
+
+    .bannerImage {
+    }
+
+
+@media (max-width: 750px) {
+    .mainHeaderLanguageMenu {
+        color: red;
+    }
+}

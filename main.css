@@ -1,0 +1,19 @@
+﻿.main {
+    display: flex;
+    min-height: 20em;
+}
+
+.filters {
+}
+
+.filtersTitle {
+}
+
+.mainContent {
+    background-color: forestgreen;
+    /*position: absolute;*/
+    width: 870px;
+    height: 497px;
+    left: 435px;
+    top: 278px;
+}
