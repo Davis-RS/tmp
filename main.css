@@ -32,3 +32,43 @@
     left: 435px;
     top: 278px;
 }
+
+.activeUsers{
+    display: flex;
+
+}
+
+.user1, .user2, .user3, .user4, .user5, .user6 {
+    width: 320px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display:inline-block;
+}
+
+.user1 {
+    
+}
+
+.user2 {
+
+}
+
+.user3 {
+
+}
+.user4 {
+
+}
+
+.user5 {
+
+}
+
+.user6 {
+
+}
+
