@@ -5,16 +5,14 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7E8A1AA-D79B-415E-B482-3EE8A3C5E70F}"
 	ProjectSection(SolutionItems) = preProject
-		index.html = index.html
-<<<<<<< HEAD
+		arrow_down.png = arrow_down.png
 		footer.css = footer.css
-		header.css = header.css
 		general.css = general.css
+		header.css = header.css
+		index.html = index.html
 		main.css = main.css
-=======
 		style.css = style.css
 		..\..\..\OneDrive\Dators\Vector.png = ..\..\..\OneDrive\Dators\Vector.png
->>>>>>> 3e6d66cbe9d78d8b49aa9338d1d330f90c0bc22e
 	EndProjectSection
 EndProject
 Global

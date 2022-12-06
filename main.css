@@ -9,6 +9,30 @@
 .filtersTitle {
 }
 
+.dropdown-btn {
+    /*position: absolute;*/
+    width: 222px;
+    height: 24px;
+    left: 8px;
+    /*top: calc(50% - 24px/2);*/
+    /* Semibold / 16 */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    /* Black */
+
+    color: #232B2B;
+}
+    .dropdown-btn:hover {
+        color: #000000;
+    }
 .mainContent {
     background-color: forestgreen;
     /*position: absolute;*/
