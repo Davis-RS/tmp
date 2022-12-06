@@ -6,6 +6,10 @@
     min-height: 100%;
 }
 
+button {
+    cursor: pointer;
+}
+
 a {
     color: black;
 }
@@ -34,35 +38,61 @@ a {
         height: 36px;
         left: 20px;
         right: 136px;
-        font-family:'Roboto';
+        font-family: 'Roboto';
         font-style: normal;
-        font-weight:400;
+        font-weight: 400;
         font-size: 14px;
-        line-height:24px;
-        padding-left:20px;
+        line-height: 24px;
+        padding-left: 20px;
     }
 
-    .bannerExpand {
+    .bannerButton1 {
+        position: relative;
+        width: 42px;
+        height: 24px;
+        left: 20px;
+        top: calc(50% - 24px/2);
+        padding-left: 20px;
+        background: none;
+        border: none;
+    }
+
+    .bannerButton1Text {
+        position: relative;
         display: inline-block;
         width: 42px;
         height: 24px;
-        right: 74px;
-        top: calc(50% - 24px/2);
+        right: 42px;
+        top: calc(50% - 55px/2);
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         color: #3A8544;
-        padding-left:20px;
+        padding-left: 20px;
     }
 
+    .bannerButton2 {
+        display: inline-block;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        left: 20px;
+        top: calc(50% - 24px/2);
+        margin-left: 25px;
+        vertical-align: middle;
+        margin-bottom: 34px;
+    }
+
+        .bannerButton2:hover {
+            cursor: pointer;
+        }
+
     .bannerImage {
-        position:absolute;
+        position: relative;
         display: inline-block;
         height: 20px;
-        right: 20px;
-        top: 20px;
     }
 
 
