@@ -1,8 +1,14 @@
 ﻿.header {
-    display: flex;
+    display: relative;
     height: 60px;
     left: 0px;
     top: 30px;
+    width: 100%;
+    
+}
+.topMenu {
+    display: flex;
+    align-content: space-around;
     width: 100%;
     background-color: white;
     border-bottom: 1px solid #C4C4C4;
