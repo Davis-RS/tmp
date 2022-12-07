@@ -30,6 +30,8 @@
     }*/
 
 .sideTest {
+    display: flex;
+    flex-direction: column;
     background-color: lightpink;
     height: 940px;
     width: 270px;
@@ -39,4 +41,23 @@
     margin-left: 8.4375em;
     margin-top: 0.625em;
     margin-right: 1.875em;
+    gap: 1.875em;
 }
+
+    .period {
+        background-color: azure;
+        width: 16.875em;
+        height: 11.375em;
+    }
+
+    .expenses {
+        background-color: azure;
+        width: 16.875em;
+        height: 22.25em;
+    }
+
+    .collection {
+        background-color: azure;
+        width: 16.875em;
+        height: 15.875em;
+    }
