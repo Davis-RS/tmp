@@ -39,13 +39,18 @@
     height: 234px;
 }
 
-.activeUsersFlex1{
+.activeCollumn1{
+
+}
+
+.activeCollumn2{
 
 }
 
 .user1, .user2, .user3, .user4, .user5, .user6 {
+    display:flex;
+    flex-direction:row;
     box-sizing: border-box;
-    width: 420px;
     height: 50px;
     left: 435px;
     top: 1298px;
