@@ -290,3 +290,11 @@
         background: #3A8544;
         border-radius: 0px 3px 3px 0px;
     }
+
+
+
+@media (max-width: 750px) {
+    .mainHeaderLanguageMenu {
+        color: red;
+    }
+}
