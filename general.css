@@ -27,7 +27,7 @@ a {
     display: flex;
     flex-direction: row;
     position: sticky;
-    top: 2em;
+    top: 1em;
     width: 900px;
     height: 60px;
     left: calc(50% - 900px/2);

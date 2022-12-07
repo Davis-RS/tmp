@@ -293,8 +293,17 @@
 
 
 
+/*
 @media (max-width: 750px) {
     .mainHeaderLanguageMenu {
-        color: red;
+        display: none;
+    }
+}
+*/
+
+@media only screen and (max-width: 769px) {
+    /* For mobile phones: */
+    .mainHeaderLanguageMenu {
+        display: none;
     }
 }
