@@ -6,8 +6,8 @@
 .filters {
 }
 
-.filtersTitle {
-}
+    .filtersTitle {
+    }
 
 .dropdown-btn {
    
@@ -26,7 +26,6 @@
 
 .mainContent {
     background-color: forestgreen;
-    /*position: absolute;*/
     width: 870px;
     height: 497px;
     left: 435px;
