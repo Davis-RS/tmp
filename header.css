@@ -293,8 +293,19 @@
 
 
 
+/*
 @media (max-width: 750px) {
     .mainHeaderLanguageMenu {
-        color: red;
+        display: none;
     }
+}
+*/
+
+@media (max-device-width: 769px) {
+    /* For mobile phones and tablets: */
+    .mainHeaderLanguageMenu, .auth, .mainMenu{
+        display: none;
+    }
+
+    
 }

@@ -8,13 +8,12 @@
 .mainContent {
     background-color: forestgreen;
     width: 870px;
-    height: 800px;
-    left: 435px;
-    top: 278px;
+    height: 1070px;
+    margin-left: 30px;
+    margin-top: 0.625em;
 }
 
 .activeUsers {
-    background-color:black;
     display: flex;
     width: 870px;
     height: 234px;
@@ -25,9 +24,9 @@
 }
 
 .user1, .user2, .user3, .user4, .user5, .user6 {
-    display:flex;
-    flex-direction:row;
-    box-sizing: border-box; 
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
     width: 420px;
     height: 50px;
     left: 435px;
@@ -35,9 +34,24 @@
     border: 1px solid #E0E0E0;
     margin-top: 10px;
     margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 3;
 }
 
-.user1 {
+.userName{
+    padding-left:20px;
+}
+
+.userNum{
+    padding-right: 20px;
+}
+/*.user1 {
     background-color: lightpink;
 }
 
@@ -59,4 +73,4 @@
 .user6 {
     background-color: lightsalmon;
 }
-
+*/
