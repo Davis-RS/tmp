@@ -27,7 +27,7 @@ a {
     width: 900px;
     height: 60px;
     top: 208px;
-    left: 270px;
+    left: calc(50% - 900px/2);
     background: #FEFAF3;
     border: 1px solid #FFAC1C;
     border-radius: 3px;
