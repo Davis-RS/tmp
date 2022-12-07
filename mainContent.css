@@ -74,3 +74,11 @@
     background-color: lightsalmon;
 }
 */
+
+
+
+@media (max-device-width: 769px) {
+    .main {
+        display: none;
+    }
+}
