@@ -253,31 +253,33 @@
 .searchQuery {
     display: flex;
     flex-direction: row;
+    margin: 0 calc(50% - 860px/2);
     width: 860px;
     height: 44px;
-    left: 290px;
-    top: 154px;
+    
 }
 
     .homeButton {
+        display: flex;
         width: 60px;
         height: 44px;
-        
         background: #3A8544;
         border-radius: 3px 0px 0px 3px;
     }
 
     .searchTextBox {
-        height: 44px;
+        display: flex;
+        width: 740px;
         background: #FFFFFF;
         border: 1px solid #CCCCCC;
     }
 
     .searchFilter {
-        background: #3A8544;
+        display: flex;
     }
 
     .searchButton {
+        display: flex;
         width: 60px;
         height: 44px;
         background: #3A8544;
