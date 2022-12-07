@@ -23,18 +23,21 @@ a {
     }
 
 .banner {
-    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 2em;
     width: 900px;
     height: 60px;
-    top: 208px;
     left: calc(50% - 900px/2);
     background: #FEFAF3;
     border: 1px solid #FFAC1C;
     border-radius: 3px;
+    align-items: center;
 }
 
     .bannerText {
-        display: inline-block;
         width: 744px;
         height: 36px;
         left: 20px;
@@ -45,56 +48,34 @@ a {
         font-size: 14px;
         line-height: 24px;
         padding-left: 20px;
+        padding-top:0.9em;
     }
 
-    .bannerButton1 {
+    .bannerLink1 {
         position: relative;
         width: 42px;
         height: 24px;
-        left: 20px;
-        top: calc(50% - 24px/2);
-        padding-left: 20px;
-        background: none;
-        border: none;
-    }
-
-    .bannerButton1Text {
-        position: relative;
-        display: inline-block;
-        width: 42px;
-        height: 24px;
-        right: 42px;
-        top: calc(50% - 55px/2);
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
         color: #3A8544;
-        padding-left: 20px;
+        padding-left:1.5em;
     }
 
-    .bannerButton2 {
-        display: inline-block;
+    .bannerLink2 {
         position: relative;
-        width: 24px;
-        height: 24px;
-        left: 20px;
-        top: calc(50% - 24px/2);
-        margin-left: 25px;
-        vertical-align: middle;
-        margin-bottom: 34px;
-    }
-
-        .bannerButton2:hover {
-            cursor: pointer;
-        }
-
-    .bannerImage {
-        position: relative;
-        display: inline-block;
+        width: 20px;
         height: 20px;
+        padding-left:1.5em;
     }
+
+        .bannerImage {
+            position: relative;
+            display: inline-block;
+            height: 20px;
+        }
 
 
 @media (max-width: 750px) {
