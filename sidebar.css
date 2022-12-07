@@ -120,9 +120,29 @@
         height: 22.25em;
     }
 
-    .sideBarCollection{
+        .expensesDropDown-btn {
+            display: flex;
+            flex-direction: row;
+            background: #F5F9F6;
+            height: 40px;
+            width: 270px;
+            border-radius: 0px;
+            align-items: center;
+        }
+
+    .sideBarCollection {
         background-color: lightskyblue;
         width: 16.875em;
         height: 15.875em;
     }
+
+        .sideBarCollectionDropDown-btn {
+            display: flex;
+            flex-direction: row;
+            background: #F5F9F6;
+            height: 40px;
+            width: 270px;
+            border-radius: 0px;
+            align-items: center;
+        }
     
