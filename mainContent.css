@@ -6,7 +6,7 @@
 
 
 .mainContent {
-    background-color: forestgreen;
+    /*background-color: forestgreen;*/
     width: 870px;
     height: 1070px;
     margin-left: 30px;
@@ -44,8 +44,27 @@
     z-index: 3;
 }
 
-.userName{
-    padding-left:20px;
+.mainContent {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.dzirksteleL {
+    width: 420px;
+    height: 447px;
+    left: 435px;
+    top: 328px;
+}
+
+.dzirksteleL {
+    width: 420px;
+    height: 447px;
+    left: 885px;
+    top: 328px;
+}
+
+.userName {
+    padding-left: 20px;
 }
 
 .userNum{

@@ -44,20 +44,47 @@
     gap: 1.875em;
 }
 
+.buttonText {
+    width: 13.875em;
+    line-height: 1.5em;
+}
+
+.arrowDown{
+
+}
+
     .period {
-        background-color: azure;
+        background-color:lightskyblue;
         width: 16.875em;
         height: 11.375em;
     }
 
+        .periodDropDown-btn {
+            display:flex;
+            flex-direction:row;
+            background: #F5F9F6;
+            height: 40px;
+            width: 270px;
+            border-radius: 0px;
+        }
+
+        .periodCalendar{
+
+        }
+
+        .periodResults{
+
+        }
+
     .expenses {
-        background-color: azure;
+        background-color: lightskyblue;
         width: 16.875em;
         height: 22.25em;
     }
 
-    .collection {
-        background-color: azure;
+    .sideBarCollection{
+        background-color: lightskyblue;
         width: 16.875em;
         height: 15.875em;
     }
+    
