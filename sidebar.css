@@ -47,33 +47,71 @@
 .buttonText {
     width: 13.875em;
     line-height: 1.5em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 8px;
 }
 
 .arrowDown{
-
+    padding-left:8px;
 }
 
     .period {
         background-color:lightskyblue;
         width: 16.875em;
         height: 11.375em;
+        position:relative;
     }
 
         .periodDropDown-btn {
             display:flex;
+            
             flex-direction:row;
             background: #F5F9F6;
             height: 40px;
             width: 270px;
             border-radius: 0px;
+            align-items:center;
         }
 
         .periodCalendar{
-
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+            column-gap:5px;
+            height:98px;
+            background-color:brown;
         }
 
-        .periodResults{
+            .dateFrom{
+                background-color:aquamarine;
+                width:124px;
+                height:40px;
+            }
 
+            .dateTo {
+                background-color: aqua;
+                width: 124px;
+                height: 40px;
+            }
+
+        .periodResults {
+            background-color: blueviolet;
+            height: 44px;
+            width: 100%;
+            background: #3A8544;
+            border-radius: 3px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            text-align: center;
         }
 
     .expenses {
