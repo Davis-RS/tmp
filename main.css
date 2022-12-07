@@ -37,8 +37,10 @@
     display: flex;
     width: 870px;
     height: 234px;
-    left: 435px;
-    top: 1114px;
+}
+
+.activeUsersFlex1{
+
 }
 
 .user1, .user2, .user3, .user4, .user5, .user6 {
@@ -48,34 +50,29 @@
     left: 435px;
     top: 1298px;
     border: 1px solid #E0E0E0;
+    margin-top: 10px
 }
 
 .user1 {
     background-color: lightpink;
-    margin-top: 10px
 }
 
 .user2 {
     background-color: lightblue;
-    margin-top: 10px
 }
 
 .user3 {
     background-color: lightgreen;
-    margin-top: 10px
 }
 .user4 {
     background-color: lightcoral;
-    margin-top: 10px
 }
 
 .user5 {
     background-color: lightslategrey;
-    margin-top: 10px
 }
 
 .user6 {
     background-color: lightsalmon;
-    margin-top: 10px
 }
 
