@@ -24,6 +24,19 @@
   outline: none;
 }
 
+.sideBarBlock {
+
+
+}
+
+
+.sideBarBlock > .title  {
+}
+
+.title{
+
+}
+
 .mainContent {
     background-color: forestgreen;
     width: 870px;

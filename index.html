@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
     <div class="banner">
         <p class="bannerText">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -27,8 +27,8 @@
             <img class="bannerImage" src="bannerIcon.png">
         </div>
     </div>
-    
-    
+
+
     <div class="header">
         <div class="topMenu">
             <div class="mainHeaderLanguageMenu">
@@ -57,7 +57,7 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="mainMenu">
             <a class="allReleases">
                 Visi izdevumi
@@ -96,16 +96,17 @@
 
     <div class="main">
         <div class="sidebar">
-            <div class="filters">
+            <div class="filters sideBarBlock">
                 <div>
-                    <div class="filtersTitle">Filtri</div>
+                    <div class="title">Filtri</div>
                 </div>
             </div>
 
-            <div class="periodbox">
-                <button class="dropdown-btn">Periods
+            <div class="periodbox sideBarBlock">
+                <div class="dropdown-btn">
+                    Periods
                     <i class="fa fa-caret-down"></i>
-                </button>
+                </div>
                 <div class="dropdown-container">
                     <a href="#">Link 1</a>
                     <div class="arrow">
@@ -113,36 +114,37 @@
                     </div>
                 </div>
             </div>
-            <div class="mainContent">
-                <div class="activeUsers">
-                    <div class="activeCollumn1">
-                        <div class="user1">
-                            <div class="userName">Aigars Liepiņš</div>
-                            <div class="userNum">8889</div>
-                        </div>
-                        <div class="user2">
-                            <div class="userName">Raivis Kļaviņš</div>
-                            <div class="userNum">876</div>
-                        </div>
-                        <div class="user3">
-                            <div class="userName">Enija Rubina</div>
-                            <div class="userNum">540</div>
-                        </div>
-                    </div>
-                    <div class="activeCollumn2">
-                        <div class="user4">
-                            <div class="userName">André von Kleist</div>
-                            <div class="userNum">5214</div>
-                        </div>
 
-                        <div class="user5">
-                            <div class="userName">Sven Lepa</div>
-                            <div class="userNum">753</div>
-                        </div>
-                        <div class="user6">
-                            <div class="userName">Eliabete Čakluma</div>
-                            <div class="userNum">412</div>
-                        </div>
+        </div>
+        <div class="mainContent">
+            <div class="activeUsers">
+                <div class="activeCollumn1">
+                    <div class="user1">
+                        <div class="userName">Aigars Liepiņš</div>
+                        <div class="userNum">8889</div>
+                    </div>
+                    <div class="user2">
+                        <div class="userName">Raivis Kļaviņš</div>
+                        <div class="userNum">876</div>
+                    </div>
+                    <div class="user3">
+                        <div class="userName">Enija Rubina</div>
+                        <div class="userNum">540</div>
+                    </div>
+                </div>il
+                <div class="activeCollumn2">
+                    <div class="user4">
+                        <div class="userName">André von Kleist</div>
+                        <div class="userNum">5214</div>
+                    </div>
+
+                    <div class="user5">
+                        <div class="userName">Sven Lepa</div>
+                        <div class="userNum">753</div>
+                    </div>
+                    <div class="user6">
+                        <div class="userName">Eliabete Čakluma</div>
+                        <div class="userNum">412</div>
                     </div>
                 </div>
             </div>
@@ -150,22 +152,25 @@
     </div>
 
     <script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
 
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
+        for (i = 0; i < dropdown.length; i++) {
+            if (!dropdown[i].classList.contains("active")) {
+                dropdown[i].classList.add("active");
+            }
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (this.classList.contains("active")) {
+                    dropdownContent.style.display = "block";
+                } else {
+                    dropdownContent.style.display = "none";
+                }
+            });
         }
-      });
-    }
-        </script>
+    </script>
 
     <div class="footer">
 
@@ -182,5 +187,5 @@
         </div>
     </div>
 
-        </body>
+</body>
 </html>
