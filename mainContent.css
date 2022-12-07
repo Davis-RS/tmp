@@ -49,19 +49,26 @@
     font-style: normal;
 }
 
-.dzirksteleL {
-    width: 420px;
-    height: 447px;
+.redIzv {
+    width: 870px;
+    height: 30px;
     left: 435px;
-    top: 328px;
+    top: 278px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #232B2B;
 }
 
 .dzirksteleL {
     width: 420px;
     height: 447px;
-    left: 885px;
-    top: 328px;
 }
+
 
 .userName {
     padding-left: 20px;
