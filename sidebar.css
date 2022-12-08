@@ -85,26 +85,63 @@
             align-items:center;
         }
 
-        .periodCalendar{
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
-            align-items:center;
-            column-gap:5px;
-            height:98px;
-            background-color:brown;
+        .periodCalendar {
+            display: grid;
+            grid-template-areas:
+                'date1 date2'
+                'dateBox1  dateBox2';
+            justify-content: center;
+            align-items: center;
+            column-gap: 5px;
+            height: 98px;
+            background-color: white;
         }
 
-            .dateFrom{
-                background-color:aquamarine;
-                width:124px;
-                height:40px;
+            .calDatesText {
+                position: relative;
+                top: 10px;
+                height:24px;
+                width:83px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+            .dateFrom {
+                grid-area: date1;
             }
 
             .dateTo {
-                background-color: aqua;
+                grid-area: date2;
+            }
+
+            .calBox {
+                display: flex;
+                justify-content: space-around;
+                position: relative;
                 width: 124px;
                 height: 40px;
+                bottom: 10px;
+                border: 1px solid #CCCCCC;
+                border-radius: 4px;
+                line-height: 40px;
+            }
+
+                .calIcon{
+                    position:relative;
+                    height:14.67px;
+                    width:14.67px;
+                    top:12.67px;
+                }
+
+            .dateFromBox{
+                grid-area:dateBox1;
+            }
+
+            .dateToBox {
+                grid-area:dateBox2;
             }
 
         .periodResults {
