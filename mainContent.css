@@ -33,7 +33,6 @@
     top: 1298px;
     border: 1px solid #E0E0E0;
     margin-top: 10px;
-    margin-left: 10px;
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto';
@@ -44,8 +43,8 @@
     z-index: 3;
 }
 
-.topBox{
-    grid-gap:30px;
+.user4, .user5, .user6 {
+    margin-left: 30px;
 }
 
 .mainContent {
@@ -65,28 +64,43 @@
     align-items: center;
     color: #232B2B;
 }
-.imagedzirksteleL{
+.rakstsL, .dzirksteleL {
+    width: 420px;
+    height: 370px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.imagedzirksteleL {
+    position: relative;
     display: grid;
-    place-items:center;
+    place-items: center;
+    bottom:22px;
+    top:22px
+}
+
+.imagerakstsL {
+    position: relative;
+    display: grid;
+    bottom: 0.1px;
+
 }
 
 .dzirksteleL {
     width: 420px;
     height: 370px;
 }
-.rakstsL {
-    width: 420px;
-    height: 370px;
-}
+
 
 .grid2 {
+    display: grid;
+    width: 870px;
     row-gap: 2em;
-    column-gap: 1em;
+    column-gap: 30px;
 }
-.grid2 > *{
-    margin:1em;
-    padding:1em;
-}
+
 .userName {
     padding-left: 20px;
 }
@@ -94,31 +108,6 @@
 .userNum{
     padding-right: 20px;
 }
-/*.user1 {
-    background-color: lightpink;
-}
-
-.user2 {
-    background-color: lightblue;
-}
-
-.user3 {
-    background-color: lightgreen;
-}
-.user4 {
-    background-color: lightcoral;
-}
-
-.user5 {
-    background-color: lightslategrey;
-}
-
-.user6 {
-    background-color: lightsalmon;
-}
-*/
-
-
 
 @media (max-device-width: 769px) {
     .main {
