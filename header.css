@@ -43,7 +43,7 @@
         }
 
     .topTitle {
-        width: 102px;
+        width: auto;
         height: 30px;
         display: flex;
         font-weight: 500;
@@ -284,6 +284,11 @@
         display: none;
        
     }
+
+    .header {
+        width: 100%;
+    }
+
     .topTitle {
         font-size: 2rem;
     }
