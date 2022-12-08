@@ -68,8 +68,14 @@
     width: 420px;
     height: 447px;
 }
-
-
+.grid2 {
+    row-gap: 2em;
+    column-gap: 1em;
+}
+.grid2 > *{
+    margin:1em;
+    padding:1em;
+}
 .userName {
     padding-left: 20px;
 }

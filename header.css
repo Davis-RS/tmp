@@ -280,17 +280,21 @@
 
 @media (max-device-width: 769px) {
     /* For mobile phones and tablets: */
-    .mainHeaderLanguageMenu, .auth, .mainMenu{
+    .mainHeaderLanguageMenu, .auth, .mainMenu {
         display: none;
+       
     }
-    
+    .topTitle {
+        font-size: 2rem;
+    }
     .searchQuery {
         flex-shrink: 1;
         margin-top: 1em;
     }
     
     .searchTextBox {
-
+      
+        
     }
 
 }
