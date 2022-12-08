@@ -44,6 +44,10 @@
     z-index: 3;
 }
 
+.topBox{
+    grid-gap:30px;
+}
+
 .mainContent {
     font-family: 'Roboto';
     font-style: normal;
@@ -52,8 +56,6 @@
 .redIzv {
     width: 870px;
     height: 30px;
-    left: 435px;
-    top: 278px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
