@@ -29,6 +29,14 @@
         outline: none;
     }*/
 
+.sideBarRoboto {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
 .sideTest {
     display: flex;
     flex-direction: column;
@@ -113,9 +121,14 @@
             color: #FFFFFF;
             text-align: center;
         }
+            .periodResultsText {
+                text-align: center;
+                margin-block-start:0;
+                padding-top:10px;
+            }
 
     .expenses {
-        background-color: lightskyblue;
+        background-color:white;
         width: 16.875em;
         height: 22.25em;
     }
