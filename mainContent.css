@@ -13,6 +13,120 @@
     margin-top: 0.625em;
 }
 
+.mainContent {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.redIzv {
+    width: 870px;
+    height: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #232B2B;
+}
+.rakstsL, .dzirksteleL {
+    width: 420px;
+    height: 370px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.imagedzirksteleL {
+    position: relative;
+    display: grid;
+    place-items: center;
+    bottom:22px;
+    top:22px
+}
+
+.imagerakstsL {
+    position: relative;
+    display: grid;
+    bottom: 0.1px;
+
+}
+
+.dzirksteleL {
+    width: 420px;
+    height: 370px;
+}
+
+
+.grid2 {
+    display: grid;
+    width: 870px;
+    row-gap: 2em;
+    column-gap: 30px;
+}
+
+.author {
+    margin-top:10px;
+    width: 415px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: grid;
+    align-items: center;
+    color: #232B2B;
+}
+
+.title {
+    margin-top: 10px;
+    width: 331px;
+    height: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: grid;
+    color: #232B2B;
+}
+.language, .langNum{
+    box-sizing: border-box;
+
+}
+
+
+.language {
+    margin-top: 10px;
+    width: 272px;
+    height: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #232B2B;
+}
+.langNum {
+    margin-top:10px;
+    width: 60px;
+    height: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #232B2B;
+    margin-left: 120px;
+}
 .activeUsers {
     display: flex;
     width: 870px;
@@ -33,7 +147,6 @@
     top: 1298px;
     border: 1px solid #E0E0E0;
     margin-top: 10px;
-    margin-left: 10px;
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto';
@@ -44,48 +157,8 @@
     z-index: 3;
 }
 
-.topBox{
-    grid-gap:30px;
-}
-
-.mainContent {
-    font-family: 'Roboto';
-    font-style: normal;
-}
-
-.redIzv {
-    width: 870px;
-    height: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #232B2B;
-}
-.imagedzirksteleL{
-    display: grid;
-    place-items:center;
-}
-
-.dzirksteleL {
-    width: 420px;
-    height: 370px;
-}
-.rakstsL {
-    width: 420px;
-    height: 370px;
-}
-
-.grid2 {
-    row-gap: 2em;
-    column-gap: 1em;
-}
-.grid2 > *{
-    margin:1em;
-    padding:1em;
+.user4, .user5, .user6 {
+    margin-left: 30px;
 }
 .userName {
     padding-left: 20px;
@@ -94,31 +167,6 @@
 .userNum{
     padding-right: 20px;
 }
-/*.user1 {
-    background-color: lightpink;
-}
-
-.user2 {
-    background-color: lightblue;
-}
-
-.user3 {
-    background-color: lightgreen;
-}
-.user4 {
-    background-color: lightcoral;
-}
-
-.user5 {
-    background-color: lightslategrey;
-}
-
-.user6 {
-    background-color: lightsalmon;
-}
-*/
-
-
 
 @media (max-device-width: 769px) {
     .main {
