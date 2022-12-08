@@ -107,6 +107,7 @@
             column-gap: 5px;
             height: 98px;
             background-color: white;
+            padding-left:8px;
         }
 
             .calDatesText {
@@ -202,6 +203,7 @@
             position:relative;
             top:20px;
             bottom:10px;
+            padding-left:8px;
             display:flex;
             flex-direction:column;
             align-items: start;
@@ -227,11 +229,10 @@
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
-            
         }
 
     .sideBarCollection {
-        background-color: lightskyblue;
+        background-color: white;
         width: 16.875em;
         height: 15.875em;
     }
@@ -244,5 +245,37 @@
             width: 270px;
             border-radius: 0px;
             align-items: center;
+        }
+
+        .colText {
+            position: relative;
+            top: 20px;
+            bottom: 10px;
+            padding-left:8px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            row-gap: 10px;
+            font-size: 14px;
+        }
+
+            .colTextLine {
+                line-height: 25px;
+                align-items: center;
+            }
+
+        .sideBarAllCollections {
+            display: flex;
+            position: relative;
+            top: 25px;
+            justify-content: end;
+            text-align: end;
+            width: 270px;
+            height: 24px;
+            color: #3A8544;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
         }
     
