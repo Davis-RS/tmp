@@ -67,6 +67,12 @@
     padding-left:8px;
 }
 
+    .sideFiltriTextBox{
+        height:30px;
+        width:270px;
+        background-color:brown;
+    }
+
     .period {
         background-color:lightskyblue;
         width: 16.875em;
