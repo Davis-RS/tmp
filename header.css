@@ -5,10 +5,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    margin: 0 0 1em;
+    padding: 0 0 1em;
     left: 0px;
     width: 100%;
-    
+    background-color: #F5F9F6;
 }
     
 .topMenu {
@@ -53,65 +53,65 @@
         color: #232B2B;
     }
 
-.auth {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    width: 168px;
-    height: 32px;
-    right: 135px;
-}
-
-    .login {
-        height: 24px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+    .auth {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        text-align: right;
-        color: #232B2B;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+        text-align: center;
+        width: 168px;
+        height: 32px;
+        right: 135px;
     }
 
-    .register {
-        height: 24px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        display: flex;
-        align-items: center;
-        text-align: right;
-        color: #232B2B;
-        flex: none;
-        order: 2;
-        flex-grow: 0;
-    }
+        .login {
+            height: 24px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            color: #232B2B;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
 
-    .dot {
-        width: 5px;
-        height: 24px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        display: flex;
-        align-items: center;
-        text-align: right;
-        color: #3A8544;
-        flex: none;
-        flex-grow: 0;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
+        .register {
+            height: 24px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            color: #232B2B;
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+        }
+
+        .dot {
+            width: 5px;
+            height: 24px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            color: #3A8544;
+            flex: none;
+            flex-grow: 0;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
 
 
 .mainMenu {
@@ -259,11 +259,11 @@
         border: 1px solid #CCCCCC;
     }
 
-    .searchFilter {
+    .searchFilterButton {
         display: flex;
         margin-left: -3.5em;
-        padding-right: 2em;
-        padding-top: 0.6em;
+        margin-right: 2em;
+        margin-top: 0.6em;
         width: 1.5em;
         height: 1.5em;
     }
@@ -280,14 +280,21 @@
 
 @media (max-device-width: 769px) {
     /* For mobile phones and tablets: */
-    .mainHeaderLanguageMenu, .auth, .mainMenu{
+    .mainHeaderLanguageMenu, .auth, .mainMenu {
         display: none;
+       
     }
-    
+    .topTitle {
+        font-size: 2rem;
+    }
     .searchQuery {
         flex-shrink: 1;
         margin-top: 1em;
-        
     }
     
+    .searchTextBox {
+      
+        
+    }
+
 }

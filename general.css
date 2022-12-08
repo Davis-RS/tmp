@@ -40,6 +40,7 @@ a {
     border: 1px solid #FFAC1C;
     border-radius: 3px;
     align-items: center;
+    justify-content:space-around;
 }
 
     .bannerText {
@@ -66,14 +67,12 @@ a {
         font-size: 16px;
         line-height: 24px;
         color: #3A8544;
-        padding-left:1.5em;
     }
 
     .bannerLink2 {
         position: relative;
         width: 20px;
         height: 20px;
-        padding-left:1.5em;
     }
 
         .bannerImage {

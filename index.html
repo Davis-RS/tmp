@@ -71,10 +71,16 @@
         </div>
 
         <div class="searchQuery">
-            <img class="homeButton" src="Home_Button.png">
+            <a class="homeButton">
+                <img class="homeImage" src="Home_Button.png">
+            </a>
             <input class="searchTextBox" type="text" placeholder="Meklē visos satura laukos, piemēram, Rainis 1930. gads">
-            <img class="searchFilter" src="Search_Filter.png">
-            <img class="searchButton" src="Search_Button.png">
+            <a class="searchFilterButton">
+                <img class="searchFilterImage" src="Search_Filter.png">
+            </a>
+            <a class="searchButton">
+                <img class="searchImage" src="Search_Button.png">
+            </a>
         </div>
     </div>
 
@@ -133,7 +139,7 @@
                         </div>
                     </div>
                     <div class="periodResults">
-                        Atlasīt rezultātus
+                        <a class="periodResultsText">Atlasīt rezultātus</a>
                     </div>
                 </div>
                 <div class="expenses sideBarBlock">
@@ -145,7 +151,7 @@
                             <img src="arrow_down.png">
                         </div>
                     </a>
-                    <div class="expensesText roboto">
+                    <div class="expensesText sideBarRoboto">
                         <p class="exTextLine1 exTextLine">5.Kurzemes Apgabala Izstādes žurnāls</p>
                         <p class="exTextLine2 exTextLine">Arodkustības Vienība (Kokstrādnieku aro</p>
                         <p class="exTextLine3 exTextLine">Atbalss: Altetingas latviešu komitejas inf</p>
@@ -188,30 +194,29 @@
                         Redaktora izvēle
                     </div>
                 </div>
-                <div class="topBox">
-                    <div style="
+
+
+                <div
+                    class="grid2" 
+                    style="
 		            display: grid;
-		            grid-template-columns: 420px 420px;
-		            ">
-                        <div style="background-color:blue" class="dzirksteleL">
-                            <div class="largeimagebox">
-                                <img src="Izlaidums 1istadzirkstele.png">
-                            </div>
-                            <a class="author">
-                                Austrālijas Latvietis<br />
-                            </a>
-                            <a class="articleTitle">
-                                Raksts: Sprādziens daugavā<br />
-                            </a>
-                            <a class="language">
-                                Latviešu
-                            </a>
-                        </div>
-                        <div style="background-color:green" class="dzikrsteleL">Austrālijas Latvietis</div>
+		            grid-template-columns: 420px 420px;"
+                >
+                    <div style="background-color:blue" class="dzirksteleL">
                         <div class="largeimagebox">
-                            <img src="Izlaidums Raksts 1istaisraksts.png">
+                            <img src="Izlaidums 1istadzirkstele.png">
                         </div>
+                        <a class="author">
+                            Austrālijas Latvietis<br />
+                        </a>
+                        <a class="articleTitle">
+                            Raksts: Sprādziens daugavā<br />
+                        </a>
+                        <a class="language">
+                            Latviešu
+                        </a>
                     </div>
+                    <div style="background-color:green" class="dzikrsteleL">Austrālijas Latvietis</div>
                 </div>
                 <div style="
 			    margin-top:20px;
