@@ -124,7 +124,9 @@
             .periodResultsText {
                 text-align: center;
                 margin-block-start:0;
-                padding-top:10px;
+                padding-bottom:20px;
+                line-height:44px;
+                color:white;
             }
 
     .expenses {
