@@ -13,40 +13,6 @@
     margin-top: 0.625em;
 }
 
-.activeUsers {
-    display: flex;
-    width: 870px;
-    height: 234px;
-}
-
-.activeCollumn1, .activeCollumn2{
-    vertical-align:bottom;
-}
-
-.user1, .user2, .user3, .user4, .user5, .user6 {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    width: 420px;
-    height: 50px;
-    left: 435px;
-    top: 1298px;
-    border: 1px solid #E0E0E0;
-    margin-top: 10px;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    z-index: 3;
-}
-
-.user4, .user5, .user6 {
-    margin-left: 30px;
-}
-
 .mainContent {
     font-family: 'Roboto';
     font-style: normal;
@@ -101,6 +67,94 @@
     column-gap: 30px;
 }
 
+.author {
+    margin-top:10px;
+    width: 415px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: grid;
+    align-items: center;
+    color: #232B2B;
+}
+
+.title {
+    width: 331px;
+    height: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: grid;
+    color: #232B2B;
+}
+.language, .langNum{
+    flex-direction: row;
+    box-sizing: border-box;
+
+}
+.language {
+    width: 272px;
+    height: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #232B2B;
+}
+.langNum {
+    width: 60px;
+    height: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #232B2B;
+}
+.activeUsers {
+    display: flex;
+    width: 870px;
+    height: 234px;
+}
+
+.activeCollumn1, .activeCollumn2{
+    vertical-align:bottom;
+}
+
+.user1, .user2, .user3, .user4, .user5, .user6 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 420px;
+    height: 50px;
+    left: 435px;
+    top: 1298px;
+    border: 1px solid #E0E0E0;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 3;
+}
+
+.user4, .user5, .user6 {
+    margin-left: 30px;
+}
 .userName {
     padding-left: 20px;
 }
