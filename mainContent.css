@@ -65,11 +65,20 @@
     align-items: center;
     color: #232B2B;
 }
+.imagedzirksteleL{
+    display: grid;
+    place-items:center;
+}
 
 .dzirksteleL {
     width: 420px;
-    height: 447px;
+    height: 370px;
 }
+.rakstsL {
+    width: 420px;
+    height: 370px;
+}
+
 .grid2 {
     row-gap: 2em;
     column-gap: 1em;
