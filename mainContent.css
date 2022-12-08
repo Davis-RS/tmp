@@ -82,6 +82,7 @@
 }
 
 .title {
+    margin-top: 10px;
     width: 331px;
     height: 14px;
     font-family: 'Roboto';
@@ -93,11 +94,13 @@
     color: #232B2B;
 }
 .language, .langNum{
-    flex-direction: row;
     box-sizing: border-box;
 
 }
+
+
 .language {
+    margin-top: 10px;
     width: 272px;
     height: 14px;
     font-family: 'Roboto';
@@ -110,6 +113,7 @@
     color: #232B2B;
 }
 .langNum {
+    margin-top:10px;
     width: 60px;
     height: 14px;
     font-family: 'Roboto';
@@ -121,6 +125,7 @@
     align-items: center;
     text-align: right;
     color: #232B2B;
+    margin-left: 120px;
 }
 .activeUsers {
     display: flex;
