@@ -44,6 +44,10 @@
     z-index: 3;
 }
 
+.topBox{
+    grid-gap:30px;
+}
+
 .mainContent {
     font-family: 'Roboto';
     font-style: normal;
