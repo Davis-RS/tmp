@@ -40,7 +40,7 @@
 .sideTest {
     display: flex;
     flex-direction: column;
-    background-color: lightpink;
+    /*background-color: lightpink;*/
     height: 940px;
     width: 270px;
     left: 135px;
@@ -70,7 +70,7 @@
     .sideFilterTextBox {
         height: 30px;
         width: 270px;
-        background-color: brown;
+        /*background-color: brown;*/
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -80,9 +80,10 @@
 
 
     .period {
-        background-color:lightskyblue;
+        background-color:white;
         width: 16.875em;
-        height: 11.375em;
+        min-height:40px;
+        max-height: 11.375em;
         position:relative;
     }
 
@@ -186,7 +187,8 @@
     .releases {
         background-color:white;
         width: 16.875em;
-        height: 22.25em;
+        min-height:40px;
+        max-height: 22.25em;
     }
 
         .releasesDropDown-btn {
@@ -234,7 +236,8 @@
     .sideBarCollection {
         background-color: white;
         width: 16.875em;
-        height: 15.875em;
+        min-height:40px;
+        max-height: 15.875em;
     }
 
         .sideBarCollectionDropDown-btn {
