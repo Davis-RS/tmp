@@ -22,6 +22,11 @@ a {
         font-weight: bold;
     }
 
+.roboto {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
 .banner {
     z-index: 100;
     display: flex;

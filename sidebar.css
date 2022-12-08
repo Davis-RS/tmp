@@ -130,6 +130,12 @@
             align-items: center;
         }
 
+        .expTextLine {
+            align-items: center;
+            row-gap: 10px;
+            font-size:14px;
+        }
+
     .sideBarCollection {
         background-color: lightskyblue;
         width: 16.875em;
