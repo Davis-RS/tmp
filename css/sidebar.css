@@ -1,35 +1,4 @@
-﻿/*.sideBar {
-    display: flex;
-    flex-direction: column;
-    background-color:greenyellow;
-}
-
-.sideBarBlock {
-
-}
-
-
-    .sideBarBlock > .title {
-
-    }
-
-    
-
-    .dropdown-btn {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 20px;
-        color: #818181;
-        display: block;
-        border: none;
-        background: none;
-        width: 100%;
-        text-align: left;
-        cursor: pointer;
-        outline: none;
-    }*/
-
-.sideBarRoboto {
+﻿.sideBarRoboto {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
