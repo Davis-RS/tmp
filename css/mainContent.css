@@ -18,9 +18,8 @@ h1{
 }
 
 .mainContent {
-    /*background-color: forestgreen;*/
-    width: 870px;
-    height: 1070px;
+    width: 54.375em;
+    height: 66.875em;
     margin-left: 30px;
     margin-top: 0.625em;
 }
@@ -37,8 +36,8 @@ h1{
 }
 
 .rakstsL, .dzirksteleL {
-    width: 420px;
-    height: 370px;
+    width: 30em;
+    height: 23.125em;
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #E0E0E0;
@@ -49,14 +48,14 @@ h1{
     position: relative;
     display: grid;
     place-items: center;
-    bottom:22px;
-    top:22px
+    bottom: 1.375em;
+    top: 1.375em
 }
 
 .imagerakstsL {
     position: relative;
     display: grid;
-    bottom: 0.1px;
+    bottom: 0.00625em;
 }
 .rightBox{
     margin-bottom:10px;
