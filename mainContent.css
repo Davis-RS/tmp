@@ -18,7 +18,13 @@
     font-style: normal;
 }
 
-.redIzv {
+.outerBox {
+    width: 870px;
+    height: 1070px;
+    background-color: white;
+}
+
+.redChoice {
     width: 870px;
     height: 30px;
     font-family: 'Roboto';
@@ -51,20 +57,27 @@
     position: relative;
     display: grid;
     bottom: 0.1px;
-
 }
-
+.rightBox{
+    margin-bottom:10px;
+}
 .dzirksteleL {
     width: 420px;
     height: 370px;
 }
 
+.languageFull {
+    display: grid;
+    grid-template-columns: 272px 143px;
+}
 
 .grid2 {
     display: grid;
     width: 870px;
     row-gap: 2em;
     column-gap: 30px;
+    display: grid;
+    grid-template-columns: 420px 420px;
 }
 
 .author {
@@ -127,14 +140,39 @@
     color: #232B2B;
     margin-left: 120px;
 }
+
+.mostViewed {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100px;
+}
+
 .activeUsers {
     display: flex;
     width: 870px;
     height: 234px;
 }
 
-.activeCollumn1, .activeCollumn2{
-    vertical-align:bottom;
+.mostViewed {
+    margin-top: 45px;
+    width: 795px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #232B2B;
+}
+
+
+
+.activeCollumn1, .activeCollumn2 {
+    vertical-align: bottom;
 }
 
 .user1, .user2, .user3, .user4, .user5, .user6 {
