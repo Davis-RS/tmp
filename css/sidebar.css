@@ -40,13 +40,7 @@
 .sideTest {
     display: flex;
     flex-direction: column;
-    /*background-color: lightpink;*/
-    height: 940px;
-    width: 270px;
-    left: 135px;
-    top: 278px;
     border-radius: 0px;
-    margin-left: 8.4375em;
     margin-top: 0.625em;
     margin-right: 1.875em;
     gap:20px;
