@@ -4,6 +4,18 @@
     min-height: 20em;
 }
 
+h1{
+    width: 870px;
+    height: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #232B2B;
+}
 
 .mainContent {
     /*background-color: forestgreen;*/
