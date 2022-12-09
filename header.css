@@ -293,8 +293,10 @@
         font-size: 2rem;
     }
     .searchQuery {
-        flex-shrink: 1;
-        margin-top: 1em;
+        min-width: 18.75em; /*300px*/
+        max-width: 24.625em; /*394px*/
+        margin: 1em auto; /*for centering*/
+        padding: 0 1em;
     }
     
     .searchTextBox {
