@@ -24,6 +24,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 8px;
+    text-align:start;
 }
 
 .arrowDown {
@@ -72,11 +73,6 @@
             width: 270px;
             border-radius: 0px;
             align-items:center;
-        }
-
-        .periodText{
-            position:relative;
-            right:88px;
         }
 
         .periodCalendar {
@@ -154,6 +150,8 @@
             .periodResultsText {
                 padding-bottom:0.9em;
                 padding-top:0.8em;
+                padding-left:4.6em;
+                padding-right:4.6em;
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
@@ -178,6 +176,7 @@
             width: 270px;
             border-radius: 0px;
             align-items: center;
+            border: 0px;
         }
 
         .reText {
@@ -225,7 +224,7 @@
             background: #F5F9F6;
             height: 40px;
             width: 270px;
-            border-radius: 0px;
+            border: 0px;
             align-items: center;
         }
 
