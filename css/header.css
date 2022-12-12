@@ -119,6 +119,12 @@
         height: 1.5em;
     }
 
+    .closeButton {
+        display: none;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
 
 .mainMenu {
     display: flex;
@@ -298,15 +304,30 @@
         justify-content: center;
     }
 
+    .topTitle {
+        position: relative;
+        font-size: 2rem;
+    }
+
     .menuButton {
         display: flex;
         position: absolute;
         right: 1em;
+        width: 24px;
+        height: 24px;
+        border: 0;
+        padding: 0;
+        background-color: white;
     }
 
-    .topTitle {
-        position: relative;
-        font-size: 2rem;
+    .closeButton {
+        position: absolute;
+        right: 1em;
+        width: 24px;
+        height: 24px;
+        border: 0;
+        padding: 0;
+        background-color: white;
     }
 
     .searchQuery {
