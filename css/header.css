@@ -113,6 +113,12 @@
             margin-left: 10px;
         }
 
+    .menuButton {
+        display: none;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
 
 .mainMenu {
     display: flex;
@@ -282,16 +288,27 @@
     /* For mobile phones and tablets: */
     .mainHeaderLanguageMenu, .auth, .mainMenu {
         display: none;
-       
     }
 
     .header {
         width: 100%;
     }
 
+    .topMenu {
+        justify-content: center;
+    }
+
+    .menuButton {
+        display: flex;
+        position: absolute;
+        right: 1em;
+    }
+
     .topTitle {
+        position: relative;
         font-size: 2rem;
     }
+
     .searchQuery {
         width: 95%;
         margin: 1em 0 1em 0;
