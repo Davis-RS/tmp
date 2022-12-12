@@ -131,7 +131,7 @@
                     </div>
                 </div>
                 <div class="releases sideBarBlock">
-                    <a class="releasesDropDown-btn">
+                    <a class="releasesDropDown-btn" onclick="flip()">
                         <div class="buttonText">
                             Izdevumi
                         </div>
@@ -157,7 +157,7 @@
                 </div>
 
                 <div class="sideBarCollection sideBarBlock">
-                    <a class="sideBarCollectionDropDown-btn">
+                    <a class="sideBarCollectionDropDown-btn" onclick="flip()">
                         <div class="buttonText">
                             Kolekcija
                             <div class="sideBarCollectionText">
@@ -336,8 +336,17 @@
     </script>
 
     <script>
+        var bool = false;
         function flip() {
-            document.querySelector('.arrowDown').style.transform = 'rotate(0deg)';
+            
+            if (bool == false) {
+                document.querySelector('.arrowDown').style.transform = 'rotate(0deg)';
+                bool = true;
+            }
+            else if (bool == true) {
+                document.querySelector('.arrowDown').style.transform = 'rotate(180deg)';
+                bool = false;
+            }
         }
     </script>
 

@@ -74,6 +74,11 @@
             align-items:center;
         }
 
+        .periodText{
+            position:relative;
+            right:88px;
+        }
+
         .periodCalendar {
             display: grid;
             grid-template-areas:
