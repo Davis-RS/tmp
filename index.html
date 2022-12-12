@@ -104,26 +104,26 @@
             <div class="sideTest">
                 <h1>Filtri</h1>
                 <div class="period sideBarBlock">
-                    <a class="periodDropDown-btn" onclick="this.classList.toggle('hover');">
+                    <button class="periodDropDown-btn" onclick="flip()">
                         <div class="buttonText">
                             <div class="periodText">Periods</div>
                         </div>
                         <div class="arrowDown">
                             <img src="img/arrow_down.svg">
                         </div>
-                    </a>
+                    </button>
                     <div>
                         <div class="periodCalendar">
                             <span class="dateFrom calDatesText">Datums no:</span>
                             <span class="dateTo calDatesText">Datums līdz:</span>
-                            <div class="dateFromBox calBox">
+                            <a class="dateFromBox calBox">
                                 01.01.1910
                                 <img class="calIcon" src="img/calendarIcon.svg">
-                            </div>
-                            <div class="dateToBox calBox">
+                            </a>
+                            <a class="dateToBox calBox">
                                 01.01.1916
                                 <img class="calIcon" src="img/calendarIcon.svg">
-                            </div>
+                            </a>
                         </div>
                         <div class="periodResults">
                             <a class="periodResultsText">Atlasīt rezultātus</a>
@@ -324,12 +324,20 @@
             dropdown[i].addEventListener("click", function () {
                 this.classList.toggle("active");
                 var dropdownContent = this.nextElementSibling;
+                
                 if (this.classList.contains("active")) {
                     dropdownContent.style.display = "block";
+                    
                 } else {
                     dropdownContent.style.display = "none";
                 }
             });
+        }
+    </script>
+
+    <script>
+        function flip() {
+            document.querySelector('.arrowDown').style.transform = 'rotate(0deg)';
         }
     </script>
 
