@@ -34,4 +34,8 @@
         display: none;
     }
 
+    .eraf {
+        width: 90%;
+        max-width: 370px;
+    }
 }

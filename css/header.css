@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
     padding: 0 0 1em;
     left: 0px;
     width: 100%;
@@ -293,15 +294,7 @@
         font-size: 2rem;
     }
     .searchQuery {
-        min-width: 18.75em; /*300px*/
-        max-width: 24.625em; /*394px*/
-        margin: 1em auto; /*for centering*/
-        padding: 0 1em;
+        width: 85%;
+        margin: 1em 0 1em 0;
     }
-    
-    .searchTextBox {
-      
-        
-    }
-
 }
