@@ -150,6 +150,8 @@
             .periodResultsText {
                 padding-bottom:0.9em;
                 padding-top:0.8em;
+                padding-left:4.6em;
+                padding-right:4.6em;
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
