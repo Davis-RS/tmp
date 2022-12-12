@@ -340,11 +340,11 @@
         function flip() {
             
             if (bool == false) {
-                document.querySelector('.arrowDown').style.transform = 'rotate(0deg)';
+                document.querySelector('.arrowDown').style.transform = 'scaleY(1)';
                 bool = true;
             }
             else if (bool == true) {
-                document.querySelector('.arrowDown').style.transform = 'rotate(180deg)';
+                document.querySelector('.arrowDown').style.transform = 'scaleY(-1)';
                 bool = false;
             }
         }
