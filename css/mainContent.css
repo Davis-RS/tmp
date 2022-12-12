@@ -5,6 +5,12 @@
     margin:auto;
 }
 
+.redChoice {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+
 h1{
     width: 100%;
     height: 30px;
@@ -143,7 +149,14 @@ h1{
     margin-left: 120px;
 }
 
-
+.grid3 {
+    display: grid;
+    width: 54.375em;
+    row-gap: 2em;
+    column-gap: 1.875em;
+    display: grid;
+    grid-template-columns: 12.1875em 12.1875em 12.1875em 12.1875em;
+}
 
 .mostViewed {
     width: 54.375em;
@@ -182,6 +195,57 @@ h1{
     position:relative;
     align-items:center;
     top:3px;
+}
+
+.titleS {
+    width: 153px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #232B2B;
+    margin-top:10px
+}
+
+
+
+.languageFullS {
+    display: grid;
+    grid-template-columns: 3em 4em;
+}
+
+.languageS {
+    width: 135px;
+    height: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #232B2B;
+    margin-top:10px;
+}
+
+.yearS {
+    width: 60px;
+    height: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #232B2B;
+    margin-left: 120px;
+    margin-top:10px;
 }
 
 .activeUsers {
