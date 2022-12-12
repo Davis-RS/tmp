@@ -38,8 +38,8 @@ h1{
     background-color: white;
 }
 
-.rakstsL, .dzirksteleL {
-    width: 30em;
+.articleL, .journalL {
+    width: 26.25em;
     height: 23.125em;
     box-sizing: border-box;
     background: #FFFFFF;
@@ -47,7 +47,7 @@ h1{
     border-radius: 4px;
 }
 
-.imagedzirksteleL {
+.imagejournalL {
     position: relative;
     display: grid;
     place-items: center;
@@ -55,7 +55,7 @@ h1{
     top: 1.375em
 }
 
-.imagerakstsL {
+.imagearticleL {
     position: relative;
     display: grid;
     bottom: 0.00625em;
@@ -63,7 +63,7 @@ h1{
 .rightBox{
     margin-bottom:10px;
 }
-.dzirksteleL {
+.journalL {
     width: 26.25em;
     height: 23.125em;
 }
@@ -108,7 +108,7 @@ h1{
     display: grid;
     color: #232B2B;
 }
-.language, .langNum{
+.language, .year{
     box-sizing: border-box;
 
 }
@@ -127,7 +127,7 @@ h1{
     align-items: center;
     color: #232B2B;
 }
-.langNum {
+.year {
     margin-top: 10px;
     width: 3.75em;
     height: 0.875em;
@@ -143,8 +143,10 @@ h1{
     margin-left: 120px;
 }
 
+
+
 .mostViewed {
-    width: 870px;
+    width: 54.375em;
     margin-top: 20px;
     display: grid;
     grid-template-columns: 6.25em;
@@ -158,17 +160,40 @@ h1{
     line-height: 24px;
 }
 
+.viewAll {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #3A8544;
+}
+
+.journalS {
+    width: 12.1875em;
+    height: 9.8125em;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.imagejournalS {
+    position:relative;
+    align-items:center;
+    top:3px;
+}
+
 .activeUsers {
     display: flex;
     width: 54.375em;
     height: 14.625em;
 }
 
-.mostViewed {
+h2 {
     margin-top: 45px;
-    width: 49.6875em;
+    width: 48.3em;
     height: 1.5em;
-    font-family: 'Roboto';
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -178,9 +203,12 @@ h1{
     align-items: center;
     text-align: right;
     color: #232B2B;
+    justify-content:space-between;
 }
 
-
+.firstbox{
+    width:54.375em;
+}
 
 .activeCollumn1, .activeCollumn2 {
     vertical-align: bottom;
