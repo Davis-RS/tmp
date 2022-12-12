@@ -27,10 +27,9 @@ h1{
 
 
 .mainContent {
-    width: 54.375em;
-    height: 66.875em;
     margin-left: 30px;
     margin-top: 0.625em;
+    margin-bottom: 3.125em;
 }
 
 .mainContent {
@@ -39,9 +38,6 @@ h1{
 }
 
 .outerBox {
-    width: 62.142857142857146em;
-    height: 76.42857142857143em;
-    background-color: white;
 }
 
 .articleL, .journalL {
@@ -160,7 +156,6 @@ h1{
 
 .mostViewed {
     width: 54.375em;
-    margin-top: 20px;
     display: grid;
     grid-template-columns: 6.25em;
 }
@@ -250,8 +245,6 @@ h1{
 
 .activeUsers {
     display: flex;
-    width: 54.375em;
-    height: 14.625em;
 }
 
 h2 {
@@ -272,6 +265,22 @@ h2 {
 
 .firstbox{
     width:54.375em;
+}
+
+h3 {
+    margin-top: 45px;
+    width: 48.3em;
+    height: 1.5em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #232B2B;
+    justify-content: space-between;
 }
 
 .activeCollumn1, .activeCollumn2 {
