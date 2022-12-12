@@ -6,7 +6,7 @@
     line-height:21px;
 }
 
-.sideTest {
+.sidebar {
     display: flex;
     flex-direction: column;
     border-radius: 0px;
@@ -156,16 +156,15 @@
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
-                line-height: 24px;
                 line-height:44px;
                 color:white;
             }
 
     .releases {
-        background-color:white;
+        background-color: white;
         width: 16.875em;
-        min-height:40px;
-        max-height: 22.25em;
+        min-height: 40px;
+        max-height: 23.56255em;
     }
 
         .releasesDropDown-btn {
@@ -183,7 +182,6 @@
             position:relative;
             top:20px;
             bottom:10px;
-            padding-left:8px;
             display:flex;
             flex-direction:column;
             align-items: start;
@@ -194,14 +192,12 @@
             .reTextLine{
                 line-height:25px;
                 align-items:center;
+                padding-left:8px;
             }
 
         .sideBarAllReleases {
             display:flex;
-            position:relative;
-            top:22px;
             justify-content:end;
-            text-align:end;
             width: 270px;
             height: 24px;
             color: #3A8544;
@@ -209,6 +205,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
+            margin-bottom:10px;
         }
 
     .sideBarCollection {
