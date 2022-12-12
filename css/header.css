@@ -49,7 +49,6 @@
         display: flex;
         font-weight: 500;
         font-size: 24px;
-        font-weight: bold;
         line-height: 30px;
         color: #232B2B;
     }
@@ -294,7 +293,11 @@
         font-size: 2rem;
     }
     .searchQuery {
-        width: 85%;
+        width: 95%;
         margin: 1em 0 1em 0;
+    }
+
+    input::-webkit-input-placeholder {
+        color: transparent;
     }
 }
