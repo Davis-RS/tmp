@@ -31,6 +31,18 @@
     transform: scaleY(-1);
 }
 
+.active {
+    display: flex;
+    border: 0px;
+    flex-direction: row;
+    background: #F5F9F6;
+    height: 40px;
+    width: 270px;
+    border-radius: 0px;
+    justify-content:left;
+    align-items: center;
+}
+
     .sideFilterTextBox {
         height: 30px;
         width: 270px;
@@ -53,7 +65,7 @@
 
         .periodDropDown-btn {
             display:flex;
-            
+            border:0px;
             flex-direction:row;
             background: #F5F9F6;
             height: 40px;
