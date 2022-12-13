@@ -364,6 +364,11 @@ h3 {
     margin-bottom:30px;
 }
 
+.searchFilterBox{
+    height:40px;
+    width:200px;
+}
+
 .languageSearchFilter{
     height:58px;
     background-color:lightpink;
@@ -372,6 +377,7 @@ h3 {
 .typeSearchFilter {
     height: 58px;
     background-color: lightblue;
+    justify-content:space-between;
 }
 
 .accessSearchFilter {
@@ -379,17 +385,52 @@ h3 {
     background-color: lightpink;
 }
 
+.languageSearchFilterBox, .typeSearchFilterBox, .accessSearchFilterBox {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+.languageSearchFilterText, .typeSearchFilterText, .accessSearchFilterText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    padding-bottom: 4px;
+    color: #74746D;
+    align-items: center;
+}
+
 .searchFilters {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     margin-bottom: 30px;
+    column-gap:43px;
 }
 
 .alphabet{
-    padding-left:47px;
+    padding-left:4px;
+    display:flex;
+    flex-direction:column;
 }
 
 .alphabetLV, .alphabetRU{
     height: 24px;
     letter-spacing:0.3em;
+}
+
+.alphabetLV {
+    padding-left: 6px;
+}
+
+.alpha1{
+    padding-bottom:20px;
+}
+
+.topOptionsArrowDown {
+    height: 8px;
+    width: 14.666666984558105px;
+    border-radius: 0px;
 }
