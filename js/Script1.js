@@ -107,11 +107,13 @@ function menu() {
     if (isopened == false) {
         document.querySelector('.menuButton').style.display = 'none';
         document.querySelector('.closeButton').style.display = 'flex';
+        document.getElementById("menu").className = "menuWrap open"
         isopened = true;
     }
     else if (isopened == true) {
         document.querySelector('.closeButton').style.display = 'none';
         document.querySelector('.menuButton').style.display = 'flex';
+        document.getElementById("menu").className = "menuWrap"
         isopened = false;
     }
 }
