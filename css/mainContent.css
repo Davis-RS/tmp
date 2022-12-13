@@ -268,7 +268,6 @@ h2 {
     line-height: 24px;
     display: flex;
     align-items: center;
-    text-align: right;
     color: #232B2B;
     justify-content:space-between;
 }
@@ -279,14 +278,13 @@ h2 {
 
 
 
+
+
 .activeCollumn1, .activeCollumn2 {
-    vertical-align: bottom;
 }
 
 .user1, .user2, .user3, .user4, .user5, .user6 {
     display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
     width: 26.25em;
     height: 3.125em;
     border: 1px solid #E0E0E0;
@@ -300,6 +298,8 @@ h2 {
     line-height: 24px;
 }
 
+
+ 
 .user4, .user5, .user6 {
     margin-left: 30px;
 }
