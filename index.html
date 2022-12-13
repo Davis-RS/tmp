@@ -42,9 +42,12 @@
                     Reģistrēties
                 </a>
             </div>
-            <a class="menuButton">
-                <img class="menuImage" src="img/Menu.svg"/>
-            </a>
+            <button class="menuButton" onclick="menu()">
+                <img class="menuImage" src="img/Menu.svg" />
+            </button>
+            <button class="closeButton" onclick="menu()">
+                <img class="closeImage" src="img/X_Close.svg" />
+            </button>
         </div>
 
         <div class="mainMenu">
@@ -403,6 +406,7 @@
     </script>
 
     <script>
+        /*Sidebar button down flips on click*/
         var bool2 = false;
         function flip2() {
             if (bool2 == false) {
@@ -417,6 +421,7 @@
     </script>
 
     <script>
+        /*Sidebar button down flips on click*/
         var bool3 = false;
         function flip3() {
             if (bool3 == false) {
@@ -426,6 +431,22 @@
             else if (bool3 == true) {
                 document.querySelector('.sideBarCollectionArrowDown').style.transform = 'scaleY(-1)';
                 bool3 = false;
+            }
+        }
+    </script>
+
+    <script>
+        var isopened = false;
+        function menu() {
+            if (isopened == false) {
+                document.querySelector('.menuButton').style.display = 'none';
+                document.querySelector('.closeButton').style.display = 'flex';
+                isopened = true;
+            }
+            else if (isopened == true) {
+                document.querySelector('.closeButton').style.display = 'none';
+                document.querySelector('.menuButton').style.display = 'flex';
+                isopened = false;
             }
         }
     </script>
