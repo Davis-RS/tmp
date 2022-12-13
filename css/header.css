@@ -125,6 +125,10 @@
         height: 1.5em;
     }
 
+    .menuWrap {
+        display: flex;
+    }
+
 
 .mainMenu {
     display: flex;
@@ -307,6 +311,33 @@
     .topTitle {
         position: relative;
         font-size: 2rem;
+    }
+
+    /*mobile view menu*/
+    .menuWrap.open {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+        transition: all .4s;
+    }
+
+    .menuWrap {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        visibility: hidden;
+        padding-top: 80px;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+        background-color: white;
+        opacity: 0;
+        transform: translate(-100%);
+        transition: all .4s;
     }
 
     .menuButton {
