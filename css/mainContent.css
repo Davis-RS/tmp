@@ -80,8 +80,13 @@ h1{
     width: 54.375em;
     row-gap: 2em;
     column-gap: 1.875em;
-    display: grid;
     grid-template-columns: 26.25em 26.25em;
+}
+
+@media(max-width: 1008px){
+    .grid2 {
+        grid-template-columns: 26.25em;
+    }
 }
 
 .author {
@@ -150,8 +155,13 @@ h1{
     width: 54.375em;
     row-gap: 2em;
     column-gap: 1.875em;
-    display: grid;
     grid-template-columns: 12.1875em 12.1875em 12.1875em 12.1875em;
+}
+
+@media (max-width: 1008px){
+    .grid3 {
+        grid-template-columns: 12.1875em 12.1875em;
+    }
 }
 
 .mostViewed {
