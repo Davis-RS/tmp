@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js/Script1.js"></script>
 </head>
 <body>
     <div class="header">
@@ -42,9 +43,12 @@
                     Reģistrēties
                 </a>
             </div>
-            <a class="menuButton">
-                <img class="menuImage" src="img/Menu.svg"/>
-            </a>
+            <button class="menuButton" onclick="menu()">
+                <img class="menuImage" src="img/Menu.svg" />
+            </button>
+            <button class="closeButton" onclick="menu()">
+                <img class="closeImage" src="img/X_Close.svg" />
+            </button>
         </div>
 
         <div class="mainMenu">
@@ -322,113 +326,5 @@
         <div class="about">Par LNB digitālo bibliotēku</div>
         <img class="eraf" src="img/eraf-logo.svg">
     </div>
-
-
-    <script>
-        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-        var dropdown = document.getElementsByClassName("periodDropDown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            if (!dropdown[i].classList.contains("active")) {
-                dropdown[i].classList.add("active");
-            }
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (this.classList.contains("active")) {
-                    dropdownContent.style.display = "block";
-                } else {
-                    dropdownContent.style.display = "none";
-                }
-            });
-        }
-    </script>
-
-    <script>
-        var dropdown = document.getElementsByClassName("releasesDropDown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            if (!dropdown[i].classList.contains("active")) {
-                dropdown[i].classList.add("active");
-            }
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (this.classList.contains("active")) {
-                    dropdownContent.style.display = "block";
-                } else {
-                    dropdownContent.style.display = "none";
-                }
-            });
-        }
-    </script>
-
-    <script>
-        var dropdown = document.getElementsByClassName("sideBarCollectionDropDown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            if (!dropdown[i].classList.contains("active")) {
-                dropdown[i].classList.add("active");
-            }
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-
-                if (this.classList.contains("active")) {
-                    dropdownContent.style.display = "block";
-
-                } else {
-                    dropdownContent.style.display = "none";
-                }
-            });
-        }
-    </script>
-
-    <script>
-        /*Sidebar button down flips on click*/
-        var bool1 = false;
-        function flip1() {
-            if (bool1 == false) {
-                document.querySelector('.periodArrowDown').style.transform = 'scaleY(1)';
-                bool1 = true;
-            }
-            else if (bool1 == true) {
-                document.querySelector('.periodArrowDown').style.transform = 'scaleY(-1)';
-                bool1 = false;
-            }
-        }
-    </script>
-
-    <script>
-        var bool2 = false;
-        function flip2() {
-            if (bool2 == false) {
-                document.querySelector('.releasesArrowDown').style.transform = 'scaleY(1)';
-                bool2 = true;
-            }
-            else if (bool2 == true) {
-                document.querySelector('.releasesArrowDown').style.transform = 'scaleY(-1)';
-                bool2 = false;
-            }
-        }
-    </script>
-
-    <script>
-        var bool3 = false;
-        function flip3() {
-            if (bool3 == false) {
-                document.querySelector('.sideBarCollectionArrowDown').style.transform = 'scaleY(1)';
-                bool3 = true;
-            }
-            else if (bool3 == true) {
-                document.querySelector('.sideBarCollectionArrowDown').style.transform = 'scaleY(-1)';
-                bool3 = false;
-            }
-        }
-    </script>
-
 </body>
 </html>
