@@ -1,60 +1,66 @@
 // JavaScript source code
 
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("periodDropDown-btn");
-var i;
+function dropdown1() {
+    var dropdown = document.getElementsByClassName("periodDropDown-btn");
+    var i;
 
-for (i = 0; i < dropdown.length; i++) {
-    if (!dropdown[i].classList.contains("active")) {
-        dropdown[i].classList.add("active");
-    }
-    dropdown[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (this.classList.contains("active")) {
-            dropdownContent.style.display = "block";
-        } else {
-            dropdownContent.style.display = "none";
+    for (i = 0; i < dropdown.length; i++) {
+        if (!dropdown[i].classList.contains("active")) {
+            dropdown[i].classList.add("active");
         }
-    });
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (this.classList.contains("active")) {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        });
+    }
 }
 
-var dropdown = document.getElementsByClassName("releasesDropDown-btn");
-var i;
+function dropdown2() {
+    var dropdown = document.getElementsByClassName("releasesDropDown-btn");
+    var i;
 
-for (i = 0; i < dropdown.length; i++) {
-    if (!dropdown[i].classList.contains("active")) {
-        dropdown[i].classList.add("active");
-    }
-    dropdown[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (this.classList.contains("active")) {
-            dropdownContent.style.display = "block";
-        } else {
-            dropdownContent.style.display = "none";
+    for (i = 0; i < dropdown.length; i++) {
+        if (!dropdown[i].classList.contains("active")) {
+            dropdown[i].classList.add("active");
         }
-    });
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (this.classList.contains("active")) {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        });
+    }
 }
 
-var dropdown = document.getElementsByClassName("sideBarCollectionDropDown-btn");
-var i;
+function dropdown3() {
+    var dropdown = document.getElementsByClassName("sideBarCollectionDropDown-btn");
+    var i;
 
-for (i = 0; i < dropdown.length; i++) {
-    if (!dropdown[i].classList.contains("active")) {
-        dropdown[i].classList.add("active");
-    }
-    dropdown[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-
-        if (this.classList.contains("active")) {
-            dropdownContent.style.display = "block";
-
-        } else {
-            dropdownContent.style.display = "none";
+    for (i = 0; i < dropdown.length; i++) {
+        if (!dropdown[i].classList.contains("active")) {
+            dropdown[i].classList.add("active");
         }
-    });
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+
+            if (this.classList.contains("active")) {
+                dropdownContent.style.display = "block";
+
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        });
+    }
 }
 
 /*Sidebar button down flips on click*/
