@@ -6,18 +6,1961 @@
     <link href="css/general.css" rel="stylesheet" type="text/css">
     <link href="css/header.css" rel="stylesheet" type="text/css">
     <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/mainContent.css" rel="stylesheet" type="text/css">
     <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="header">
+        <div class="topMenu">
+            <div class="mainHeaderLanguageMenu">
+                <a class="roboto GF3NRW2DHI selected">LV</a>
+                <div class="dot">
+                    •
+                </div>
+                <a class="roboto GF3NRW2DHI">RU</a>
+                <div class="dot">
+                    •
+                </div>
+                <a class="roboto GF3NRW2DHI">EN</a>
+            </div>
+            <div class="roboto topTitle">
+                Periodika
+            </div>
+            <div class="auth">
+                <a class="login">
+                    Pieslēgties
+                </a>
+                <div class="dot">
+                    •
+                </div>
+                <a class="register">
+                    Reģistrēties
+                </a>
+            </div>
+            <button class="menuButton" onclick="menu()">
+                <img class="menuImage" src="img/Menu.svg" />
+            </button>
+            <button class="closeButton" onclick="menu()">
+                <img class="closeImage" src="img/X_Close.svg" />
+            </button>
+        </div>
 
+        <div class="mainMenu">
+            <a class="roboto allReleases">
+                Visi izdevumi
+            </a>
+            <a class="roboto bookmarks">
+                Grāmatzīmes
+            </a>
+            <a class="roboto reccomend">
+                Ieteiktie materiāli
+            </a>
+            <a class="roboto collection">
+                Kolekcijas
+            </a>
+            <a class="roboto corrections">
+                Labojumi
+            </a>
+            <a class="roboto users">
+                Lietotāji
+            </a>
+            <a class="roboto mostValued">
+                Novērtētākie
+            </a>
+            <a class="roboto cart">
+                Grozs
+            </a>
+        </div>
+
+        <div class="searchQuery">
+            <a class="homeButton">
+                <img class="homeImage" src="img/Home_Button.svg">
+            </a>
+            <input class="searchTextBox" type="text" placeholder="Meklē visos satura laukos, piemēram, Rainis 1930. gads">
+            <a class="searchFilterButton">
+                <img class="searchFilterImage" src="img/Search_Filter.svg">
+            </a>
+            <a class="searchButton">
+                <img class="searchImage" src="img/Search_Button.svg">
+            </a>
+        </div>
     </div>
 
 
     <div class="main">
+        <div class="mainContainer">
+            <div class="mainTopOptions">
+                <h3>
+                    <p class="allReleasesText">
+                        Visi izdevumi
+                    <p />
+                    <img class="copyrightC" src="img/copyrightC.svg">
+                    <p class="copyrightText">
+                        Ar šo atzīmēti izdevumi, kurus aizsargā autortiesības un kuri pieejami apskatei tikai Latvijas bibliotēku tīklā
+                    </p>
+                </h3>
+                <div class="searchFilters">
+                    <div class="languageSearchFilter SF">
+                        <div class="languageSearchFilterText">
+                            Valoda
+                        </div>
+                        <button class="languageSearchFilterBox searchFilterBox">
+                            <div class="topOptionsTextBox">Visas</div>
+                            <img class="topOptionsArrowDown" src="img/arrow_down.svg">
+                        </button>
+                    </div>
+                    <div class="typeSearchFilter SF">
+                        <div class="typeSearchFilterText">
+                            Tips
+                        </div>
+                        <button class="typeSearchFilterBox searchFilterBox">
+                            <div class="topOptionsTextBox">Visi</div>
+                            <img class="topOptionsArrowDown" src="img/arrow_down.svg">
+                        </button>
+                    </div>
+                    <div class="accessSearchFilter SF">
+                        <div class="accessSearchFilterText">
+                            Pieejamība
+                        </div>
+                        <button class="accessSearchFilterBox searchFilterBox">
+                            <div class="topOptionsTextBox">Visi</div>
+                            <img class="topOptionsArrowDown" src="img/arrow_down.svg">
+                        </button>
+                    </div>
+                </div>
 
+                <div class="alphabet">
+                    <div class="alpha1">
+                        <a class="alphabetExpand">
+                            Visi
+                            <img src="img/allReleasesShortLine.svg">
+                        </a>
+                        <a class="alphabetLV">
+                            0	1	2	3	4	5	6	7	8	9	A	Ā	B	C	Č	D	E	Ē	F	G	Ģ	H	I	Ī	J	K	Ķ	L	Ļ	M	N	Ņ	O	P	Q	R	S	Š	T	U	Ū	V	W	X	Y	Z	Ž
+                        </a>
+                    </div>
+                    <div class="alpha2">
+                        <a class="alphabetRU">
+                            А	Б	В	Г	Д	Е	Ё	Ж	З	И	Й	К	Л	М	Н	О	П	Р	С	Т	У	Ф	Х	Ц	Ч	Ш	Щ	Ы	Э	Ю	Я
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="releaseGridContainer">
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="rectangleLine" src="img/rectangleLongLine.svg">
+            <div class="releaseGridContainer">
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="rectangleLine" src="img/rectangleLongLine.svg">
+            <div class="releaseGridContainer">
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="rectangleLine" src="img/rectangleLongLine.svg">
+            <div class="releaseGridContainer">
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="rectangleLine" src="img/rectangleLongLine.svg">
+            <div class="releaseGridContainer lastGridContainer">
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="releaseGridElement">
+                    <div class="releaseLine">
+                        <!--Line1-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Apvienotie Latvijas Lauksaimnieks un ...
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line2-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arhitekts
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line3-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Allgemeines kurländisches Amts- und In
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line4-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Arodnieciskā Vienība
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line5-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auseklis (Latv.katoļu sav. ziņotājs)
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line6-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Austrālijas Latvieša Literārais PIeliku..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line7-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Adelaides Latviešu Ziņotājs
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line8-->
+                        <img class="releaseLineElement1" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Avots (ž. jaunākai lit., zinātnei un māks..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                    <div class="releaseLine">
+                        <!--Line9-->
+                        <img class="releaseLineElement1 noCopyRights" src="img/copyrightC.svg">
+                        <span class="releaseLineElement2">
+                            Auces Balss (Neatkarīgs nedēļas laikra..
+                        </span>
+                        <span class="releaseLineElement3">
+                            1962-2003
+                        </span>
+                        <a>
+                            <img class="releaseLineElement4" src="img/releaseLink.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

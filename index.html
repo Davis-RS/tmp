@@ -18,31 +18,99 @@
 <body>
     <div class="header">
         <div class="topMenu">
-            <div class="mainHeaderLanguageMenu">
-                <a class="roboto GF3NRW2DHI selected">LV</a>
-                <div class="dot">
+            <div class="languageMenu">
+                <a class="roboto latvian selected">LV</a>
+                <div class="roboto dot">
                     •
                 </div>
-                <a class="roboto GF3NRW2DHI">RU</a>
-                <div class="dot">
+                <a class="roboto russian">RU</a>
+                <div class="roboto dot">
                     •
                 </div>
-                <a class="roboto GF3NRW2DHI">EN</a>
+                <a class="roboto english">EN</a>
             </div>
             <div class="roboto topTitle">
                 Periodika
             </div>
             <div class="auth">
-                <a class="login">
+                <a id="auth1" class="roboto login">
                     Pieslēgties
                 </a>
-                <div class="dot">
+                <div class="roboto dot">
                     •
                 </div>
-                <a class="register">
+                <a id="auth2" class="roboto register">
                     Reģistrēties
                 </a>
             </div>
+
+            <div id="menu" class="menuWrap">
+                <nav class="md-hidden">
+                    <a id="home" class="roboto menuItems">
+                        Sākums
+                    </a>
+                    <a id="allReleases" class="roboto menuItems">
+                        Visi izdevumi
+                    </a>
+                    <a id="bookmarks" class="roboto menuItems">
+                        Grāmatzīmes
+                    </a>
+                    <a id="recommended" class="roboto menuItems">
+                        Ieteiktie materiāli
+                    </a>
+                    <a id="collections" class="roboto menuItems">
+                        Kolekcijas
+                    </a>
+                    <a id="corrections" class="roboto menuItems">
+                        Labojumi
+                    </a>
+                    <a id="comments" class="roboto menuItems">
+                        Komentāri
+                    </a>
+                    <a id="mostValued" class="roboto menuItems">
+                        Novērtētākie
+                    </a>
+                    <a id="aboutLibrary" class="roboto menuItems">
+                        Par bibliotēku
+                    </a>
+                    <a id="termsOfUse" class="roboto menuItems">
+                        Lietošanas noteikumi
+                    </a>
+                    <a id="contacts" class="roboto menuItems">
+                        Kontakti
+                    </a>
+                </nav>
+
+                <div class="rectangleContainer">
+                    <img class="menuRectangle1" src="img/Rectangle 123.svg">
+                    <div class="auth mobile">
+                        <a id="auth1" class="roboto user">
+                            Renārs Avotiņš
+                        </a>
+                        <div class="roboto dot">
+                            •
+                        </div>
+                        <a id="auth2" class="roboto exitUser">
+                            Iziet
+                        </a>
+                    </div>
+                    <img class="menuRectangle2" src="img/Rectangle 123.svg">
+                    <div class="languageMenu mobile">
+                        <a class="roboto latvian selected">LV</a>
+                        <div class="roboto dot">
+                            •
+                        </div>
+                        <a class="roboto russian">RU</a>
+                        <div class="roboto dot">
+                            •
+                        </div>
+                        <a class="roboto english">EN</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menuBackground" class="menuBackground"></div>
+
             <button class="menuButton" onclick="menu()">
                 <img class="menuImage" src="img/Menu.svg" />
             </button>
@@ -52,28 +120,28 @@
         </div>
 
         <div class="mainMenu">
-            <a class="roboto allReleases">
+            <a id="allReleases" class="roboto menuItems">
                 Visi izdevumi
             </a>
-            <a class="roboto bookmarks">
+            <a id="bookmarks" class="roboto menuItems">
                 Grāmatzīmes
             </a>
-            <a class="roboto reccomend">
+            <a id="recommended" class="roboto menuItems">
                 Ieteiktie materiāli
             </a>
-            <a class="roboto collection">
+            <a id="collections" class="roboto menuItems">
                 Kolekcijas
             </a>
-            <a class="roboto corrections">
+            <a id="corrections" class="roboto menuItems">
                 Labojumi
             </a>
-            <a class="roboto users">
+            <a id="users" class="roboto menuItems">
                 Lietotāji
             </a>
-            <a class="roboto mostValued">
+            <a id="mostValued" class="roboto menuItems">
                 Novērtētākie
             </a>
-            <a class="roboto cart">
+            <a id="cart" class="roboto menuItems">
                 Grozs
             </a>
         </div>
