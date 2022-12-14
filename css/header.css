@@ -26,13 +26,9 @@
 
 
 
-    .mainHeaderLanguageMenu {
+    .languageMenu {
         display: flex;
     }
-
-        .mainHeaderLanguageMenu a {
-            
-        }
 
     .topTitle {
         font-weight: 500;
@@ -42,12 +38,6 @@
 
     .auth {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        width: 168px;
-        height: 32px;
-        right: 135px;
     }
 
         .login {
@@ -60,6 +50,14 @@
         }
 
         .register {
+        }
+
+        .user {
+
+        }
+
+        .exitUser {
+            color: #3A8544
         }
 
     .menuButton {
@@ -82,6 +80,10 @@
         display: none;
     }
 
+    .menuBackground {
+        display: none;
+    }
+
 
 .mainMenu {
     display: flex;
@@ -92,8 +94,6 @@
 }
 
     .menuItems {
-        font-size: 14px;
-        line-height: 24px;
         display: flex;
     }
 
@@ -139,7 +139,7 @@
 
 @media (max-device-width: 769px) {
     /* For mobile phones and tablets: */
-    .mainHeaderLanguageMenu, .auth, .mainMenu {
+    .languageMenu, .auth, .mainMenu {
         display: none;
     }
 
@@ -173,9 +173,7 @@
         left: 0;
         bottom: 0;
         visibility: hidden;
-        padding-top: 2em;
-        padding-left: 2em;
-        width: 85%;
+        width: 90%;
         flex-direction: column;
         overflow: auto;
         background-color: white;
@@ -184,9 +182,81 @@
         transition: all .4s;
     }
 
-    .md-hidden {
-        display: block;
+    .menuBackground.open {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+        transition: all .4s;
     }
+
+    .menuBackground {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        top: 63px;
+        right: 0;
+        bottom: 0;
+        visibility: hidden;
+        width: 10%;
+        overflow: auto;
+        background: rgba(35, 43, 43, 0.7);
+        transform: translate(100%);
+        transition: all .4s;
+    }
+
+    .md-hidden {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .rectangleContainer {
+        /* to center the rectangles */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.375em;
+    }
+
+    .menuRectangle1 {
+        width: 85%;
+        margin-top: 2.5em;
+        margin-bottom: 2.125em;
+    }
+
+    .auth.mobile {
+        display: flex;
+    }
+        
+        .user, .exitUser {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .dot {
+            margin-left: 2.5em;
+            margin-right: 2.5em;
+        }
+
+    .menuRectangle2 {
+        width: 85%;
+        margin-top: 2.125em;
+        margin-bottom: 1.875em;
+    }
+
+    .languageMenu.mobile {
+        display: flex;
+    }
+
+        .latvian, .russian, .english {
+            font-size: 16px;
+            line-height: 24px;
+        }
 
     .menuButton {
         display: flex;
