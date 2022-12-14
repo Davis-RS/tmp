@@ -223,6 +223,7 @@
     }
 
     .menuRectangle1 {
+        height: 1px;
         width: 85%;
         margin-top: 2.5em;
         margin-bottom: 2.125em;
@@ -244,6 +245,7 @@
         }
 
     .menuRectangle2 {
+        height: 1px;
         width: 85%;
         margin-top: 2.125em;
         margin-bottom: 1.875em;
