@@ -317,24 +317,19 @@ h2 {
     }
 }
 
-.mainContent2{
-    height:300px;
-}
-
 .mainTopOptions {
-    background-color: lightgreen;
     height: 210px;
     width: 1170px;
     left: 135px;
     top: 278px;
     border-radius: 0px;
+    margin-bottom: 40px;
 }
 
 .copyrightC{
     height:24px;
     width:24px;
     padding-left:360px;
-
 }
 
 .copyrightText {
@@ -411,9 +406,26 @@ h3 {
     flex-direction:column;
 }
 
-.alphabetLV, .alphabetRU{
+.alphabetExpand {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A8544;
+}
+
+.alphabetLV, .alphabetRU {
     height: 24px;
-    letter-spacing:0.3em;
+    letter-spacing: 0.3em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .alphabetLV {
@@ -422,6 +434,7 @@ h3 {
 
 .alpha1{
     padding-bottom:20px;
+    display:flex;
 }
 
 .topOptionsTextBox {
@@ -442,4 +455,72 @@ h3 {
     border-radius: 0px;
     padding-top:15px;
     padding-right:2px;
+}
+
+.releaseGridContainer{
+    display:grid;
+    grid-template-columns:360px 360px 360px;
+    column-gap:45px;
+}
+
+.lastGridContainer{
+    margin-bottom:50px;
+}
+
+.releaseGridElement{
+    height:296px;
+    width:360px;
+}
+
+.releaseLine{
+    display:flex;
+    height:24px;
+    width:360px;
+    margin-bottom:10px;
+    align-items:center;
+}
+
+.releaseLineElement1{
+    width:16px;
+    height:16px;
+    padding-right:5px;
+}
+
+.releaseLineElement2 {
+    width: 250px;
+    height: 24px;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #232B2B;
+    padding-right:3px;
+}
+
+.releaseLineElement3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    width: 60px;
+    height: 14px;
+    padding-right:10px;
+}
+
+.releaseLineElement4 {
+    width: 16px;
+    height: 16px;
+}
+
+.rectangleLine {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #CCCCCC;
+}
+
+.noCopyRights{
+    visibility:hidden;
 }
