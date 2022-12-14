@@ -318,7 +318,6 @@ h2 {
 }
 
 .mainTopOptions {
-    background-color: lightgreen;
     height: 210px;
     width: 1170px;
     left: 135px;
@@ -407,6 +406,18 @@ h3 {
     flex-direction:column;
 }
 
+.alphabetExpand {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A8544;
+}
+
 .alphabetLV, .alphabetRU {
     height: 24px;
     letter-spacing: 0.3em;
@@ -423,6 +434,7 @@ h3 {
 
 .alpha1{
     padding-bottom:20px;
+    display:flex;
 }
 
 .topOptionsTextBox {
@@ -445,14 +457,17 @@ h3 {
     padding-right:2px;
 }
 
-.releaseGridContainer1{
+.releaseGridContainer{
     display:grid;
     grid-template-columns:360px 360px 360px;
     column-gap:45px;
 }
 
+.lastGridContainer{
+    margin-bottom:50px;
+}
+
 .releaseGridElement{
-    background-color:aquamarine;
     height:296px;
     width:360px;
 }
@@ -462,7 +477,6 @@ h3 {
     height:24px;
     width:360px;
     margin-bottom:10px;
-    background-color:aqua;
     align-items:center;
 }
 
@@ -501,7 +515,8 @@ h3 {
     height: 16px;
 }
 
-.rectangleLine{
-    margin-top:40px;
-    margin-bottom:40px;
+.rectangleLine {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #CCCCCC;
 }
