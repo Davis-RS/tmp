@@ -369,20 +369,8 @@ h3 {
     width:200px;
 }
 
-.languageSearchFilter{
+.SF{
     height:58px;
-    background-color:lightpink;
-}
-
-.typeSearchFilter {
-    height: 58px;
-    background-color: lightblue;
-    justify-content:space-between;
-}
-
-.accessSearchFilter {
-    height: 58px;
-    background-color: lightpink;
 }
 
 .languageSearchFilterBox, .typeSearchFilterBox, .accessSearchFilterBox {
@@ -390,7 +378,14 @@ h3 {
     border-radius: 4px;
     background: #FFFFFF;
     box-sizing: border-box;
+    display:flex;
+    justify-content:space-between;
 }
+
+.languageSearchFilterBox{
+    
+}
+
 .languageSearchFilterText, .typeSearchFilterText, .accessSearchFilterText {
     font-family: 'Roboto';
     font-style: normal;
@@ -429,8 +424,22 @@ h3 {
     padding-bottom:20px;
 }
 
+.topOptionsTextBox {
+    display: flex;
+    padding-top:6px;
+    padding-bottom:8px;
+    padding-left: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .topOptionsArrowDown {
     height: 8px;
     width: 14.666666984558105px;
     border-radius: 0px;
+    padding-top:15px;
+    padding-right:2px;
 }
