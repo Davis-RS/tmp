@@ -520,3 +520,7 @@ h3 {
     margin-bottom: 40px;
     background: #CCCCCC;
 }
+
+.noCopyRights{
+    visibility:hidden;
+}
