@@ -203,8 +203,6 @@ h1{
 }
 
 .titleS {
-    width: 153px;
-    height: 24px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -253,9 +251,6 @@ h1{
     margin-top:10px;
 }
 
-.activeUsers {
-    display: flex;
-}
 
 h2 {
     margin-top: 45px;
@@ -278,61 +273,101 @@ h2 {
 
 h3 {
     margin-top: 45px;
-    width: 48.3em;
-    height: 1.5em;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
     display: flex;
     align-items: center;
     text-align: right;
     color: #232B2B;
     justify-content: space-between;
 }
+@media(min-width:1008.1px){
+    h2 {
+        width: 48.3em;
+    }
+    .activeUsers1{
+        display:none;
+    }
+    .activeUsers2{
+        display: flex;
+        flex-direction:row;
+    }
+    .activeCollumn1 {
+        width:420px;
+        margin-right:0px;
+    }
+    .activeCollumn2 {
+        width: 420px;
+    }
+    .user1, .user2, .user3, .user4, .user5, .user6 {
+        display: flex;
+        width: 26.25em;
+        height: 3.125em;
+        border: 1px solid #E0E0E0;
+        margin-top: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 
 
-.activeCollumn1, .activeCollumn2 {
-}
+    .user4, .user5, .user6 {
+        margin-left: 30px;
+    }
 
-.user1, .user2, .user3, .user4, .user5, .user6 {
-    display: flex;
-    width: 26.25em;
-    height: 3.125em;
-    border: 1px solid #E0E0E0;
-    margin-top: 10px;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
+    .userName {
+        padding-left: 20px;
+    }
 
-
- 
-.user4, .user5, .user6 {
-    margin-left: 30px;
-}
-.userName {
-    padding-left: 20px;
-}
-
-.userNum{
-    padding-right: 20px;
-}
-
-@media (max-device-width: 769px) {
-    .main {
-        display: none;
+    .userNum {
+        padding-right: 20px;
     }
 }
+@media(max-width: 1008px){
 
-.test12{
-    background-color:lightcoral;
-    width:1000px;
-    height:1000px;
+    h2{
+        width:23.15em;
+    }
+    .activeUsers2{
+        display:none;
+    }
+    .activeUsers1 {
+        display: grid;
+    }
+
+
+    .user1, .user2, .user3, .user4, .user5, .user6 {
+        display: flex;
+        width: 26.25em;
+        height: 3.125em;
+        border: 1px solid #E0E0E0;
+        margin-top: 10px;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    
+    .userName {
+        padding-left: 20px;
+    }
+
+    .userNum{
+        padding-right: 20px;
+    }
+
+    
 }
+@media (max-device-width: 769px) {
+        .main {
+            display: none;
+        }
+    }
+
+    .test12{
+        background-color:lightcoral;
+        width:1000px;
+        height:1000px;
+    }
