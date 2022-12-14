@@ -77,7 +77,6 @@ h1{
 
 .grid2 {
     display: grid;
-    width: 54.375em;
     row-gap: 2em;
     column-gap: 1.875em;
     grid-template-columns: 26.25em 26.25em;
@@ -152,7 +151,6 @@ h1{
 
 .grid3 {
     display: grid;
-    width: 54.375em;
     row-gap: 2em;
     column-gap: 1.875em;
     grid-template-columns: 12.1875em 12.1875em 12.1875em 12.1875em;
@@ -165,7 +163,6 @@ h1{
 }
 
 .mostViewed {
-    width: 54.375em;
     display: grid;
     grid-template-columns: 6.25em;
 }
