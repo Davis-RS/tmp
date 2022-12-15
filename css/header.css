@@ -24,8 +24,6 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     }
 
-
-
     .languageMenu {
         display: flex;
     }
@@ -53,7 +51,6 @@
         }
 
         .user {
-
         }
 
         .exitUser {
@@ -66,23 +63,11 @@
         height: 1.5em;
     }
 
-    .closeButton {
-        display: none;
-        width: 1.5em;
-        height: 1.5em;
-    }
-
-    .menuWrap {
+    .closeMenuButton, .menuWrap, .menuBackground, .headerContent{
         display: none;
     }
 
-    .md-hidden {
-        display: none;
-    }
-
-    .menuBackground {
-        display: none;
-    }
+    
 
 
 .mainMenu {
@@ -96,11 +81,11 @@
     .menuItems {
         display: flex;
     }
-
-
+    
 .searchQuery {
     display: flex;
-    width: 860px;
+    max-width: 860px;
+    width: 90%;
 }
 
     .homeButton {
@@ -136,7 +121,6 @@
     }
 
 
-
 @media (max-device-width: 769px) {
     /* For mobile phones and tablets: */
     .languageMenu, .auth, .mainMenu {
@@ -156,7 +140,7 @@
         font-size: 2rem;
     }
 
-    /*mobile view menu*/
+    /* mobile menu */
     .menuWrap.open {
         display: flex;
         visibility: visible;
@@ -215,7 +199,6 @@
     }
 
     .rectangleContainer {
-        /* to center the rectangles */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -226,6 +209,7 @@
         width: 85%;
         margin-top: 2.5em;
         margin-bottom: 2.125em;
+        height: 1px;
     }
 
     .auth.mobile {
@@ -247,6 +231,7 @@
         width: 85%;
         margin-top: 2.125em;
         margin-bottom: 1.875em;
+        height: 1px;
     }
 
     .languageMenu.mobile {
@@ -269,7 +254,7 @@
         background-color: white;
     }
 
-    .closeButton {
+    .closeMenuButton {
         position: absolute;
         right: 1em;
         width: 24px;
@@ -278,10 +263,109 @@
         padding: 0;
         background-color: white;
     }
+    /* end of mobile menu */
+
+    /* mobile filters */
+    .contentText {
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 0.625em;
+        margin-right: 0.625em;
+    }
+
+    .filtersWrap.open {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+        transition: all .4s;
+    }
+
+    .filtersWrap {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        bottom: 0;
+        visibility: hidden;
+        width: 90%;
+        flex-direction: column;
+        overflow: auto;
+        background-color: white;
+        opacity: 0;
+        transform: translate(-100%);
+        transition: all .4s;
+    }
+
+    .filtersBackground.open {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+        transition: all .4s;
+    }
+
+    .filtersBackground {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        visibility: hidden;
+        width: 10%;
+        overflow: auto;
+        background: rgba(35, 43, 43, 0.7);
+        transform: translate(100%);
+        transition: all .4s;
+    }
+
+    .filtersContainer {
+        margin: 0.875em 1.25em 1.875em;
+    }
+
+    .filtersButton {
+        display: flex;
+        height: 24px;
+        border: 0;
+        padding: 0;
+        margin-left: 0.8em;
+        background-color: white;
+    }
+
+    .filtersImage {
+        margin-right: 10px;
+    }
+
+    .filtersText {
+        font-size: 16px;
+        font-weight: 500;
+        color: #3A8544;
+        margin: 0;
+    }
+
+    .closeFiltersButton {
+        position: absolute;
+        right: 1.25em;
+        top: 0.875em;
+        width: 24px;
+        height: 24px;
+        border: 0;
+        padding: 0;
+        background-color: white;
+    }
+    /* end of mobile filters */
 
     .searchQuery {
         width: 95%;
         margin: 1em 0 1em 0;
+    }
+
+    .headerContent {
+        display: block;
+        width: 100%;
+        background-color: white;
     }
 
     input::-webkit-input-placeholder {
