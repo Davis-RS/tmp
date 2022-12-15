@@ -574,7 +574,13 @@ h3 {
     
 }
 @media (max-device-width: 769px) {
-        .main {
-            display: none;
-        }
+    .banner{
+        display:none;
+    }
+    .sidebar{
+        display:none;
+    }
+    .main{
+        margin-left:0px;
+    }
 }
