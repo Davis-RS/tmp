@@ -45,6 +45,7 @@
                 </a>
             </div>
 
+            <!--mobile-->
             <div id="menu" class="menuWrap">
                 <nav class="md-hidden">
                     <a id="home" class="roboto menuItems">
@@ -112,10 +113,10 @@
 
             <div id="menuBackground" class="menuBackground"></div>
 
-            <button class="menuButton" onclick="menu()">
+            <button class="menuButton" onclick="menuMobile()">
                 <img class="menuImage" src="img/Menu.svg" />
             </button>
-            <button class="closeButton" onclick="menu()">
+            <button class="closeMenuButton" onclick="menuMobile()">
                 <img class="closeImage" src="img/X_Close.svg" />
             </button>
         </div>
@@ -159,10 +160,36 @@
                 <img class="searchImage" src="img/Search_Button.svg">
             </a>
         </div>
+
+        <div class="headerContent">
+            <!--mobile-->
+
+            <p class="roboto contentText">
+                Mokslas nūzares un viņas izteiksmes un izpratnes rubežas.
+            </p>
+
+            <div id="filters" class="filtersWrap">
+                <button class="closeFiltersButton" onclick="filtersMobile()">
+                    <img class="closeImage" src="img/X_Close.svg" />
+                </button>
+
+                <div class="filtersContainer">
+                    <h1>Filtri</h1>
+                    <!-- ENTER FILTERS HERE -->
+
+                </div>
+            </div>
+            <div id="filtersBackground" class="filtersBackground"></div>
+
+            <button class="filtersButton" onclick="filtersMobile()">
+                <img class="filtersImage" src="img/Search_Filter.svg" />
+                <p class="roboto filtersText">Filtri</p>
+            </button>
+        </div>
     </div>
 
-
     <div class="main">
+
         <div class="sidebar">
             <h1 class="filtersHeader">
                 <span>Filtri</span>
@@ -244,12 +271,11 @@
                 </div>
             </div>
         </div>
-
         <div class="mainContent3">
             <h1 class="releaseDescriptionHeader">
                 <span>Izdevuma apraksts</span>
             </h1>
-            <div class="releaseDescriptionContainer"> 
+            <div class="releaseDescriptionContainer">
                 <img class="coverimg" src="img/Coverimage.png">
                 <div class="releaseDescription">
                     <div class="descriptionName descriptionLine">
@@ -308,14 +334,22 @@
                             Anotācija
                         </div>
                         <div class="descriptionColumnElement2">
-                            <p>Gan tad, ja tavs mērķis ir tikai apgūt fizikas pamatus, gan tad, ja par to izjūti patiesu interesi, tev noderēs "Supervienkāršā fizika".</p>
-
-                            <p>Šī grāmata ir lielisks palīglīdzeklis, veicot mājas darbus un pārbaudot savas prasmes, tā noderēs arī kā visaptveroša rokasgrāmata.</p>
-
-                            <p>No angļu valodas tulkojis Guntis Kalns.</p>
+                            <p class="descriptionTextMarginClassStart descriptionTextMarginClass">Gan tad, ja tavs mērķis ir tikai apgūt fizikas pamatus, gan tad, ja par to izjūti patiesu interesi, tev noderēs "Supervienkāršā fizika".</p>
+                            <p class="descriptionTextMarginClass">Šī grāmata ir lielisks palīglīdzeklis, veicot mājas darbus un pārbaudot savas prasmes, tā noderēs arī kā visaptveroša rokasgrāmata.</p>
+                            <p class="descriptionTextMarginClass">No angļu valodas tulkojis Guntis Kalns.</p>
                         </div>
                     </div>
+                    <img class="descriptionLine descriptionLastLine" src="img/descriptionSeperationLine.svg">
+                    <div class="descriptionBottomBox">
+                        <a class="descriptionBottomBoxText1">
+                            Visi šī izdevuma raksti
+                        </a>
+                        <a class="descriptionBottomBoxText2">
+                            Visi šī izdevuma numuri
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
