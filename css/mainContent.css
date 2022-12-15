@@ -609,7 +609,8 @@ h3 {
     .sidebar{
         display:none;
     }
-    .main{
-        margin-left:0px;
+    .main {
+        margin-left: 0.625em;
+        margin-right: 0.625em;
     }
 }
