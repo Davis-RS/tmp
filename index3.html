@@ -45,6 +45,7 @@
                 </a>
             </div>
 
+            <!--mobile-->
             <div id="menu" class="menuWrap">
                 <nav class="md-hidden">
                     <a id="home" class="roboto menuItems">
@@ -112,10 +113,10 @@
 
             <div id="menuBackground" class="menuBackground"></div>
 
-            <button class="menuButton" onclick="menu()">
+            <button class="menuButton" onclick="menuMobile()">
                 <img class="menuImage" src="img/Menu.svg" />
             </button>
-            <button class="closeButton" onclick="menu()">
+            <button class="closeMenuButton" onclick="menuMobile()">
                 <img class="closeImage" src="img/X_Close.svg" />
             </button>
         </div>
@@ -159,8 +160,33 @@
                 <img class="searchImage" src="img/Search_Button.svg">
             </a>
         </div>
-    </div>
 
+        <div class="headerContent">
+            <!--mobile-->
+
+            <p class="roboto contentText">
+                Mokslas nūzares un viņas izteiksmes un izpratnes rubežas.
+            </p>
+
+            <div id="filters" class="filtersWrap">
+                <button class="closeFiltersButton" onclick="filtersMobile()">
+                    <img class="closeImage" src="img/X_Close.svg" />
+                </button>
+
+                <div class="filtersContainer">
+                    <h1>Filtri</h1>
+                    <!-- ENTER FILTERS HERE -->
+
+                </div>
+            </div>
+            <div id="filtersBackground" class="filtersBackground"></div>
+
+            <button class="filtersButton" onclick="filtersMobile()">
+                <img class="filtersImage" src="img/Search_Filter.svg" />
+                <p class="roboto filtersText">Filtri</p>
+            </button>
+        </div>
+    </div>
 
     <div class="main">
 
@@ -249,7 +275,7 @@
             <h1 class="releaseDescriptionHeader">
                 <span>Izdevuma apraksts</span>
             </h1>
-            <div class="releaseDescriptionContainer"> 
+            <div class="releaseDescriptionContainer">
                 <img class="coverimg" src="img/Coverimage.png">
                 <div class="releaseDescription">
                     <div class="descriptionName descriptionLine">
@@ -323,7 +349,7 @@
                         </a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
