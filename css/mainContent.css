@@ -268,14 +268,6 @@ h2 {
     width:54.375em;
 }
 
-h3 {
-    margin-top: 45px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    color: #232B2B;
-    justify-content: space-between;
-}
 @media(min-width:1008.1px){
     h2 {
         width: 48.3em;
@@ -375,7 +367,7 @@ h3 {
 .copyrightC {
     height: 24px;
     width: 24px;
-    padding-left: 360px;
+    padding-left:360px;
 }
 
 .copyrightText {
@@ -395,11 +387,12 @@ h3 {
 }
 
 h3 {
-    width: 1170px;
+    max-width: 1170px;
+    min-width:100px;
     height: 24px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-block-start: 20px;
     margin-block-end: 0px;
     margin-bottom: 30px;
@@ -564,4 +557,13 @@ h3 {
     margin-top: 40px;
     margin-bottom: 40px;
     background: #CCCCCC;
+}
+
+@media(max-width:1000px){
+    .releaseGridContainer {
+        display: grid;
+        grid-template-columns: 360px 360px;
+        column-gap: 45px;
+        gap:40px;
+    }
 }
