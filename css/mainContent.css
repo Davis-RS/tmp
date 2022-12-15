@@ -467,7 +467,36 @@ h3 {
 .mainContent3{
     width:870px;
     height:492px;
+    margin-top:10px;
     background-color:aquamarine;
+}
+
+.releaseDescriptionHeader{
+    margin-bottom:20px;
+    background-color:aqua;
+}
+
+.filtersHeader{
+    margin-block-end:0;
+}
+
+.releaseDescriptionContainer{
+    display:flex;
+    flex-direction:row;
+}
+
+.coverimg{
+    width:282px;
+    height:366px;
+}
+
+.releaseDescription{
+    margin-left:20px;
+}
+
+.descriptionLine{
+    display:flex;
+    flex-direction:row;
 }
 
 @media(max-width:1000px){
