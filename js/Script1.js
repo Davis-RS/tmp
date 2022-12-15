@@ -102,20 +102,36 @@ function flip3() {
     }
 }
 
-var isopened = false;
-function menu() {
-    if (isopened == false) {
+var menuOpened = false;
+function menuMobile() {
+    if (menuOpened == false) {
         document.querySelector('.menuButton').style.display = 'none';
-        document.querySelector('.closeButton').style.display = 'flex';
+        document.querySelector('.closeMenuButton').style.display = 'flex';
         document.getElementById("menu").className = "menuWrap open"
         document.getElementById("menuBackground").className = "menuBackground open"
-        isopened = true;
+        menuOpened = true;
     }
-    else if (isopened == true) {
-        document.querySelector('.closeButton').style.display = 'none';
+    else if (menuOpened == true) {
+        document.querySelector('.closeMenuButton').style.display = 'none';
         document.querySelector('.menuButton').style.display = 'flex';
-        document.getElementById("menu").className = "menuWrap"
-        document.getElementById("menuBackground").className = "menuBackground"
-        isopened = false;
+        document.getElementById("menu").className = "menuWrap";
+        document.getElementById("menuBackground").className = "menuBackground";
+        menuOpened = false;
+    }
+}
+
+var filtersOpened = false;
+function filtersMobile() {
+    if (filtersOpened == false) {
+        document.querySelector('.closeFiltersButton').style.display = 'flex';
+        document.getElementById("filters").className = "filtersWrap open";
+        document.getElementById("filtersBackground").className = "filtersBackground open";
+        filtersOpened = true;
+    }
+    else if (filtersOpened == true) {
+        document.querySelector('.closeFiltersButton').style.display = 'none';
+        document.getElementById("filters").className = "filtersWrap";
+        document.getElementById("filtersBackground").className = "filtersBackground";
+        filtersOpened = false;
     }
 }
