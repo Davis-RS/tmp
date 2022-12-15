@@ -643,4 +643,12 @@ h3 {
         width: 100%;
         justify-content: center;
     }
+    .outerBox{
+        position:relative;
+        width:100%;
+        justify-content:center;
+    }
+    .mainContent{
+        margin-left:0px;
+    }
 }
