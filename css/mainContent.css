@@ -559,6 +559,10 @@ h3 {
     background: #CCCCCC;
 }
 
+.index3Invisible{
+    display:none;
+}
+
 @media(max-width:1000px){
     .releaseGridContainer {
         display: grid;
