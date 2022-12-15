@@ -468,12 +468,10 @@ h3 {
     width:870px;
     height:492px;
     margin-top:10px;
-    background-color:aquamarine;
 }
 
 .releaseDescriptionHeader{
     margin-bottom:20px;
-    background-color:aqua;
 }
 
 .filtersHeader{
@@ -497,6 +495,37 @@ h3 {
 .descriptionLine{
     display:flex;
     flex-direction:row;
+}
+
+.descriptionColumnElement1 {
+    width: 130px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    align-items:center;
+    margin-right:20px;
+}
+
+.descriptionColumnElement2 {
+    height:24px;
+    width:418px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.descriptionLine {
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.descriptionGreenText {
+    color: #3A8544;
 }
 
 @media(max-width:1000px){
