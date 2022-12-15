@@ -563,6 +563,12 @@ h3 {
     display:none;
 }
 
+.mainContent3{
+    width:870px;
+    height:492px;
+    background-color:aquamarine;
+}
+
 @media(max-width:1000px){
     .releaseGridContainer {
         display: grid;
