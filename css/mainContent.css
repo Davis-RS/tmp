@@ -468,6 +468,7 @@ h3 {
     width:870px;
     height:492px;
     margin-top:10px;
+    /*background-color:blue;*/
 }
 
 .releaseDescriptionHeader{
@@ -481,6 +482,7 @@ h3 {
 .releaseDescriptionContainer{
     display:flex;
     flex-direction:row;
+    
 }
 
 .coverimg{
@@ -520,12 +522,17 @@ h3 {
 }
 
 .descriptionLine {
-    margin-top:5px;
     margin-bottom:10px;
 }
 
 .descriptionGreenText {
     color: #3A8544;
+}
+
+.descriptionAnotation{
+    width:568px;
+    height:198px;
+    /*background-color:aqua;*/
 }
 
 @media(max-width:1000px){
