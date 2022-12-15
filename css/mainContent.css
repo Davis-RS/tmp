@@ -466,7 +466,7 @@ h3 {
 
 .mainContent3{
     width:870px;
-    height:492px;
+    margin-bottom:40px;
     margin-top:10px;
     /*background-color:blue;*/
 }
@@ -525,6 +525,10 @@ h3 {
     margin-bottom:10px;
 }
 
+.descriptionLastLine {
+    margin-bottom: 20px;
+}
+
 .descriptionGreenText {
     color: #3A8544;
 }
@@ -535,118 +539,161 @@ h3 {
     /*background-color:aqua;*/
 }
 
-@media(max-width:1000px){
-    .releaseGridContainer {
-        display: grid;
-        grid-template-columns: 360px 360px;
-        column-gap: 45px;
-        gap:40px;
-    }
+.descriptionTextMarginClassStart {
+    margin-block-start: 0;
 }
 
-@media(max-width: 1008px){
-    .grid2 {
-        grid-template-columns: 26.25em;
-    }
+.descriptionTextMarginClass{
+    margin-block-end:1.7em;
 }
 
-@media (max-width: 1008px){
-    .grid3 {
-        grid-template-columns: 12.1875em 12.1875em;
-    }
+.descriptionBottomBox{
+    display:flex;
+    justify-content:space-between;
 }
 
-@media(min-width:1008.1px){
-    h2 {
-        width: 48.3em;
-    }
-    .activeUsers1{
-        display:none;
-    }
-    .activeUsers2{
-        display: flex;
-        flex-direction:row;
-    }
-    .activeCollumn1 {
-        width:420px;
-        margin-right:0px;
-    }
-    .activeCollumn2 {
-        width: 420px;
-    }
-    .user1, .user2, .user3, .user4, .user5, .user6 {
-        display: flex;
-        width: 26.25em;
-        height: 3.125em;
-        border: 1px solid #E0E0E0;
-        margin-top: 10px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
-
-    .user4, .user5, .user6 {
-        margin-left: 30px;
-    }
-
-    .userName {
-        padding-left: 20px;
-    }
-
-    .userNum {
-        padding-right: 20px;
-    }
+.descriptionBottomBoxText1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    width: 145px;
+    height: 24px;
+    color: #3A8544;
 }
 
-@media(max-width: 1008px){
-
-    h2{
-        width:23.15em;
-    }
-    .activeUsers2{
-        display:none;
-    }
-    .activeUsers1 {
-        display: grid;
-    }
-
-
-    .user1, .user2, .user3, .user4, .user5, .user6 {
-        display: flex;
-        width: 26.25em;
-        height: 3.125em;
-        border: 1px solid #E0E0E0;
-        margin-top: 10px;
-        justify-content: space-between;
-        align-items: center;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    
-    .userName {
-        padding-left: 20px;
-    }
-
-    .userNum{
-        padding-right: 20px;
-    }
-
-    
+.descriptionBottomBoxText2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    width: 150px;
+    height: 24px;
+    color: #3A8544;
 }
-@media (max-device-width: 769px) {
-    .banner{
-        display:none;
+
+    @media(max-width:1000px) {
+        .releaseGridContainer {
+            display: grid;
+            grid-template-columns: 360px 360px;
+            column-gap: 45px;
+            gap: 40px;
+        }
     }
-    .sidebar{
-        display:none;
+
+    @media(max-width: 1008px) {
+        .grid2 {
+            grid-template-columns: 26.25em;
+        }
     }
-    .main {
-        margin-left: 0.625em;
-        margin-right: 0.625em;
+
+    @media (max-width: 1008px) {
+        .grid3 {
+            grid-template-columns: 12.1875em 12.1875em;
+        }
     }
-}
+
+    @media(min-width:1008.1px) {
+        h2 {
+            width: 48.3em;
+        }
+
+        .activeUsers1 {
+            display: none;
+        }
+
+        .activeUsers2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .activeCollumn1 {
+            width: 420px;
+            margin-right: 0px;
+        }
+
+        .activeCollumn2 {
+            width: 420px;
+        }
+
+        .user1, .user2, .user3, .user4, .user5, .user6 {
+            display: flex;
+            width: 26.25em;
+            height: 3.125em;
+            border: 1px solid #E0E0E0;
+            margin-top: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+
+        .user4, .user5, .user6 {
+            margin-left: 30px;
+        }
+
+        .userName {
+            padding-left: 20px;
+        }
+
+        .userNum {
+            padding-right: 20px;
+        }
+    }
+
+    @media(max-width: 1008px) {
+
+        h2 {
+            width: 23.15em;
+        }
+
+        .activeUsers2 {
+            display: none;
+        }
+
+        .activeUsers1 {
+            display: grid;
+        }
+
+
+        .user1, .user2, .user3, .user4, .user5, .user6 {
+            display: flex;
+            width: 26.25em;
+            height: 3.125em;
+            border: 1px solid #E0E0E0;
+            margin-top: 10px;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+
+        .userName {
+            padding-left: 20px;
+        }
+
+        .userNum {
+            padding-right: 20px;
+        }
+    }
+
+    @media (max-device-width: 769px) {
+        .banner {
+            display: none;
+        }
+
+        .sidebar {
+            display: none;
+        }
+
+        .main {
+            margin-left: 0.625em;
+            margin-right: 0.625em;
+        }
+    }
