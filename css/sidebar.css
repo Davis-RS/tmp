@@ -15,6 +15,27 @@
     gap: 20px;
 }
 
+.sideBarHeader {
+    display: flex;
+    border: 0px;
+    flex-direction: row;
+    background: #F5F9F6;
+    height: 40px;
+    width: 270px;
+    border-radius: 0px;
+    justify-content: left;
+    align-items: center;
+    text-align:start;
+    line-height: 1.5em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 8px;
+    text-align: start;
+}
+
 .buttonText {
     width: 13.875em;
     line-height: 1.5em;
@@ -29,6 +50,7 @@
 
 .arrowDown {
     padding-left: 8px;
+    justify-content:right;
 }
 
     .arrowDown.inverted {
