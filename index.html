@@ -204,16 +204,13 @@
     <div class="main">
         <div class="sidebar">
             <h1>Filtri</h1>
-            <div class="period sideBarBlock">
-                <button class="periodDropDown-btn" onclick="flip1(); dropdown1()">
-                    <div class="buttonText">
-                        <div class="periodText">Periods</div>
-                    </div>
-                    <div class="arrowDown periodArrowDown">
-                        <img src="img/arrow_down.svg">
-                    </div>
-                </button>
-                <div>
+            <div class="period sideBarBlock active">
+                <div class="sideBarHeader periodDropDown-btn">
+                    Periods
+                    <img class="arrowDown" src="img/arrow_down.svg">
+                </div>
+                
+                <div class="sideBarContent">
                     <div class="periodCalendar">
                         <span class="dateFrom calDatesText">Datums no:</span>
                         <span class="dateTo calDatesText">Datums līdz:</span>
@@ -237,7 +234,7 @@
                         Izdevumi
                     </div>
                     <div class="arrowDown releasesArrowDown">
-                        <img src="img/arrow_down.svg">
+                        
                     </div>
                 </button>
                 <div>
@@ -452,5 +449,9 @@
         <div class="about">Par LNB digitālo bibliotēku</div>
         <img class="eraf" src="img/eraf-logo.svg">
     </div>
+
+    <script>
+        initSidebarBlocks();
+    </script>
 </body>
 </html>

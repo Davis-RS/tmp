@@ -41,8 +41,32 @@ function dropdown2() {
     }
 }
 
-function dropdown3() {
-    var dropdown = document.getElementsByClassName("sideBarCollectionDropDown-btn");
+
+function initSidebarBlocks() {
+    var sidebarBlocks = document.getElementsByClassName("sideBarBlock");
+
+    for (i = 0; i < sidebarBlocks.length; i++) {
+        var btns = sidebarBlocks[i].getElementsByClassName("sideBarHeader");
+        if (btns[0] != null) {
+            btns[0].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+
+                if (this.classList.contains("active")) {
+                    dropdownContent.style.display = "block";
+
+                } else {
+                    dropdownContent.style.display = "none";
+                }
+                flip(this.getElementsByClassName("arrowDown")[0]);
+            });
+        }
+    }
+}
+
+
+function dropdown3(selectorName) {
+    var dropdown = document.getElementsByClassName(selectorName);
     var i;
 
     for (i = 0; i < dropdown.length; i++) {
@@ -64,15 +88,15 @@ function dropdown3() {
 }
 
 /*Sidebar button down flips on click*/
-var bool1 = false;
-function flip1() {
-    if (bool1 == false) {
-        document.querySelector('.periodArrowDown').style.transform = 'none';
-        bool1 = true;
+
+function flip(obj) {
+    console.log(obj);
+    var parent = obj.parentNode.parentNode;
+    if (parent.classList.contains("active")) {
+        obj.style.transform = 'none';
     }
     else if (bool1 == true) {
-        document.querySelector('.periodArrowDown').style.transform = 'scaleY(-1)';
-        bool1 = false;
+        obj.style.transform = 'scaleY(-1)';
     }
 }
 
