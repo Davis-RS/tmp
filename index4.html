@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="css/general.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/mainContent.css" rel="stylesheet" type="text/css">
+    <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js/Script1.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="topMenu">
+            <div class="languageMenu">
+                <a class="roboto latvian selected">LV</a>
+                <div class="roboto dot">
+                    •
+                </div>
+                <a class="roboto russian">RU</a>
+                <div class="roboto dot">
+                    •
+                </div>
+                <a class="roboto english">EN</a>
+            </div>
+            <div class="roboto topTitle">
+                Periodika
+            </div>
+            <div class="auth">
+                <a id="auth1" class="roboto login">
+                    Pieslēgties
+                </a>
+                <div class="roboto dot">
+                    •
+                </div>
+                <a id="auth2" class="roboto register">
+                    Reģistrēties
+                </a>
+            </div>
+
+            <!--mobile-->
+            <div id="menu" class="menuWrap">
+                <nav class="md-hidden">
+                    <a id="home" class="roboto menuItems">
+                        Sākums
+                    </a>
+                    <a id="allReleases" class="roboto menuItems">
+                        Visi izdevumi
+                    </a>
+                    <a id="bookmarks" class="roboto menuItems">
+                        Grāmatzīmes
+                    </a>
+                    <a id="recommended" class="roboto menuItems">
+                        Ieteiktie materiāli
+                    </a>
+                    <a id="collections" class="roboto menuItems">
+                        Kolekcijas
+                    </a>
+                    <a id="corrections" class="roboto menuItems">
+                        Labojumi
+                    </a>
+                    <a id="comments" class="roboto menuItems">
+                        Komentāri
+                    </a>
+                    <a id="mostValued" class="roboto menuItems">
+                        Novērtētākie
+                    </a>
+                    <a id="aboutLibrary" class="roboto menuItems">
+                        Par bibliotēku
+                    </a>
+                    <a id="termsOfUse" class="roboto menuItems">
+                        Lietošanas noteikumi
+                    </a>
+                    <a id="contacts" class="roboto menuItems">
+                        Kontakti
+                    </a>
+                </nav>
+
+                <div class="rectangleContainer">
+                    <img class="menuRectangle1" src="img/Rectangle 123.svg">
+                    <div class="auth mobile">
+                        <a id="auth1" class="roboto user">
+                            Renārs Avotiņš
+                        </a>
+                        <div class="roboto dot">
+                            •
+                        </div>
+                        <a id="auth2" class="roboto exitUser">
+                            Iziet
+                        </a>
+                    </div>
+                    <img class="menuRectangle2" src="img/Rectangle 123.svg">
+                    <div class="languageMenu mobile">
+                        <a class="roboto latvian selected">LV</a>
+                        <div class="roboto dot">
+                            •
+                        </div>
+                        <a class="roboto russian">RU</a>
+                        <div class="roboto dot">
+                            •
+                        </div>
+                        <a class="roboto english">EN</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menuBackground" class="menuBackground"></div>
+
+            <button class="menuButton" onclick="menuMobile()">
+                <img class="menuImage" src="img/Menu.svg" />
+            </button>
+            <button class="closeMenuButton" onclick="menuMobile()">
+                <img class="closeImage" src="img/X_Close.svg" />
+            </button>
+        </div>
+
+        <div class="mainMenu">
+            <a id="allReleases" class="roboto menuItems">
+                Visi izdevumi
+            </a>
+            <a id="bookmarks" class="roboto menuItems">
+                Grāmatzīmes
+            </a>
+            <a id="recommended" class="roboto menuItems">
+                Ieteiktie materiāli
+            </a>
+            <a id="collections" class="roboto menuItems">
+                Kolekcijas
+            </a>
+            <a id="corrections" class="roboto menuItems">
+                Labojumi
+            </a>
+            <a id="users" class="roboto menuItems">
+                Lietotāji
+            </a>
+            <a id="mostValued" class="roboto menuItems">
+                Novērtētākie
+            </a>
+            <a id="cart" class="roboto menuItems">
+                Grozs
+            </a>
+        </div>
+
+        <div class="searchQuery">
+            <a class="homeButton">
+                <img class="homeImage" src="img/Home_Button.svg">
+            </a>
+            <input class="searchTextBox" type="text" placeholder="Meklē visos satura laukos, piemēram, Rainis 1930. gads">
+            <a class="searchFilterButton">
+                <img class="searchFilterImage" src="img/Search_Filter.svg">
+            </a>
+            <a class="searchButton">
+                <img class="searchImage" src="img/Search_Button.svg">
+            </a>
+        </div>
+
+        <div class="headerContent">
+            <!--mobile-->
+
+            <p class="roboto contentText">
+                Mokslas nūzares un viņas izteiksmes un izpratnes rubežas.
+            </p>
+
+            <div id="filters" class="filtersWrap">
+                <button class="closeFiltersButton" onclick="filtersMobile()">
+                    <img class="closeImage" src="img/X_Close.svg" />
+                </button>
+
+                <div class="filtersContainer">
+                    <h1>Filtri</h1>
+                    <!-- ENTER FILTERS HERE -->
+
+                </div>
+            </div>
+            <div id="filtersBackground" class="filtersBackground"></div>
+
+            <button class="filtersButton" onclick="filtersMobile()">
+                <img class="filtersImage" src="img/Search_Filter.svg" />
+                <p class="roboto filtersText">Filtri</p>
+            </button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="sidebar2">
+            <h1 class="filtersHeader">
+                <span>Filtri</span>
+            </h1>
+        </div>
+        <div class="mainContent4">
+            <h1 class="allPublicationArticles">
+                <span>Dzirsktele ilustrētais žurnāls</span>
+            </h1>
+            <div class="searchNavigation">
+                <a class="previousPage">
+                    <img src="img/previousArrow.svg">
+                </a>
+                <span class="currentPageText">
+                    Lapa
+                </span>
+                <span class="CurrentPageNumber">
+                    1
+                </span>
+                <span class="AllPages">
+                    no 11
+                </span>
+                <a>
+                    <img src="img/nextArrow.svg">
+                </a>
+                <span class="totalResults">
+                    1234 rezultāti
+                </span>
+                <span class="sortByText">
+                    Kārtot pēc
+                </span>
+                <a class="correspondenceContainer">
+                    <span class="correspondenceText">
+                        Atbilstība
+                    </span>
+                </a>
+                <span class="showMoreText">
+                    Rādīt
+                </span>
+                <span class="searchBlackBox">
+                    20
+                </span>
+                <span class="searchGreenBox">
+                    40
+                </span>
+            </div>
+            <div class="articleItem">
+                <span>
+                    Mokslas nūzares un viņas izteiksmes un izpratnes rubežas.
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="about">Par LNB digitālo bibliotēku</div>
+        <img class="eraf" src="img/eraf-logo.svg">
+    </div>
+
+</body>
+
+</html>
