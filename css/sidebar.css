@@ -256,4 +256,9 @@
             font-weight: 500;
             font-size: 16px;
         }
-    
+
+@media (max-device-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+}

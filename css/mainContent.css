@@ -699,10 +699,16 @@ h3 {
     }
     .outerBox{
         position:relative;
-        width:100%;
+        width:95%;
         justify-content:center;
+        margin-left:0;
+        margin-right:0;
     }
     .mainContent{
         margin-left:0px;
     }
+    h1{
+        width:95%;
+    }
+
 }
