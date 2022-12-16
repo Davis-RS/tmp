@@ -49,16 +49,9 @@ function initSidebarBlocks() {
         var btns = sidebarBlocks[i].getElementsByClassName("sideBarHeader");
         if (btns[0] != null) {
             btns[0].addEventListener("click", function () {
-                this.classList.toggle("active");
                 var dropdownContent = this.nextElementSibling;
-
-                if (this.classList.contains("active")) {
-                    dropdownContent.style.display = "block";
-
-                } else {
-                    dropdownContent.style.display = "none";
-                }
-                flip(this.getElementsByClassName("arrowDown")[0]);
+                dropdownContent.classList.toggle("sideBarActive");
+                this.getElementsByClassName("arrowDown")[0].classList.toggle("inverted");
             });
         }
     }
@@ -89,15 +82,8 @@ function dropdown3(selectorName) {
 
 /*Sidebar button down flips on click*/
 
-function flip(obj) {
-    console.log(obj);
-    var parent = obj.parentNode.parentNode;
-    if (parent.classList.contains("active")) {
-        obj.style.transform = 'none';
-    }
-    else if (bool1 == true) {
-        obj.style.transform = 'scaleY(-1)';
-    }
+function flipSideBarArrow(obj) {
+        obj.classList.toggle("inverted");
 }
 
 /*Sidebar button down flips on click*/

@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height:21px;
+    line-height: 21px;
 }
 
 .sidebar {
@@ -12,7 +12,7 @@
     border-radius: 0px;
     margin-top: 0.625em;
     margin-right: 1.875em;
-    gap:20px;
+    gap: 20px;
 }
 
 .buttonText {
@@ -24,15 +24,21 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 8px;
-    text-align:start;
+    text-align: start;
 }
 
 .arrowDown {
     padding-left: 8px;
-    transform: scaleY(-1);
 }
 
-.active {
+    .arrowDown.inverted {
+        transform: scaleY(-1);
+    }
+.sideBarHeader{
+    cursor:pointer;
+}
+
+.sideBarActive {
     display: flex;
     border: 0px;
     flex-direction: row;
@@ -40,222 +46,223 @@
     height: 40px;
     width: 270px;
     border-radius: 0px;
-    justify-content:left;
+    justify-content: left;
     align-items: center;
 }
 
-    .sideFilterTextBox {
-        height: 30px;
-        width: 270px;
-        /*background-color: brown;*/
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
-    }
+.sideFilterTextBox {
+    height: 30px;
+    width: 270px;
+    /*background-color: brown;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
 
 
-    .period {
-        background-color:white;
-        width: 16.875em;
-        min-height:40px;
-        max-height: 11.375em;
-        position:relative;
-    }
+.period {
+    background-color: white;
+    width: 16.875em;
+    min-height: 40px;
+    max-height: 11.375em;
+    position: relative;
+}
 
-        .periodDropDown-btn {
-            display:flex;
-            border:0px;
-            flex-direction:row;
-            background: #F5F9F6;
-            height: 40px;
-            width: 270px;
-            border-radius: 0px;
-            align-items:center;
-        }
+.periodDropDown-btn {
+    display: flex;
+    border: 0px;
+    flex-direction: row;
+    background: #F5F9F6;
+    height: 40px;
+    width: 270px;
+    border-radius: 0px;
+    align-items: center;
+}
 
-        .periodCalendar {
-            display: grid;
-            grid-template-areas:
-                'date1 date2'
-                'dateBox1  dateBox2';
-            justify-content: center;
-            align-items: center;
-            column-gap: 5px;
-            height: 98px;
-            background-color: white;
-            padding-left:8px;
-        }
+.periodCalendar {
+    display: grid;
+    grid-template-areas:
+        'date1 date2'
+        'dateBox1  dateBox2';
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    height: 98px;
+    background-color: white;
+    padding-left: 8px;
+}
 
-            .calDatesText {
-                position: relative;
-                top: 10px;
-                height:24px;
-                width:83px;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 14px;
-            }
+.calDatesText {
+    position: relative;
+    top: 10px;
+    height: 24px;
+    width: 83px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
 
-            .dateFrom {
-                grid-area: date1;
-            }
+.dateFrom {
+    grid-area: date1;
+}
 
-            .dateTo {
-                grid-area: date2;
-            }
+.dateTo {
+    grid-area: date2;
+}
 
-            .calBox {
-                display: flex;
-                justify-content: space-around;
-                position: relative;
-                width: 124px;
-                height: 40px;
-                bottom: 10px;
-                border: 1px solid #CCCCCC;
-                border-radius: 4px;
-                line-height: 40px;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-            }
+.calBox {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 124px;
+    height: 40px;
+    bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    line-height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
 
-                .calIcon{
-                    position:relative;
-                    height:14.67px;
-                    width:14.67px;
-                    top:12.67px;
-                }
+.calIcon {
+    position: relative;
+    height: 14.67px;
+    width: 14.67px;
+    top: 12.67px;
+}
 
-            .dateFromBox{
-                grid-area:dateBox1;
-            }
+.dateFromBox {
+    grid-area: dateBox1;
+}
 
-            .dateToBox {
-                grid-area:dateBox2;
-            }
+.dateToBox {
+    grid-area: dateBox2;
+}
 
-        .periodResults {
-            height: 100%;
-            width: 100%;
-            background: #3A8544;
-            border-radius: 3px;
-            color: #FFFFFF;
-            text-align: center;
-        }
-            .periodResultsText {
-                padding-bottom:0.9em;
-                padding-top:0.8em;
-                padding-left:4.6em;
-                padding-right:4.6em;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height:44px;
-                color:white;
-            }
+.periodResults {
+    height: 100%;
+    width: 100%;
+    background: #3A8544;
+    border-radius: 3px;
+    color: #FFFFFF;
+    text-align: center;
+}
 
-    .releases {
-        background-color: white;
-        width: 16.875em;
-        min-height: 40px;
-        max-height: 23.56255em;
-    }
+.periodResultsText {
+    padding-bottom: 0.9em;
+    padding-top: 0.8em;
+    padding-left: 4.6em;
+    padding-right: 4.6em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 44px;
+    color: white;
+}
 
-        .releasesDropDown-btn {
-            display: flex;
-            flex-direction: row;
-            background: #F5F9F6;
-            height: 40px;
-            width: 270px;
-            border-radius: 0px;
-            align-items: center;
-            border: 0px;
-        }
+.releases {
+    background-color: white;
+    width: 16.875em;
+    min-height: 40px;
+    max-height: 23.56255em;
+}
 
-        .reText {
-            position:relative;
-            top:20px;
-            bottom:10px;
-            display:flex;
-            flex-direction:column;
-            align-items: start;
-            row-gap: 10px;
-            font-size:14px;
-        }
+.releasesDropDown-btn {
+    display: flex;
+    flex-direction: row;
+    background: #F5F9F6;
+    height: 40px;
+    width: 270px;
+    border-radius: 0px;
+    align-items: center;
+    border: 0px;
+}
 
-            .reTextLine{
-                line-height:25px;
-                align-items:center;
-                padding-left:8px;
-            }
+.reText {
+    position: relative;
+    top: 20px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+    font-size: 14px;
+}
 
-        .sideBarAllReleases {
-            display:flex;
-            justify-content:end;
-            width: 270px;
-            height: 24px;
-            color: #3A8544;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            margin-bottom:10px;
-        }
+.reTextLine {
+    line-height: 25px;
+    align-items: center;
+    padding-left: 8px;
+}
 
-    .sideBarCollection {
-        background-color: white;
-        width: 16.875em;
-        min-height:40px;
-        max-height: 15.875em;
-    }
+.sideBarAllReleases {
+    display: flex;
+    justify-content: end;
+    width: 270px;
+    height: 24px;
+    color: #3A8544;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
-        .sideBarCollectionDropDown-btn {
-            display: flex;
-            flex-direction: row;
-            background: #F5F9F6;
-            height: 40px;
-            width: 270px;
-            border: 0px;
-            align-items: center;
-        }
+.sideBarCollection {
+    background-color: white;
+    width: 16.875em;
+    min-height: 40px;
+    max-height: 15.875em;
+}
 
-        .colText {
-            position: relative;
-            top: 20px;
-            bottom: 10px;
-            padding-left:8px;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            row-gap: 10px;
-            font-size: 14px;
-        }
+.sideBarCollectionDropDown-btn {
+    display: flex;
+    flex-direction: row;
+    background: #F5F9F6;
+    height: 40px;
+    width: 270px;
+    border: 0px;
+    align-items: center;
+}
 
-            .colTextLine {
-                line-height: 25px;
-                align-items: center;
-            }
+.colText {
+    position: relative;
+    top: 20px;
+    bottom: 10px;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+    font-size: 14px;
+}
 
-        .sideBarAllCollections {
-            display: flex;
-            position: relative;
-            top: 25px;
-            justify-content: end;
-            text-align: end;
-            width: 270px;
-            height: 24px;
-            color: #3A8544;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-        }
+.colTextLine {
+    line-height: 25px;
+    align-items: center;
+}
+
+.sideBarAllCollections {
+    display: flex;
+    position: relative;
+    top: 25px;
+    justify-content: end;
+    text-align: end;
+    width: 270px;
+    height: 24px;
+    color: #3A8544;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
 
 @media (max-device-width: 769px) {
     .sidebar {
