@@ -576,7 +576,6 @@ h3 {
 
 .mainContent4{
     width:870px;
-    background-color:aqua;
     margin-top:20px;
     height:1332px;
 }
@@ -736,7 +735,7 @@ articlePageArrow{
     display:flex;
     flex-direction:row;
     height:157px;
-    background-color:lightcoral;
+    margin-bottom:40px;
 }
 
 .articleItemPlaceholder {
@@ -750,7 +749,55 @@ articlePageArrow{
 .articleItemDescription{
     display:flex;
     flex-direction:column;
-    padding-left:20px;
+    margin-left:20px;
+}
+
+.articleItemRoboto {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.articleItemName {
+    width: 631px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 5px;
+}
+
+.articleItemSynopsis {
+    width: 631px;
+    height: 80px;
+}
+
+.articleItemAuthor {
+    width: 500px;
+    height: 24px;
+}
+
+.articleItemReleaseDate{
+    width: 500px;
+    height: 24px;
+}
+
+.articleItemBottomDescriptionRow{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.articleItemDOM {
+    display:flex;
+    justify-content:right;
+    height: 24px;
+    width:155px;
+    color: #3A8544;
 }
 
 @media(max-width:1000px) {
