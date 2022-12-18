@@ -594,10 +594,13 @@ h3 {
     margin-block-end:30px;
 }
 
-.searchNavigation{
+.articleSearchNavigation{
+    display:flex;
+    flex-direction:row;
     height:30px;
-    background-color:lightpink;
     margin-bottom:30px;
+    align-items: center;
+    background-color:white; /*remove later*/
 }
 
 .articleItem{
@@ -605,8 +608,135 @@ h3 {
     background-color:lightcoral;
 }
 
-    @media(max-width:1000px) {
-        .releaseGridContainer {
+.pageSearchNavigationBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 254px;
+    height: 30px;
+}
+
+articlePageArrow{
+    width:40px;
+}
+
+.currentArticlePageText {
+    width: 31px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.currentArticlePageNumber {
+    width: 30px;
+    line-height: 19px;
+    border: 2px solid #232B2B;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:3px;
+    padding-bottom:3px;
+    text-align:center;
+}
+
+.allArticlePages {
+    width: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.totalArticleResults {
+    width: 86px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #3A8544;
+    line-height: 24px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.articleSortByText {
+    width: 65px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-right:20px;
+}
+
+.articleCorrespondenceContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    width: 170px;
+    height: 30px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+.articleCorrespondenceText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    width:129px;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-left:8px;
+}
+
+.articleCorrespondenceArrowDown{
+    height:8px;
+    width:14.67px;
+    padding-right:8.67px;
+}
+
+.articleShowMoreText {
+    padding-left: 51px;
+    padding-right: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.articleSearchNavigationBox {
+    width: 16px;
+    height: 30px;
+    color: white;
+    background-color: #3A8544;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.searchNavigationBackgroundColorGreen {
+    background: #3A8544;
+}
+
+.searchNavigationBackgroundColorBlack {
+    background: #232B2B;
+}
+
+@media(max-width:1000px) {
+    .releaseGridContainer {
             display: grid;
             grid-template-columns: 360px 360px;
             column-gap: 45px;

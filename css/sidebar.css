@@ -49,7 +49,7 @@
 }
 
 .arrowDown {
-    padding-left: 8px;
+    padding-right: 8px;
     justify-content:right;
 }
 
@@ -57,7 +57,14 @@
         transform: scaleY(-1);
     }
 .sideBarHeader{
+    padding-left:0px;
     cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+}
+
+.sideBarHeaderText{
+    padding-left:8px;
 }
 
 .sideBarActive {
