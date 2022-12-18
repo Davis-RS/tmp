@@ -603,10 +603,7 @@ h3 {
     background-color:white; /*remove later*/
 }
 
-.articleItem{
-    height:157px;
-    background-color:lightcoral;
-}
+
 
 .pageSearchNavigationBox {
     display: flex;
@@ -733,6 +730,27 @@ articlePageArrow{
 
 .searchNavigationBackgroundColorBlack {
     background: #232B2B;
+}
+
+.articleItemContainer{
+    display:flex;
+    flex-direction:row;
+    height:157px;
+    background-color:lightcoral;
+}
+
+.articleItemPlaceholder {
+    width: 185px;
+    height: 147px;
+    padding: 3px;
+    border: 2px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+.articleItemDescription{
+    display:flex;
+    flex-direction:column;
+    padding-left:20px;
 }
 
 @media(max-width:1000px) {
