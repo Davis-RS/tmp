@@ -60,9 +60,12 @@ articleL {
 }
 .journalL {
     width: 100%;
-    height: 82.22%;
+    height: 81.22%;
 }
-
+.imagejournalL {
+    height: 88.1%;
+    width: 97.61%;
+}
 .languageFull {
     display: grid;
     grid-template-columns: 17em 8.9375em;
