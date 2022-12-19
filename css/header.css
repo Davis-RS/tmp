@@ -154,7 +154,7 @@
         display: flex;
         z-index: 1;
         position: fixed;
-        top: 63px;
+        top: 61px;
         left: 0;
         bottom: 0;
         visibility: hidden;
@@ -179,7 +179,7 @@
         display: flex;
         z-index: 1;
         position: fixed;
-        top: 63px;
+        top: 61px;
         right: 0;
         bottom: 0;
         visibility: hidden;
@@ -348,8 +348,8 @@
 
     .closeFiltersButton {
         position: absolute;
-        right: 1.25em;
-        top: 0.875em;
+        right: 20px;
+        top: 19px;
         width: 24px;
         height: 24px;
         border: 0;

@@ -472,6 +472,7 @@ h3 {
 
 .filtersHeader{
     margin-block-end:0;
+    margin-top:0px;
 }
 
 .releaseDescriptionContainer{
@@ -575,6 +576,24 @@ h3 {
     height:1332px;
 }
 
+h4 {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-top:0px;
+}
+
+.articleExportText{
+    padding-left:500px;
+}
+
 .sidebar2{
     width:270px;
     background-color:aquamarine;
@@ -596,8 +615,6 @@ h3 {
     align-items: center;
     background-color:white; /*remove later*/
 }
-
-
 
 .pageSearchNavigationBox {
     display: flex;
@@ -793,6 +810,45 @@ articlePageArrow{
     height: 24px;
     width:155px;
     color: #3A8544;
+}
+
+.contentHeader6 {
+    margin-block: 20px;
+    width: 870px;
+    height: 30px;
+}
+
+.collectionArticleItemContainer {
+    width: 1171px;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-areas: "collectionDiplomaticItem collectionDiplomaticItem collectionHumanitaryItem collectionMusicItem collectionHistoryItem"
+        "collectionDiplomaticItem collectionDiplomaticItem collectionHumanitaryItem collectionMusicItem collectionHistoryItem"
+        "collectionDiplomaticItem collectionDiplomaticItem collectionHumanitaryItem collectionMusicItem collectionHistoryItem";
+    grid-column-gap:49px;
+    grid-row-gap:40px;
+    margin-bottom:50px;
+}
+
+.collectionArticleItem {
+    width: 195px;
+    height: 210px;
+}
+
+.collectionDiplomaticItem{
+    background-color:chocolate;
+}
+
+.collectionHumanitaryItem{
+    background-color:cadetblue;
+}
+
+.collectionMusicItem{
+    background-color:burlywood;
+}
+
+.collectionHistoryItem{
+    background-color:darkorange;
 }
 
 @media(max-width:1000px) {
