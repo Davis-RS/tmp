@@ -56,8 +56,10 @@
     .arrowDown.inverted {
         transform: scaleY(-1);
     }
+
 .sideBarHeader{
     padding-left:0px;
+    z-index:5;
     cursor:pointer;
     display:flex;
     justify-content:space-between;
@@ -69,6 +71,7 @@
 
 .sideBarActive {
     display: flex;
+    z-index:4;
     border: 0px;
     flex-direction: row;
     background: #F5F9F6;

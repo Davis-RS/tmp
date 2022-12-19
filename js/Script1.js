@@ -53,6 +53,7 @@ function initSidebarBlocks() {
                 dropdownContent.classList.toggle("sideBarActive");
                 this.getElementsByClassName("arrowDown")[0].classList.toggle("inverted");
                 var node = document.getElementById('periodCalendar');
+                dropdownContent.style.display = "none";
             });
         }
 
