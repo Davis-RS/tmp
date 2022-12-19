@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height:21px;
+    line-height: 21px;
 }
 
 .sidebar {
@@ -12,7 +12,28 @@
     border-radius: 0px;
     margin-top: 0.625em;
     margin-right: 1.875em;
-    gap:20px;
+    gap: 20px;
+}
+
+.sideBarHeader {
+    display: flex;
+    border: 0px;
+    flex-direction: row;
+    background: #F5F9F6;
+    height: 40px;
+    width: 270px;
+    border-radius: 0px;
+    justify-content: left;
+    align-items: center;
+    text-align:start;
+    line-height: 1.5em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 8px;
+    text-align: start;
 }
 
 .buttonText {
@@ -24,15 +45,64 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 8px;
-    text-align:start;
+    text-align: start;
 }
 
 .arrowDown {
-    padding-left: 8px;
-    transform: scaleY(-1);
+    padding-right: 8px;
+    justify-content:right;
 }
 
-.active {
+    .arrowDown.inverted {
+        transform: scaleY(-1);
+    }
+
+.sideBarHeader{
+    padding-left:0px;
+    z-index:5;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+}
+
+.sideBarHeaderText{
+    padding-left:8px;
+}
+
+.sideBarActive {
+    display: flex;
+    z-index:4;
+    border: 0px;
+    flex-direction: row;
+    background: #F5F9F6;
+    height: 40px;
+    width: 270px;
+    border-radius: 0px;
+    justify-content: left;
+    align-items: center;
+}
+
+.sideFilterTextBox {
+    height: 30px;
+    width: 270px;
+    /*background-color: brown;*/
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+.period {
+    background-color: white;
+    width: 16.875em;
+    min-height: 40px;
+    max-height: 11.375em;
+    position: relative;
+}
+
+.periodDropDown-btn {
     display: flex;
     border: 0px;
     flex-direction: row;
@@ -40,222 +110,191 @@
     height: 40px;
     width: 270px;
     border-radius: 0px;
-    justify-content:left;
     align-items: center;
 }
 
-    .sideFilterTextBox {
-        height: 30px;
-        width: 270px;
-        /*background-color: brown;*/
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
-    }
+.periodCalendar {
+    display: grid;
+    grid-template-areas:
+        'date1 date2'
+        'dateBox1  dateBox2';
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    height: 98px;
+    background-color: white;
+    padding-left: 8px;
+}
 
+.calDatesText {
+    position: relative;
+    top: 10px;
+    height: 24px;
+    width: 83px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
 
-    .period {
-        background-color:white;
-        width: 16.875em;
-        min-height:40px;
-        max-height: 11.375em;
-        position:relative;
-    }
+.dateFrom {
+    grid-area: date1;
+}
 
-        .periodDropDown-btn {
-            display:flex;
-            border:0px;
-            flex-direction:row;
-            background: #F5F9F6;
-            height: 40px;
-            width: 270px;
-            border-radius: 0px;
-            align-items:center;
-        }
+.dateTo {
+    grid-area: date2;
+}
 
-        .periodCalendar {
-            display: grid;
-            grid-template-areas:
-                'date1 date2'
-                'dateBox1  dateBox2';
-            justify-content: center;
-            align-items: center;
-            column-gap: 5px;
-            height: 98px;
-            background-color: white;
-            padding-left:8px;
-        }
+.calBox {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 124px;
+    height: 40px;
+    bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    line-height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
 
-            .calDatesText {
-                position: relative;
-                top: 10px;
-                height:24px;
-                width:83px;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 14px;
-            }
+.calIcon {
+    position: relative;
+    height: 14.67px;
+    width: 14.67px;
+    top: 12.67px;
+}
 
-            .dateFrom {
-                grid-area: date1;
-            }
+.dateFromBox {
+    grid-area: dateBox1;
+}
 
-            .dateTo {
-                grid-area: date2;
-            }
+.dateToBox {
+    grid-area: dateBox2;
+}
 
-            .calBox {
-                display: flex;
-                justify-content: space-around;
-                position: relative;
-                width: 124px;
-                height: 40px;
-                bottom: 10px;
-                border: 1px solid #CCCCCC;
-                border-radius: 4px;
-                line-height: 40px;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-            }
+.periodResults {
+    height: 100%;
+    width: 100%;
+    background: #3A8544;
+    border-radius: 3px;
+    color: #FFFFFF;
+    text-align: center;
+}
 
-                .calIcon{
-                    position:relative;
-                    height:14.67px;
-                    width:14.67px;
-                    top:12.67px;
-                }
+.periodResultsText {
+    padding-bottom: 0.9em;
+    padding-top: 0.8em;
+    padding-left: 4.6em;
+    padding-right: 4.6em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 44px;
+    color: white;
+}
 
-            .dateFromBox{
-                grid-area:dateBox1;
-            }
+.releases {
+    background-color: white;
+    width: 16.875em;
+    min-height: 40px;
+    max-height: 23.56255em;
+}
 
-            .dateToBox {
-                grid-area:dateBox2;
-            }
+.releasesDropDown-btn {
+    display: flex;
+    flex-direction: row;
+    background: #F5F9F6;
+    height: 40px;
+    width: 270px;
+    border-radius: 0px;
+    align-items: center;
+    border: 0px;
+}
 
-        .periodResults {
-            height: 100%;
-            width: 100%;
-            background: #3A8544;
-            border-radius: 3px;
-            color: #FFFFFF;
-            text-align: center;
-        }
-            .periodResultsText {
-                padding-bottom:0.9em;
-                padding-top:0.8em;
-                padding-left:4.6em;
-                padding-right:4.6em;
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height:44px;
-                color:white;
-            }
+.reText {
+    position: relative;
+    top: 20px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+    font-size: 14px;
+}
 
-    .releases {
-        background-color: white;
-        width: 16.875em;
-        min-height: 40px;
-        max-height: 23.56255em;
-    }
+.reTextLine {
+    line-height: 25px;
+    align-items: center;
+    padding-left: 8px;
+}
 
-        .releasesDropDown-btn {
-            display: flex;
-            flex-direction: row;
-            background: #F5F9F6;
-            height: 40px;
-            width: 270px;
-            border-radius: 0px;
-            align-items: center;
-            border: 0px;
-        }
+.sideBarAllReleases {
+    display: flex;
+    justify-content: end;
+    width: 270px;
+    height: 24px;
+    color: #3A8544;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
-        .reText {
-            position:relative;
-            top:20px;
-            bottom:10px;
-            display:flex;
-            flex-direction:column;
-            align-items: start;
-            row-gap: 10px;
-            font-size:14px;
-        }
+.sideBarCollection {
+    background-color: white;
+    width: 16.875em;
+    min-height: 40px;
+    max-height: 15.875em;
+}
 
-            .reTextLine{
-                line-height:25px;
-                align-items:center;
-                padding-left:8px;
-            }
+.sideBarCollectionDropDown-btn {
+    display: flex;
+    flex-direction: row;
+    background: #F5F9F6;
+    height: 40px;
+    width: 270px;
+    border: 0px;
+    align-items: center;
+}
 
-        .sideBarAllReleases {
-            display:flex;
-            justify-content:end;
-            width: 270px;
-            height: 24px;
-            color: #3A8544;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            margin-bottom:10px;
-        }
+.colText {
+    position: relative;
+    top: 20px;
+    bottom: 10px;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+    font-size: 14px;
+}
 
-    .sideBarCollection {
-        background-color: white;
-        width: 16.875em;
-        min-height:40px;
-        max-height: 15.875em;
-    }
+.colTextLine {
+    line-height: 25px;
+    align-items: center;
+}
 
-        .sideBarCollectionDropDown-btn {
-            display: flex;
-            flex-direction: row;
-            background: #F5F9F6;
-            height: 40px;
-            width: 270px;
-            border: 0px;
-            align-items: center;
-        }
-
-        .colText {
-            position: relative;
-            top: 20px;
-            bottom: 10px;
-            padding-left:8px;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            row-gap: 10px;
-            font-size: 14px;
-        }
-
-            .colTextLine {
-                line-height: 25px;
-                align-items: center;
-            }
-
-        .sideBarAllCollections {
-            display: flex;
-            position: relative;
-            top: 25px;
-            justify-content: end;
-            text-align: end;
-            width: 270px;
-            height: 24px;
-            color: #3A8544;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-        }
+.sideBarAllCollections {
+    display: flex;
+    position: relative;
+    top: 25px;
+    justify-content: end;
+    text-align: end;
+    width: 270px;
+    height: 24px;
+    color: #3A8544;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
 
 @media (max-device-width: 769px) {
     .sidebar {

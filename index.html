@@ -204,13 +204,14 @@
     <div class="main">
         <div class="sidebar">
             <h1>Filtri</h1>
-            <div class="period sideBarBlock active">
-                <div class="sideBarHeader periodDropDown-btn">
-                    Periods
-                    <img class="arrowDown" src="img/arrow_down.svg">
+            <div class="period sideBarBlock">
+                <div class="sideBarHeader">
+                    <span class="sideBarHeaderText">
+                        Periods
+                    </span>
+                    <img class="arrowDown inverted" src="img/arrow_down.svg">
                 </div>
-                
-                <div class="sideBarContent">
+                <div class="sideBarContent sideBarActive">
                     <div class="periodCalendar">
                         <span class="dateFrom calDatesText">Datums no:</span>
                         <span class="dateTo calDatesText">Datums līdz:</span>
@@ -229,15 +230,13 @@
                 </div>
             </div>
             <div class="releases sideBarBlock">
-                <button class="releasesDropDown-btn" onclick="flip2(); dropdown2()">
-                    <div class="buttonText">
+                <div class="sideBarHeader">
+                    <span class="sideBarHeaderText">
                         Izdevumi
-                    </div>
-                    <div class="arrowDown releasesArrowDown">
-                        
-                    </div>
-                </button>
-                <div>
+                    </span>
+                    <img class="arrowDown inverted" src="img/arrow_down.svg">
+                </div>
+                <div class="sideBarContent sideBarActive">
                     <div class="reText sideBarRoboto">
                         <a class="reTextLine">5.Kurzemes Apgabala Izstādes žurnāls</a>
                         <a class="reTextLine">Arodkustības Vienība (Kokstrādnieku aro</a>
@@ -255,17 +254,13 @@
             </div>
 
             <div class="sideBarCollection sideBarBlock">
-                <button class="sideBarCollectionDropDown-btn" onclick="flip3(); dropdown3()">
-                    <div class="buttonText">
-                        <div class="sideBarCollectionText">
-                            Kolekcija
-                        </div>
-                    </div>
-                    <div class="arrowDown sideBarCollectionArrowDown">
-                        <img src="img/arrow_down.svg">
-                    </div>
-                </button>
-                <div>
+                <div class="sideBarHeader">
+                    <span class="sideBarHeaderText">
+                        Kolekcija
+                    </span>
+                    <img class="arrowDown inverted" src="img/arrow_down.svg">
+                </div>
+                <div class="sideBarContent sideBarActive">
                     <div class="colText sideBarRoboto">
                         <a class="colTextLine">Diplomātija</a>
                         <a class="colTextLine">Ekonomika</a>
