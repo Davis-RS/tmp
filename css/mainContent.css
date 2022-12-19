@@ -821,9 +821,8 @@ articlePageArrow{
     height: 30px;
 }
 
-.collectionArticleItemContainer {
+.collectionItemContainer {
     width: 1171px;
-    background-color: aquamarine;
     display: grid;
     grid-template-areas: "collectionDiplomaticItem collectionDiplomaticItem collectionHumanitaryItem collectionMusicItem collectionHistoryItem"
         "collectionDiplomaticItem collectionDiplomaticItem collectionHumanitaryItem collectionMusicItem collectionHistoryItem"
@@ -833,25 +832,42 @@ articlePageArrow{
     margin-bottom:50px;
 }
 
-.collectionArticleItem {
+.collectionItem {
     width: 195px;
     height: 210px;
+    display:flex;
+    flex-direction:column;
 }
 
-.collectionDiplomaticItem{
-    background-color:chocolate;
+.collectionPlaceholderIMG {
+    width: 185px;
+    height:147px;
+    border: 2px solid #E0E0E0;
+    border-radius: 4px;
+    padding:3px;
 }
 
-.collectionHumanitaryItem{
-    background-color:cadetblue;
+.collectionTitle {
+    min-width: 72px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top:10px;
+    padding-bottom:5px;
 }
 
-.collectionMusicItem{
-    background-color:burlywood;
-}
-
-.collectionHistoryItem{
-    background-color:darkorange;
+.collectionDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 @media(max-width:1000px) {
