@@ -36,6 +36,10 @@
     text-align: start;
 }
 
+.mainContent1SideBarHeader{
+    margin-block-end:10px;
+}
+
 .buttonText {
     width: 13.875em;
     line-height: 1.5em;
