@@ -12,7 +12,7 @@
 
 h1{
     width: 100%;
-    height: 30px;
+    height: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -26,7 +26,6 @@ h1{
 
 
 .mainContent {
-    margin-left: 30px;
     margin-top: 0.625em;
     margin-bottom: 3.125em;
 }
@@ -35,12 +34,7 @@ h1{
     font-style: normal;
 }
 
-.outerBox {
-}
-
 .articleL, .journalL {
-    width: 26.25em;
-    height: 23.125em;
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #E0E0E0;
@@ -57,15 +51,18 @@ h1{
 
 .imagearticleL {
     position: relative;
-    display: grid;
     bottom: 0.00625em;
 }
-.rightBox{
+.articleLContents{
     margin-bottom:10px;
 }
+articleL {
+    width: 100%;
+    height: 82.22%;
+}
 .journalL {
-    width: 26.25em;
-    height: 23.125em;
+    width: 100%;
+    height: 82.22%;
 }
 
 .languageFull {
@@ -82,8 +79,8 @@ h1{
 
 .author {
     margin-top: 10px;
-    width: 25.9375em;
-    height: 1.5em;
+    width: 98.8%;
+    height: 5.33%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -820,6 +817,9 @@ articlePageArrow{
     }
 
     @media(min-width:1008.1px) {
+        .mainContent{
+            margin-left:30px;
+        }
         h2 {
             width: 48.3em;
         }
@@ -850,6 +850,11 @@ articlePageArrow{
             margin-top: 10px;
             justify-content: space-between;
             align-items: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
         }
 
 
