@@ -619,8 +619,6 @@ h4 {
     background-color:white; /*remove later*/
 }
 
-
-
 .pageSearchNavigationBox {
     display: flex;
     flex-direction: row;
@@ -815,6 +813,45 @@ articlePageArrow{
     height: 24px;
     width:155px;
     color: #3A8544;
+}
+
+.contentHeader6 {
+    margin-block: 20px;
+    width: 870px;
+    height: 30px;
+}
+
+.collectionArticleItemContainer {
+    width: 1171px;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-areas: "collectionDiplomaticItem collectionDiplomaticItem collectionHumanitaryItem collectionMusicItem collectionHistoryItem"
+        "collectionDiplomaticItem collectionDiplomaticItem collectionHumanitaryItem collectionMusicItem collectionHistoryItem"
+        "collectionDiplomaticItem collectionDiplomaticItem collectionHumanitaryItem collectionMusicItem collectionHistoryItem";
+    grid-column-gap:49px;
+    grid-row-gap:40px;
+    margin-bottom:50px;
+}
+
+.collectionArticleItem {
+    width: 195px;
+    height: 210px;
+}
+
+.collectionDiplomaticItem{
+    background-color:chocolate;
+}
+
+.collectionHumanitaryItem{
+    background-color:cadetblue;
+}
+
+.collectionMusicItem{
+    background-color:burlywood;
+}
+
+.collectionHistoryItem{
+    background-color:darkorange;
 }
 
 @media(max-width:1000px) {
