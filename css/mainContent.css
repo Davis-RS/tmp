@@ -12,14 +12,12 @@
 
 h1{
     width: 100%;
-    height: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     display: flex;
-    align-items: center;
     color: #232B2B;
 }
 
@@ -473,6 +471,8 @@ h3 {
 .filtersHeader{
     margin-block-end:0;
     margin-top:0px;
+    height:36px;
+    line-height:36px;
 }
 
 .releaseDescriptionContainer{
@@ -590,8 +590,10 @@ h4 {
     margin-top:0px;
 }
 
-.articleExportText{
-    padding-left:500px;
+.articleExportText {
+    padding-left: 500px;
+    font-size: 16px;
+    color: #3A8544;
 }
 
 .sidebar2{
@@ -613,7 +615,6 @@ h4 {
     height:30px;
     margin-bottom:30px;
     align-items: center;
-    background-color:white; /*remove later*/
 }
 
 .pageSearchNavigationBox {
@@ -865,6 +866,29 @@ articlePageArrow{
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+}
+
+.mainContent7 {
+    width: 870px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 1522px;
+}
+
+.collectionDiplomacyTitle{
+    margin-block-start:0px;
+    margin-block-end:20px;
+}
+
+.collectionDiplomacyDescription {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 870px;
+    height: 120px;
+    margin-block-end:20px;
 }
 
 @media(max-width:1000px) {
