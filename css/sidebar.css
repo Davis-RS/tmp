@@ -298,6 +298,25 @@
     font-size: 16px;
 }
 
+.sidebarExtendedPeriod {
+    width: 270px;
+    background-color: aquamarine;
+    margin-top: 20px;
+    margin-right: 30px;
+    height: 1442px;
+    margin-bottom: 30px;
+}
+
+.sidebarPopularity{
+    display:flex;
+    flex-direction:column;
+    height:408px;
+    width:270px;
+    background-color:aqua;
+    margin-top:20px;
+    margin-right:30px;
+}
+
 @media (max-device-width: 769px) {
     .sidebar {
         display: none;
