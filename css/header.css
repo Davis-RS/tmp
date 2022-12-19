@@ -192,11 +192,15 @@
 
     .md-hidden {
         display: flex;
+        max-width: 134px;
         flex-direction: column;
         gap: 20px;
         margin-top: 2em;
         margin-left: 2em;
-        margin-right: 2em;
+    }
+
+    .menuItems.selected {
+        border-bottom: 1px solid #3A8544;
     }
 
     .rectangleContainer {
