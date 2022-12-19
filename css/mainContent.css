@@ -591,9 +591,15 @@ h4 {
 }
 
 .articleExportText {
-    padding-left: 500px;
+    margin-left: 500px;
     font-size: 16px;
     color: #3A8544;
+}
+
+.articleExportCart{
+    width:42px;
+    height:30px;
+    padding-top:6px;
 }
 
 .sidebar2{
@@ -713,8 +719,8 @@ articlePageArrow{
 }
 
 .articleShowMoreText {
-    padding-left: 51px;
-    padding-right: 20px;
+    margin-left: 51px;
+    margin-right: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
