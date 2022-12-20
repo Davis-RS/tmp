@@ -4,6 +4,43 @@
     margin:auto;
 }
 
+.mainContent {
+    margin-top: 0.625em;
+    margin-bottom: 3.125em;
+    font-style: normal;
+}
+
+.mainContent3{
+    width:870px;
+    margin-bottom:40px;
+    margin-top:10px;
+}
+
+.mainContent4 {
+    width: 870px;
+    margin-top: 20px;
+    height: 1332px;
+}
+
+.mainContent5 {
+    width: 870px;
+    margin-top: 20px;
+    height: 1332px;
+}
+
+.mainContent7{
+    width: 870px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.mainContent8 {
+    width: 870px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    height: 1344px;
+}
+
 .redChoice {
     display: grid;
     grid-template-columns: 1fr;
@@ -22,15 +59,6 @@ h1{
 }
 
 
-
-.mainContent {
-    margin-top: 0.625em;
-    margin-bottom: 3.125em;
-}
-
-.mainContent {
-    font-style: normal;
-}
 
 .articleL, .journalL {
     box-sizing: border-box;
@@ -457,12 +485,7 @@ h3 {
     display:none;
 }
 
-.mainContent3{
-    width:870px;
-    margin-bottom:40px;
-    margin-top:10px;
-    /*background-color:blue;*/
-}
+
 
 .releaseDescriptionHeader{
     margin-bottom:20px;
@@ -570,12 +593,6 @@ h3 {
     color: #3A8544;
 }
 
-.mainContent4{
-    width:870px;
-    margin-top:20px;
-    height:1332px;
-}
-
 h4 {
     display:flex;
     flex-direction:row;
@@ -591,18 +608,15 @@ h4 {
 }
 
 .articleExportText {
-    padding-left: 500px;
+    margin-left: 500px;
     font-size: 16px;
     color: #3A8544;
 }
 
-.sidebar2{
-    width:270px;
-    background-color:aquamarine;
-    margin-top:20px;
-    margin-right:30px;
-    height:1442px;
-    margin-bottom:30px;
+.articleExportCart{
+    width:42px;
+    height:30px;
+    padding-top:6px;
 }
 
 .allPublicationArticles{
@@ -713,8 +727,8 @@ articlePageArrow{
 }
 
 .articleShowMoreText {
-    padding-left: 51px;
-    padding-right: 20px;
+    margin-left: 51px;
+    margin-right: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -868,13 +882,6 @@ articlePageArrow{
     line-height: 14px;
 }
 
-.mainContent7 {
-    width: 870px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    height: 1522px;
-}
-
 .collectionDiplomacyTitle{
     margin-block-start:0px;
     margin-block-end:20px;
@@ -890,6 +897,8 @@ articlePageArrow{
     height: 120px;
     margin-block-end:20px;
 }
+
+
 
 @media(max-width:1000px) {
     .releaseGridContainer {
