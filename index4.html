@@ -190,10 +190,54 @@
 
     <div class="main">
         <div class="sidebarExtendedPeriod">
-            <h1 class="filtersHeader">
+            <h1 class="filtersHeader mainContent4SidebarHeader">
                 <span>Filtri</span>
             </h1>
+            <div class="sidebarPeriod sideBarBlock">
+                <div class="sideBarHeader">
+                    <span class="sideBarHeaderText">
+                        Periods
+                    </span>
+                    <img class="arrowDown inverted" src="img/arrow_down.svg">
+                </div>
+                <div class="sideBarContent sideBarActive">
+                    <div class="periodCalendar">
+                        <span class="calendarDateFrom calendarDatesText">Datums no:</span>
+                        <span class="calendarDateTo calendarDatesText">Datums līdz:</span>
+                        <a class="calendarDateFromBox calendarBox">
+                            <span class="calendarDateNumber">01.01.1910</span>
+                            <img class="calendarIcon" src="img/calendarIcon.svg">
+                        </a>
+                        <a class="calendarDateToBox calendarBox">
+                            <span class="calendarDateNumber">01.01.1916</span>
+                            <img class="calendarIcon" src="img/calendarIcon.svg">
+                        </a>
+                    </div>
+                    <div class="periodResults">
+                        <a class="periodResultsText">Atlasīt rezultātus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebarExtendedPeriodAmountBars">
+                1910
+            </div>
+            <div class="sidebarExtendedPeriodAccessability">
+                Pieejamība
+            </div>
+            <div class="sidebarExtendedPeriodLanguage">
+                Valoda
+            </div>
+            <div class="sidebarExtendedPeriodAuthors">
+                Autors
+            </div>
+            <div class="sidebarExtendedPeriodReleaseTitle">
+                Izdevuma nosaukums
+            </div>
+            <div class="sidebarExtendedPeriodList">
+                Saraksti
+            </div>
         </div>
+
         <div class="mainContent4">
             <h4 class="allPublicationArticles">
                 <span>Dzirsktele ilustrētais žurnāls</span>
@@ -424,6 +468,10 @@
         <div class="about">Par LNB digitālo bibliotēku</div>
         <img class="eraf" src="img/eraf-logo.svg">
     </div>
+
+    <script>
+        initSidebarBlocks();
+    </script>
 
 </body>
 
