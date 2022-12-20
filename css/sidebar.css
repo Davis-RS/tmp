@@ -261,7 +261,6 @@
     flex-direction:column;
     width: 100%;
     max-height:100%;
-    background-color: aquamarine;
     margin-top: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -297,11 +296,6 @@
     width: 100%;
 }
 
-.sidebarExtendedPeriodAmountBars {
-    height: 228px; /*remove later*/
-    background-color: aqua; /*remove later*/
-}
-
 .sidebarExtendedPeriodCheckBox {
     box-sizing: border-box;
     width: 20px;
@@ -330,6 +324,64 @@
     line-height: 24px;
     width: 23px;
     height: 24px;
+}
+
+.sidebarAmountBarLine {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:10px;
+}
+
+.sidebarAmountBarYear {
+    width: 60px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right:10px;
+}
+
+.sidebarAmountUnits {
+    width:24px;
+    height:24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid #3A8544;
+    padding-left:10px;
+    padding-right:150px;
+}
+
+.sidebarAmountUnit1 {
+    padding-right: 150px;
+}
+
+.sidebarAmountUnit2 {
+    padding-right: 141px;
+}
+
+.sidebarAmountUnit3 {
+    padding-right: 125px;
+}
+
+.sidebarAmountUnit4 {
+    padding-right: 150px;
+}
+
+.sidebarAmountUnit5 {
+    padding-right: 84px;
+}
+
+.sidebarAmountUnit6 {
+    padding-right: 117px;
+}
+
+.sidebarAmountUnit7 {
+    padding-right: 134px;
 }
 
 @media (max-device-width: 769px) {
