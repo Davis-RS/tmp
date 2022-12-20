@@ -21,38 +21,10 @@ function initSidebarBlocks() {
     }
 }
 
-
-
 /*Sidebar button down flips on click*/
 
 function flipSideBarArrow(obj) {
         obj.classList.toggle("inverted");
-}
-
-/*Sidebar button down flips on click*/
-var bool2 = false;
-function flip2() {
-    if (bool2 == false) {
-        document.querySelector('.releasesArrowDown').style.transform = 'none';
-        bool2 = true;
-    }
-    else if (bool2 == true) {
-        document.querySelector('.releasesArrowDown').style.transform = 'scaleY(-1)';
-        bool2 = false;
-    }
-}
-
-/*Sidebar button down flips on click*/
-var bool3 = false;
-function flip3() {
-    if (bool3 == false) {
-        document.querySelector('.sideBarCollectionArrowDown').style.transform = 'none';
-        bool3 = true;
-    }
-    else if (bool3 == true) {
-        document.querySelector('.sideBarCollectionArrowDown').style.transform = 'scaleY(-1)';
-        bool3 = false;
-    }
 }
 
 var menuOpened = false;
