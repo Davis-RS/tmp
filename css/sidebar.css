@@ -71,7 +71,7 @@
     border-radius: 0px;
     justify-content: left;
     align-items: center;
-    background-color:aqua;
+    background-color:white;
 }
     .sideBarContent.sideBarActive {
         display: block;
@@ -117,7 +117,7 @@
     padding-left: 8px;
 }
 
-.calDatesText {
+.calendarDatesText {
     height: 14px;
     font-family: 'Roboto';
     font-style: normal;
@@ -126,19 +126,20 @@
     line-height: 14px;
     color: #74746D;
     margin-block-start:20px;
+    margin-block-end:4px;
 }
 
-.dateFrom {
+.calendarDateFrom {
     grid-area: date1;
     width: 62px;
 }
 
-.dateTo {
+.calendarDateTo {
     grid-area: date2;
     width: 67px;
 }
 
-.calBox {
+.calendarBox {
     display: flex;
     justify-content: space-between;
     width: 124px;
@@ -153,11 +154,11 @@
     margin-block-end:20px;
 }
 
-.calendarDateText{
+.calendarDateNumber{
     margin-left:8px;
 }
 
-.calIcon {
+.calendarIcon {
     height: 14.67px;
     width: 14.67px;
     margin-top: 12.67px;
@@ -165,11 +166,11 @@
     margin-right: 8.67px;
 }
 
-.dateFromBox {
+.calendarDateFromBox {
     grid-area: dateBox1;
 }
 
-.dateToBox {
+.calendarDateToBox {
     grid-area: dateBox2;
 }
 
@@ -198,8 +199,6 @@
 .releases {
     background-color: white;
     width: 16.875em;
-    min-height: 40px;
-    max-height: 356px;
 }
 
 .releasesDropDown-btn {
@@ -213,15 +212,17 @@
     border: 0px;
 }
 
-.reText {
+.releasesText {
     display: flex;
     flex-direction: column;
     align-items: start;
     row-gap: 10px;
     font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-.reTextLine {
+.releasesTextLine {
     line-height: 25px;
     align-items: center;
     padding-left: 8px;
@@ -237,14 +238,11 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
 .sideBarCollection {
     background-color: white;
     width: 16.875em;
-    min-height: 40px;
-    max-height: 15.875em;
 }
 
 .sideBarCollectionDropDown-btn {
@@ -257,18 +255,16 @@
     align-items: center;
 }
 
-.colText {
+.collectionText {
+    padding-top:20px;
     padding-left: 8px;
     display: flex;
     flex-direction: column;
     align-items: start;
     row-gap: 10px;
     font-size: 14px;
-}
-
-.colTextLine {
+    padding-block-end:10px;
     line-height: 25px;
-    align-items: center;
 }
 
 .sideBarAllCollections {
