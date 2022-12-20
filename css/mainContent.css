@@ -1,5 +1,5 @@
 ﻿.main {
-    display: none;
+    display: flex;
     flex-direction: row;
     margin:auto;
 }
@@ -326,11 +326,7 @@ h3 {
     width: 200px;
 }
 
-.SF {
-    height: 58px;
-}
-
-.languageSearchFilterBox, .typeSearchFilterBox, .accessSearchFilterBox {
+.languageSearchFilterBox, .typeSearchFilterBox, .accessSearchFilterBox, .letterSearchFilterBox {
     border: 1px solid #CCCCCC;
     border-radius: 4px;
     background: #FFFFFF;
@@ -342,7 +338,7 @@ h3 {
 .languageSearchFilterBox {
 }
 
-.languageSearchFilterText, .typeSearchFilterText, .accessSearchFilterText {
+.languageSearchFilterText, .typeSearchFilterText, .accessSearchFilterText, .letterSearchFilterText {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
