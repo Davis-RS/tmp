@@ -63,7 +63,6 @@ articleL {
     height: 81.22%;
 }
 .imagejournalL {
-    height: 88.1%;
     width: 97.61%;
 }
 .languageFull {
@@ -178,9 +177,7 @@ articleL {
 }
 
 .imagejournalS {
-    position:relative;
     align-items:center;
-    top:3px;
 }
 
 .titleS {
