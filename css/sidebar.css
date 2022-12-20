@@ -88,8 +88,7 @@
     line-height: 24px;
 }
 
-.period {
-    width: 16.875em;
+.sidebarPeriod {
     max-height:182px;
     position: relative;
 }
@@ -184,9 +183,8 @@
     color: white;
 }
 
-.releases {
+.sidebarReleases {
     background-color: white;
-    width: 16.875em;
 }
 
 .releasesText {
@@ -208,7 +206,6 @@
 .sideBarAllReleases {
     display: flex;
     justify-content: end;
-    width: 270px;
     height: 24px;
     color: #3A8544;
     font-family: 'Roboto';
@@ -219,7 +216,6 @@
 
 .sideBarCollection {
     background-color: white;
-    width: 16.875em;
 }
 
 .collectionText {
@@ -277,6 +273,19 @@
 
     .sideBarBlock{
         margin-bottom:30px;
+    }
+
+    .periodCalendar{
+        padding:0px;
+        column-gap:28%;
+    }
+
+    .calendarDateFrom, .calendarDateFromBox{
+
+    }
+
+    .calendarDateTo, .calendarDateToBox {
+
     }
 
     /* mobile filters */
