@@ -20,7 +20,7 @@
     border: 0px;
     background: #F5F9F6;
     height: 40px;
-    width: 270px;
+    width: 100%;
     border-radius: 0px;
     align-items: center;
     font-family: 'Roboto';
@@ -67,7 +67,7 @@
     border: 0px;
     flex-direction: row;
     background: #F5F9F6;
-    width: 270px;
+    width: 100%;
     border-radius: 0px;
     justify-content: left;
     align-items: center;
@@ -79,7 +79,7 @@
 
 .sideFilterTextBox {
     height: 30px;
-    width: 270px;
+    width: 100%;
     /*background-color: brown;*/
     font-family: 'Roboto';
     font-style: normal;
@@ -88,22 +88,10 @@
     line-height: 24px;
 }
 
-
 .period {
     width: 16.875em;
     max-height:182px;
     position: relative;
-}
-
-.periodDropDown-btn {
-    display: flex;
-    border: 0px;
-    flex-direction: row;
-    background: #F5F9F6;
-    height: 40px;
-    width: 270px;
-    border-radius: 0px;
-    align-items: center;
 }
 
 .periodCalendar {
@@ -201,17 +189,6 @@
     width: 16.875em;
 }
 
-.releasesDropDown-btn {
-    display: flex;
-    flex-direction: row;
-    background: #F5F9F6;
-    height: 40px;
-    width: 270px;
-    border-radius: 0px;
-    align-items: center;
-    border: 0px;
-}
-
 .releasesText {
     display: flex;
     flex-direction: column;
@@ -245,16 +222,6 @@
     width: 16.875em;
 }
 
-.sideBarCollectionDropDown-btn {
-    display: flex;
-    flex-direction: row;
-    background: #F5F9F6;
-    height: 40px;
-    width: 270px;
-    border: 0px;
-    align-items: center;
-}
-
 .collectionText {
     padding-top:20px;
     padding-left: 8px;
@@ -271,7 +238,7 @@
     display: flex;
     justify-content: end;
     text-align: end;
-    width: 270px;
+    width: 100%;
     height: 24px;
     color: #3A8544;
     font-family: 'Roboto';
@@ -281,7 +248,7 @@
 }
 
 .sidebarExtendedPeriod {
-    width: 270px;
+    width: 100%;
     background-color: aquamarine;
     margin-top: 20px;
     margin-right: 30px;
@@ -293,7 +260,7 @@
     display:flex;
     flex-direction:column;
     height:408px;
-    width:270px;
+    width:100%;
     background-color:aqua;
     margin-top:20px;
     margin-right:30px;
@@ -303,4 +270,104 @@
     .sidebar {
         display: none;
     }
+
+    .filterHeaderText{
+        margin-block-end:20px;
+    }
+
+    .sideBarBlock{
+        margin-bottom:30px;
+    }
+
+    /* mobile filters */
+    .contentText {
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 0.625em;
+        margin-right: 0.625em;
+    }
+
+    .filtersWrap.open {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+        transition: all .4s;
+    }
+
+    .filtersWrap {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        bottom: 0;
+        visibility: hidden;
+        width: 90%;
+        flex-direction: column;
+        overflow: auto;
+        background-color: white;
+        opacity: 0;
+        transform: translate(-100%);
+        transition: all .4s;
+    }
+
+    .filtersBackground.open {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+        transition: all .4s;
+    }
+
+    .filtersBackground {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        visibility: hidden;
+        width: 10%;
+        overflow: auto;
+        background: rgba(35, 43, 43, 0.7);
+        transform: translate(100%);
+        transition: all .4s;
+    }
+
+    .filtersContainer {
+        margin: 0.875em 1.25em 1.875em;
+    }
+
+    .filtersButton {
+        display: flex;
+        height: 24px;
+        border: 0;
+        padding: 0;
+        margin-left: 0.8em;
+        background-color: white;
+    }
+
+    .filtersImage {
+        margin-right: 10px;
+    }
+
+    .filtersText {
+        font-size: 16px;
+        font-weight: 500;
+        color: #3A8544;
+        margin: 0;
+    }
+
+    .closeFiltersButton {
+        position: absolute;
+        right: 20px;
+        top: 19px;
+        width: 24px;
+        height: 24px;
+        border: 0;
+        padding: 0;
+        background-color: white;
+    }
+    /* end of mobile filters */
 }
