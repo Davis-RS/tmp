@@ -68,23 +68,22 @@ h1{
 }
 
 .imagejournalL {
-    position: relative;
     display: grid;
     place-items: center;
-    bottom: 1.375em;
-    top: 1.375em
+    padding: 10px 0px;
 }
 
 .imagearticleL {
-    position: relative;
-    bottom: 0.00625em;
+    display: grid;
+    place-items: center;
+    padding: 10px 0px;
+    margin:0px;
 }
 .articleLContents{
     margin-bottom:10px;
 }
 articleL {
     width: 100%;
-    height: 82.22%;
 }
 .journalL {
     width: 100%;
@@ -95,20 +94,19 @@ articleL {
 }
 .languageFull {
     display: grid;
-    grid-template-columns: 17em 8.9375em;
+    grid-template-columns: 65% 10%;
 }
 
 .grid2 {
     display: grid;
-    row-gap: 2em;
-    column-gap: 1.875em;
-    grid-template-columns: 26.25em 26.25em;
+    row-gap: 3.67%;
+    column-gap: 3.45%;
+    grid-template-columns: 48.276% 48.276%;
 }
 
 .author {
     margin-top: 10px;
-    width: 98.8%;
-    height: 5.33%;
+    width: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -121,8 +119,7 @@ articleL {
 
 .title {
     margin-top: 10px;
-    width: 20.6875em;
-    height: 0.875em;
+    width: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -139,8 +136,7 @@ articleL {
 
 .language {
     margin-top: 10px;
-    width: 17em;
-    height: 0.875em;
+    width: 90%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -152,8 +148,7 @@ articleL {
 }
 .year {
     margin-top: 10px;
-    width: 3.75em;
-    height: 0.875em;
+    width: 10%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -168,30 +163,28 @@ articleL {
 
 .grid3 {
     display: grid;
-    row-gap: 2em;
-    column-gap: 1.875em;
-    grid-template-columns: 12.1875em 12.1875em 12.1875em 12.1875em;
+    row-gap: 3.678%;
+    column-gap: 3.448%;
+    grid-template-columns: 22.45% 22.45% 22.45% 22.45%;
 }
 
 .mostViewed {
     display: grid;
-    grid-template-columns: 6.25em;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    height:10%
 }
 
 .mostViewedText {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+    margin:0px;
 }
 
 .viewAll {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 24px;
     color: #3A8544;
 }
 
@@ -223,13 +216,13 @@ articleL {
 
 
 .languageFullS {
-    display: grid;
-    grid-template-columns: 3em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .languageS {
-    width: 135px;
-    height: 14px;
+    width: 70%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -242,8 +235,7 @@ articleL {
 }
 
 .yearS {
-    width: 60px;
-    height: 14px;
+    width: 30%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -253,15 +245,14 @@ articleL {
     align-items: center;
     text-align: right;
     color: #232B2B;
-    margin-left: 120px;
-    margin-top:10px;
+    margin-left: 61.53%;
+    margin-top: 10px;
 }
 
 
 h2 {
     margin-top: 45px;
     width: 48.3em;
-    height: 1.5em;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
