@@ -189,85 +189,31 @@
     </div>
 
     <div class="main">
-
         <div class="sidebar">
-            <h1 class="filtersHeader">
-                <span>Filtri</span>
-            </h1>
-            <div class="period sideBarBlock">
-                <button class="periodDropDown-btn" onclick="flip1(); dropdown1()">
-                    <div class="buttonText">
-                        <div class="periodText">Periods</div>
-                    </div>
-                    <div class="arrowDown periodArrowDown">
-                        <img src="img/arrow_down.svg">
-                    </div>
-                </button>
-                <div>
+            <h1 class="mainContent3SideBarHeader">Filtri</h1>
+            <div class="sidebarPeriod sideBarBlock">
+                <div class="sideBarHeader">
+                    <span class="sideBarHeaderText">
+                        Periods
+                    </span>
+                    <img class="arrowDown inverted" src="img/arrow_down.svg">
+                </div>
+                <div class="sideBarContent sideBarActive">
                     <div class="periodCalendar">
-                        <span class="dateFrom calDatesText">Datums no:</span>
-                        <span class="dateTo calDatesText">Datums līdz:</span>
-                        <a class="dateFromBox calBox">
-                            01.01.1910
-                            <img class="calIcon" src="img/calendarIcon.svg">
+                        <span class="calendarDateFrom calendarDatesText">Datums no:</span>
+                        <span class="calendarDateTo calendarDatesText">Datums līdz:</span>
+                        <a class="calendarDateFromBox calendarBox">
+                            <span class="calendarDateNumber">01.01.1910</span>
+                            <img class="calendarIcon" src="img/calendarIcon.svg">
                         </a>
-                        <a class="dateToBox calBox">
-                            01.01.1916
-                            <img class="calIcon" src="img/calendarIcon.svg">
+                        <a class="calendarDateToBox calendarBox">
+                            <span class="calendarDateNumber">01.01.1916</span>
+                            <img class="calendarIcon" src="img/calendarIcon.svg">
                         </a>
                     </div>
                     <div class="periodResults">
                         <a class="periodResultsText">Atlasīt rezultātus</a>
                     </div>
-                </div>
-            </div>
-            <div class="releases sideBarBlock index3Invisible">
-                <button class="releasesDropDown-btn" onclick="flip2(); dropdown2()">
-                    <div class="buttonText">
-                        Izdevumi
-                    </div>
-                    <div class="arrowDown releasesArrowDown">
-                        <img src="img/arrow_down.svg">
-                    </div>
-                </button>
-                <div>
-                    <div class="reText sideBarRoboto">
-                        <a class="reTextLine">5.Kurzemes Apgabala Izstādes žurnāls</a>
-                        <a class="reTextLine">Arodkustības Vienība (Kokstrādnieku aro</a>
-                        <a class="reTextLine">Atbalss: Altetingas latviešu komitejas inf</a>
-                        <a class="reTextLine">Anekdota</a>
-                        <a class="reTextLine">Auto, Moto, Velo sport</a>
-                        <a class="reTextLine">Ašmodai</a>
-                        <a class="reTextLine">Bauskas Novada Zemnieku Balss</a>
-                        <a class="reTextLine">Avangards (Daugavpils)</a>
-                        <a class="sideBarAllReleases">
-                            visi izdevumi
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="sideBarCollection sideBarBlock index3Invisible">
-                <button class="sideBarCollectionDropDown-btn" onclick="flip3(); dropdown3()">
-                    <div class="buttonText">
-                        <div class="sideBarCollectionText">
-                            Kolekcija
-                        </div>
-                    </div>
-                    <div class="arrowDown sideBarCollectionArrowDown">
-                        <img src="img/arrow_down.svg">
-                    </div>
-                </button>
-                <div>
-                    <div class="colText sideBarRoboto">
-                        <a class="colTextLine">Diplomātija</a>
-                        <a class="colTextLine">Ekonomika</a>
-                        <a class="colTextLine">Savstarpējās attiecības</a>
-                        <a class="colTextLine">Anekdotes</a>
-                        <a class="colTextLine">Teikas</a>
-                    </div>
-                    <a class="sideBarAllCollections">
-                        visas kolekcijas
-                    </a>
                 </div>
             </div>
         </div>
@@ -359,6 +305,10 @@
         <div class="about">Par LNB digitālo bibliotēku</div>
         <img class="eraf" src="img/eraf-logo.svg">
     </div>
+
+    <script>
+        initSidebarBlocks();
+    </script>
 
 </body>
 

@@ -20,7 +20,7 @@
     border: 0px;
     background: #F5F9F6;
     height: 40px;
-    width: 270px;
+    width: 100%;
     border-radius: 0px;
     align-items: center;
     font-family: 'Roboto';
@@ -35,6 +35,10 @@
 
 .mainContent1SideBarHeader{
     margin-block-end:10px;
+}
+
+.mainContent3SideBarHeader {
+    margin-block-end: 0px;
 }
 
 .buttonText {
@@ -67,11 +71,11 @@
     border: 0px;
     flex-direction: row;
     background: #F5F9F6;
-    width: 270px;
+    width: 100%;
     border-radius: 0px;
     justify-content: left;
     align-items: center;
-    background-color:aqua;
+    background-color:white;
 }
     .sideBarContent.sideBarActive {
         display: block;
@@ -79,8 +83,7 @@
 
 .sideFilterTextBox {
     height: 30px;
-    width: 270px;
-    /*background-color: brown;*/
+    width: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -88,22 +91,9 @@
     line-height: 24px;
 }
 
-
-.period {
-    width: 16.875em;
+.sidebarPeriod {
     max-height:182px;
-    position: relative;
-}
-
-.periodDropDown-btn {
-    display: flex;
-    border: 0px;
-    flex-direction: row;
-    background: #F5F9F6;
-    height: 40px;
-    width: 270px;
-    border-radius: 0px;
-    align-items: center;
+    width:270px;
 }
 
 .periodCalendar {
@@ -117,7 +107,7 @@
     padding-left: 8px;
 }
 
-.calDatesText {
+.calendarDatesText {
     height: 14px;
     font-family: 'Roboto';
     font-style: normal;
@@ -126,19 +116,20 @@
     line-height: 14px;
     color: #74746D;
     margin-block-start:20px;
+    margin-block-end:4px;
 }
 
-.dateFrom {
+.calendarDateFrom {
     grid-area: date1;
     width: 62px;
 }
 
-.dateTo {
+.calendarDateTo {
     grid-area: date2;
     width: 67px;
 }
 
-.calBox {
+.calendarBox {
     display: flex;
     justify-content: space-between;
     width: 124px;
@@ -153,11 +144,11 @@
     margin-block-end:20px;
 }
 
-.calendarDateText{
+.calendarDateNumber{
     margin-left:8px;
 }
 
-.calIcon {
+.calendarIcon {
     height: 14.67px;
     width: 14.67px;
     margin-top: 12.67px;
@@ -165,15 +156,15 @@
     margin-right: 8.67px;
 }
 
-.dateFromBox {
+.calendarDateFromBox {
     grid-area: dateBox1;
 }
 
-.dateToBox {
+.calendarDateToBox {
     grid-area: dateBox2;
 }
 
-.periodResults {
+.sidebarPeriodResults {
     height: 100%;
     width: 100%;
     background: #3A8544;
@@ -195,33 +186,21 @@
     color: white;
 }
 
-.releases {
+.sidebarReleases {
     background-color: white;
-    width: 16.875em;
-    min-height: 40px;
-    max-height: 356px;
 }
 
-.releasesDropDown-btn {
-    display: flex;
-    flex-direction: row;
-    background: #F5F9F6;
-    height: 40px;
-    width: 270px;
-    border-radius: 0px;
-    align-items: center;
-    border: 0px;
-}
-
-.reText {
+.releasesText {
     display: flex;
     flex-direction: column;
     align-items: start;
     row-gap: 10px;
     font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-.reTextLine {
+.releasesTextLine {
     line-height: 25px;
     align-items: center;
     padding-left: 8px;
@@ -230,52 +209,35 @@
 .sideBarAllReleases {
     display: flex;
     justify-content: end;
-    width: 270px;
     height: 24px;
     color: #3A8544;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
 .sideBarCollection {
     background-color: white;
-    width: 16.875em;
-    min-height: 40px;
-    max-height: 15.875em;
 }
 
-.sideBarCollectionDropDown-btn {
-    display: flex;
-    flex-direction: row;
-    background: #F5F9F6;
-    height: 40px;
-    width: 270px;
-    border: 0px;
-    align-items: center;
-}
-
-.colText {
+.collectionText {
+    padding-top:20px;
     padding-left: 8px;
     display: flex;
     flex-direction: column;
     align-items: start;
     row-gap: 10px;
     font-size: 14px;
-}
-
-.colTextLine {
+    padding-block-end:10px;
     line-height: 25px;
-    align-items: center;
 }
 
 .sideBarAllCollections {
     display: flex;
     justify-content: end;
     text-align: end;
-    width: 270px;
+    width: 100%;
     height: 24px;
     color: #3A8544;
     font-family: 'Roboto';
@@ -284,27 +246,213 @@
     font-size: 16px;
 }
 
-.sidebarExtendedPeriod {
-    width: 270px;
-    background-color: aquamarine;
-    margin-top: 20px;
-    margin-right: 30px;
-    height: 1442px;
-    margin-bottom: 30px;
-}
-
 .sidebarPopularity{
     display:flex;
     flex-direction:column;
     height:408px;
-    width:270px;
+    width:100%;
     background-color:aqua;
     margin-top:20px;
     margin-right:30px;
+}
+
+.sidebarExtendedPeriod {
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    max-height:100%;
+    background-color: aquamarine;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    gap:20px;
+}
+
+.sidebarExtendedPeriodContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 8px;
+    padding-left: 10px;
+    padding-top:20px;
+}
+
+.sidebarExtendedPeriodContentType2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 8px;
+    padding-left: 10px;
+}
+
+.sidebarExtendedPeriodContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.sidebarExtendedPeriodAmountBars, .sidebarExtendedPeriodAccessability, ..sidebarExtendedPeriodLanguage, ..sidebarExtendedPeriodAuthors, ..sidebarExtendedPeriodReleaseTitle, .sidebarExtendedPeriodList {
+    width: 100%;
+}
+
+.sidebarExtendedPeriodAmountBars {
+    height: 228px; /*remove later*/
+    background-color: aqua; /*remove later*/
+}
+
+.sidebarExtendedPeriodCheckBox {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-color: #232B2B;
+    border-radius: 3px;
+    background: #FFFFFF;
+}
+
+.sidebarExtendedPeriodCheckBoxText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    width: 189px;
+    height: 24px;
+}
+
+.sidebarExtendedPeriodAmountNumber {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 24px;
+    width: 23px;
+    height: 24px;
 }
 
 @media (max-device-width: 769px) {
     .sidebar {
         display: none;
     }
+
+    .filterHeaderText{
+        margin-block-end:20px;
+    }
+
+    .sideBarBlock{
+        margin-bottom:30px;
+    }
+
+    .periodCalendar{
+        padding:0px;
+        column-gap:28%;
+    }
+
+    .calendarDateFrom, .calendarDateFromBox{
+
+    }
+
+    .calendarDateTo, .calendarDateToBox {
+
+    }
+
+    /* mobile filters */
+    .contentText {
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 0.625em;
+        margin-right: 0.625em;
+    }
+
+    .filtersWrap.open {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+        transition: all .4s;
+    }
+
+    .filtersWrap {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        bottom: 0;
+        visibility: hidden;
+        width: 90%;
+        flex-direction: column;
+        overflow: auto;
+        background-color: white;
+        opacity: 0;
+        transform: translate(-100%);
+        transition: all .4s;
+    }
+
+    .filtersBackground.open {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+        transition: all .4s;
+    }
+
+    .filtersBackground {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        visibility: hidden;
+        width: 10%;
+        overflow: auto;
+        background: rgba(35, 43, 43, 0.7);
+        transform: translate(100%);
+        transition: all .4s;
+    }
+
+    .filtersContainer {
+        margin: 0.875em 1.25em 1.875em;
+    }
+
+    .mobileSearchFilters {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .filtersButton {
+        display: flex;
+        height: 24px;
+        border: 0;
+        padding: 0;
+        margin-left: 0.8em;
+        background-color: white;
+    }
+
+    .filtersImage {
+        margin-right: 10px;
+    }
+
+    .filtersText {
+        font-size: 16px;
+        font-weight: 500;
+        color: #3A8544;
+        margin: 0;
+    }
+
+    .closeFiltersButton {
+        position: absolute;
+        right: 20px;
+        top: 19px;
+        width: 24px;
+        height: 24px;
+        border: 0;
+        padding: 0;
+        background-color: white;
+    }
+    /* end of mobile filters */
 }

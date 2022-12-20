@@ -67,9 +67,6 @@
         display: none;
     }
 
-    
-
-
 .mainMenu {
     display: flex;
     align-items: center;
@@ -269,98 +266,6 @@
         background-color: white;
     }
     /* end of mobile menu */
-
-    /* mobile filters */
-    .contentText {
-        font-size: 16px;
-        font-weight: 500;
-        margin-left: 0.625em;
-        margin-right: 0.625em;
-    }
-
-    .filtersWrap.open {
-        display: flex;
-        visibility: visible;
-        opacity: 1;
-        transform: translate(0);
-        transition: all .4s;
-    }
-
-    .filtersWrap {
-        display: flex;
-        z-index: 1;
-        position: fixed;
-        top: 0px;
-        left: 0;
-        bottom: 0;
-        visibility: hidden;
-        width: 90%;
-        flex-direction: column;
-        overflow: auto;
-        background-color: white;
-        opacity: 0;
-        transform: translate(-100%);
-        transition: all .4s;
-    }
-
-    .filtersBackground.open {
-        display: flex;
-        visibility: visible;
-        opacity: 1;
-        transform: translate(0);
-        transition: all .4s;
-    }
-
-    .filtersBackground {
-        display: flex;
-        z-index: 1;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        visibility: hidden;
-        width: 10%;
-        overflow: auto;
-        background: rgba(35, 43, 43, 0.7);
-        transform: translate(100%);
-        transition: all .4s;
-    }
-
-    .filtersContainer {
-        margin: 0.875em 1.25em 1.875em;
-    }
-
-    .filtersButton {
-        display: flex;
-        height: 24px;
-        border: 0;
-        padding: 0;
-        margin-left: 0.8em;
-        background-color: white;
-    }
-
-    .filtersImage {
-        margin-right: 10px;
-    }
-
-    .filtersText {
-        font-size: 16px;
-        font-weight: 500;
-        color: #3A8544;
-        margin: 0;
-    }
-
-    .closeFiltersButton {
-        position: absolute;
-        right: 20px;
-        top: 19px;
-        width: 24px;
-        height: 24px;
-        border: 0;
-        padding: 0;
-        background-color: white;
-    }
-    /* end of mobile filters */
 
     .searchQuery {
         width: 95%;

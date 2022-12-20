@@ -1,5 +1,5 @@
 ﻿.main {
-    display: flex;
+    display: none;
     flex-direction: row;
     margin:auto;
 }
@@ -20,6 +20,7 @@
     width: 870px;
     margin-top: 20px;
     height: 1332px;
+    margin-bottom:40px;
 }
 
 .mainContent5 {

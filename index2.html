@@ -3,14 +3,17 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/general.css" rel="stylesheet" type="text/css">
     <link href="css/header.css" rel="stylesheet" type="text/css">
     <link href="css/footer.css" rel="stylesheet" type="text/css">
     <link href="css/mainContent.css" rel="stylesheet" type="text/css">
+    <link href="css/sidebar.css" rel="stylesheet" type="text/css">
     <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js/Script1.js"></script>
 </head>
 
 <body>
@@ -46,7 +49,7 @@
             <!--mobile-->
             <div id="menu" class="menuWrap">
                 <nav class="md-hidden">
-                    <a id="home" class="roboto menuItems">
+                    <a id="home" class="roboto menuItems selected">
                         Sākums
                     </a>
                     <a id="allReleases" class="roboto menuItems">
@@ -163,18 +166,48 @@
             <!--mobile-->
 
             <p class="roboto contentText">
-                Mokslas nūzares un viņas izteiksmes un izpratnes rubežas.
+                Visi izdevumi
             </p>
 
             <div id="filters" class="filtersWrap">
                 <button class="closeFiltersButton" onclick="filtersMobile()">
-                    <img class="closeImage" src="img/X_Close.svg" />
+                    <img class="closeFiltersImage" src="img/Green_X_Close.svg" />
                 </button>
 
                 <div class="filtersContainer">
-                    <h1>Filtri</h1>
-                    <!-- ENTER FILTERS HERE -->
+                    <h1 class="filterHeaderText">Filtri</h1>
 
+
+
+                    <div class="mobileSearchFilters">
+                        <div class="languageSearchFilter">
+                            <div class="languageSearchFilterText">
+                                Valoda
+                            </div>
+                            <button class="languageSearchFilterBox searchFilterBox">
+                                <div class="topOptionsTextBox">Visas</div>
+                                <img class="topOptionsArrowDown" src="img/arrow_down.svg">
+                            </button>
+                        </div>
+                        <div class="typeSearchFilter">
+                            <div class="typeSearchFilterText">
+                                Tips
+                            </div>
+                            <button class="typeSearchFilterBox searchFilterBox">
+                                <div class="topOptionsTextBox">Visi</div>
+                                <img class="topOptionsArrowDown" src="img/arrow_down.svg">
+                            </button>
+                        </div>
+                        <div class="accessSearchFilter">
+                            <div class="accessSearchFilterText">
+                                Pieejamība
+                            </div>
+                            <button class="accessSearchFilterBox searchFilterBox">
+                                <div class="topOptionsTextBox">Visi</div>
+                                <img class="topOptionsArrowDown" src="img/arrow_down.svg">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="filtersBackground" class="filtersBackground"></div>
