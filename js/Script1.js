@@ -1,45 +1,6 @@
 // JavaScript source code
 
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-function dropdown1() {
-    var dropdown = document.getElementsByClassName("periodDropDown-btn");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-        if (!dropdown[i].classList.contains("active")) {
-            dropdown[i].classList.add("active");
-        }
-        dropdown[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (this.classList.contains("active")) {
-                dropdownContent.style.display = "block";
-            } else {
-                dropdownContent.style.display = "none";
-            }
-        });
-    }
-}
-
-function dropdown2() {
-    var dropdown = document.getElementsByClassName("releasesDropDown-btn");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-        if (!dropdown[i].classList.contains("active")) {
-            dropdown[i].classList.add("active");
-        }
-        dropdown[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (this.classList.contains("active")) {
-                dropdownContent.style.display = "block";
-            } else {
-                dropdownContent.style.display = "none";
-            }
-        });
-    }
-}
 
 
 function initSidebarBlocks() {
@@ -52,8 +13,8 @@ function initSidebarBlocks() {
                 var dropdownContent = this.nextElementSibling;
                 dropdownContent.classList.toggle("sideBarActive");
                 this.getElementsByClassName("arrowDown")[0].classList.toggle("inverted");
-                var node = document.getElementById('periodCalendar');
-                dropdownContent.style.display = "none";
+               
+                
             });
         }
 
@@ -61,27 +22,6 @@ function initSidebarBlocks() {
 }
 
 
-function dropdown3(selectorName) {
-    var dropdown = document.getElementsByClassName(selectorName);
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-        if (!dropdown[i].classList.contains("active")) {
-            dropdown[i].classList.add("active");
-        }
-        dropdown[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-
-            if (this.classList.contains("active")) {
-                dropdownContent.style.display = "block";
-
-            } else {
-                dropdownContent.style.display = "none";
-            }
-        });
-    }
-}
 
 /*Sidebar button down flips on click*/
 

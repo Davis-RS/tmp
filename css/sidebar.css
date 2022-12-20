@@ -64,7 +64,7 @@
 .sideBarHeader{
     padding-left:0px;
     cursor:pointer;
-    display:flex;
+    display:block;
     justify-content:space-between;
 }
 
@@ -72,8 +72,8 @@
     padding-left:8px;
 }
 
-.sideBarActive {
-    display: flex;
+.sideBarContent {
+    display: none;
     border: 0px;
     flex-direction: row;
     background: #F5F9F6;
@@ -83,6 +83,9 @@
     justify-content: left;
     align-items: center;
 }
+    .sideBarContent.sideBarActive {
+        display: block;
+    }
 
 .sideFilterTextBox {
     height: 30px;
