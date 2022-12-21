@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/general.css" rel="stylesheet" type="text/css">
     <link href="css/header.css" rel="stylesheet" type="text/css">
     <link href="css/footer.css" rel="stylesheet" type="text/css">
@@ -48,7 +49,7 @@
             <!--mobile-->
             <div id="menu" class="menuWrap">
                 <nav class="md-hidden">
-                    <a id="home" class="roboto menuItems">
+                    <a id="home" class="roboto menuItems selected">
                         Sākums
                     </a>
                     <a id="allReleases" class="roboto menuItems">
@@ -170,13 +171,36 @@
 
             <div id="filters" class="filtersWrap">
                 <button class="closeFiltersButton" onclick="filtersMobile()">
-                    <img class="closeImage" src="img/X_Close.svg" />
+                    <img class="closeFiltersImage" src="img/Green_X_Close.svg" />
                 </button>
 
                 <div class="filtersContainer">
-                    <h1>Filtri</h1>
-                    <!-- ENTER FILTERS HERE -->
-
+                    <h1 class="filterHeaderText">Filtri</h1>
+                    <div class="period sideBarBlock">
+                        <div class="sideBarHeader">
+                            <span class="sideBarHeaderText">
+                                Periods
+                            </span>
+                            <img class="arrowDown inverted" src="img/arrow_down.svg">
+                        </div>
+                        <div class="sideBarContent sideBarActive">
+                            <div class="periodCalendar">
+                                <span class="calendarDateFrom calendarDatesText">Datums no:</span>
+                                <span class="calendarDateTo calendarDatesText">Datums līdz:</span>
+                                <a class="calendarDateFromBox calendarBox">
+                                    <span class="calendarDateNumber">01.01.1910</span>
+                                    <img class="calendarIcon" src="img/calendarIcon.svg">
+                                </a>
+                                <a class="calendarDateToBox calendarBox">
+                                    <span class="calendarDateNumber">01.01.1916</span>
+                                    <img class="calendarIcon" src="img/calendarIcon.svg">
+                                </a>
+                            </div>
+                            <div class="sidebarPeriodResults">
+                                <a class="periodResultsText">Atlasīt rezultātus</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="filtersBackground" class="filtersBackground"></div>
@@ -211,7 +235,7 @@
                             <img class="calendarIcon" src="img/calendarIcon.svg">
                         </a>
                     </div>
-                    <div class="periodResults">
+                    <div class="sidebarPeriodResults">
                         <a class="periodResultsText">Atlasīt rezultātus</a>
                     </div>
                 </div>
