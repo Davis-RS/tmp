@@ -610,6 +610,7 @@ h4 {
 
 .allPublicationArticles{
     margin-block-end:30px;
+    height:30px;
 }
 
 .articleSearchNavigation{
@@ -874,6 +875,7 @@ articlePageArrow{
 .collectionDiplomacyTitle{
     margin-block-start:0px;
     margin-block-end:20px;
+    height:36px;
 }
 
 .collectionDiplomacyDescription {
