@@ -462,12 +462,23 @@
         margin-bottom:30px;
     }
 
+    .sideBarBlock.index2 {
+        margin: 0;
+    }
+
     .periodCalendar{
         padding:0px;
         display:flex;
         justify-content:space-between;
         margin-left:8px;
         margin-right:8px;
+    }
+
+    .periodCalendar.index2 {
+        column-gap: 5%;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
     }
 
     .calendarDateToBox, .calendarDateFromBox{
@@ -480,6 +491,53 @@
 
     .calendarBox.index2 {
         margin-bottom: 0;
+    }
+
+    .filtersMenuAmountBars {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .amountBar {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .amountOfBooks1 {
+        width: 100%;
+        border: 1px solid #3A8544;
+    }
+
+    .amountOfBooks2 {
+        width: 100%;
+        border: 1px solid #3A8544;
+    }
+
+    .amountOfBooks3 {
+        width: 100%;
+        border: 1px solid #3A8544;
+    }
+
+    .amountOfBooks4 {
+        width: 100%;
+        border: 1px solid #3A8544;
+    }
+
+    .amountOfBooks5 {
+        width: 100%;
+        border: 1px solid #3A8544;
+    }
+
+    .amountOfBooks6 {
+        width: 100%;
+        border: 1px solid #3A8544;
+    }
+
+    .amountOfBooks7 {
+        width: 100%;
+        border: 1px solid #3A8544;
     }
 
     /* mobile filters */
@@ -552,11 +610,7 @@
         width: 100%;
     }
 
-    .periodCalendar.index2 {
-        column-gap: 5%;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-    }
+    
 
     .filtersButton {
         display: flex;
