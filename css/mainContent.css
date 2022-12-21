@@ -27,6 +27,7 @@
     width: 870px;
     margin-top: 20px;
     height: 1332px;
+    margin-bottom:62px;
 }
 
 .mainContent7{
@@ -62,6 +63,8 @@ h1{
 
 
 .articleL, .journalL {
+    display: grid;
+    place-items: center;
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #E0E0E0;
@@ -72,6 +75,7 @@ h1{
     display: grid;
     place-items: center;
     padding: 10px 0px;
+    margin:0px;
 }
 
 .imagearticleL {
@@ -609,6 +613,7 @@ h4 {
 
 .allPublicationArticles{
     margin-block-end:30px;
+    height:30px;
 }
 
 .articleSearchNavigation{
@@ -873,6 +878,7 @@ articlePageArrow{
 .collectionDiplomacyTitle{
     margin-block-start:0px;
     margin-block-end:20px;
+    height:36px;
 }
 
 .collectionDiplomacyDescription {

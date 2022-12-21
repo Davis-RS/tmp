@@ -189,10 +189,56 @@
     </div>
 
     <div class="main">
-        <div class="sidebar">
-            <h1 class="filtersHeader">
+        <div class="sidebarShortenedPeriod">
+            <h1 class="filtersHeader mainContent4SidebarHeader">
                 <span>Filtri</span>
             </h1>
+            <div class="sidebarPeriod sideBarBlock">
+                <div class="sideBarHeader">
+                    <span class="sideBarHeaderText">
+                        Periods
+                    </span>
+                    <img class="arrowDown inverted" src="img/arrow_down.svg">
+                </div>
+                <div class="sideBarContent sideBarActive">
+                    <div class="periodCalendar">
+                        <span class="calendarDateFrom calendarDatesText">Datums no:</span>
+                        <span class="calendarDateTo calendarDatesText">Datums līdz:</span>
+                        <a class="calendarDateFromBox calendarBox">
+                            <span class="calendarDateNumber">01.01.1910</span>
+                            <img class="calendarIcon" src="img/calendarIcon.svg">
+                        </a>
+                        <a class="calendarDateToBox calendarBox">
+                            <span class="calendarDateNumber">01.01.1916</span>
+                            <img class="calendarIcon" src="img/calendarIcon.svg">
+                        </a>
+                    </div>
+                    <div class="sidebarPeriodResults">
+                        <a class="periodResultsText">Atlasīt rezultātus</a>
+                    </div>
+                </div>
+            </div>
+            <a class="shortenedYearPeriodBox">
+                1910
+            </a>
+            <a class="shortenedYearPeriodBox">
+                1912
+            </a>
+            <a class="shortenedYearPeriodBox">
+                1913
+            </a>
+            <a class="shortenedYearPeriodBox">
+                1914
+            </a>
+            <a class="shortenedYearPeriodBox">
+                1915
+            </a>
+            <a class="shortenedYearPeriodBox">
+                1916
+            </a>
+            <a class="shortenedYearPeriodBox">
+                Viss
+            </a>
         </div>
         <div class="mainContent5">
             <h4 class="allPublicationArticles">
@@ -419,11 +465,14 @@
         </div>
     </div>
 
-
     <div class="footer">
         <div class="about">Par LNB digitālo bibliotēku</div>
         <img class="eraf" src="img/eraf-logo.svg">
     </div>
+
+    <script>
+        initSidebarBlocks();
+    </script>
 
 </body>
 
