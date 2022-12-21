@@ -41,6 +41,13 @@
     margin-block-end: 0px;
 }
 
+.mainContent8SideBarHeader {
+    display:flex;
+    align-items:center;
+    margin-block-end: 0px;
+    height:30px;
+}
+
 .buttonText {
     width: 13.875em;
     line-height: 1.5em;
@@ -301,7 +308,7 @@
     background: #FFFFFF;
 }
 
-.sidebarExtendedPeriodCheckBoxText {
+.sidebarSelectionBoxText {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -403,6 +410,43 @@
     font-size: 16px;
     line-height: 24px;
     padding: 8px 0px 8px 8px;
+}
+
+.sidebarRadioButtonCorrespondance {
+    display:flex;
+    flex-direction:column;
+    margin-top: 20px;
+    margin-right: 30px;
+    width: 270px;
+    height: 100%;
+    row-gap:18px;
+}
+
+.sidebarRadioButtonContent {
+    display: flex;
+    flex-direction: row;
+    margin-right: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sidebarRadioButtonSelection {
+    width: 270px;
+}
+
+.sidebarRadioButtonContentTopLine{
+    margin-top:20px;
+}
+
+.sidebarRadioButtonBox {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-color: #232B2B;
+    border-radius: 3px;
+    background: #FFFFFF;
+    margin-right:9px;
 }
 
 @media (max-device-width: 769px) {

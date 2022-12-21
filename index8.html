@@ -189,11 +189,75 @@
     </div>
 
     <div class="main">
-        <div class="sidebarPopularity">
-            <h1 class="filtersHeader">
+        <div class="sidebarRadioButtonCorrespondance">
+            <h1 class="filtersHeader mainContent8SideBarHeader">
                 <span>Filtri</span>
             </h1>
+            <div class="sidebarRadioButtonSelection sideBarBlock">
+                <div class="sideBarHeader">
+                    <span class="sideBarHeaderText">
+                        Atlasīt
+                    </span>
+                    <img class="arrowDown inverted" src="img/arrow_down.svg">
+                </div>
+                <div class="sideBarContent sideBarActive">
+                    <div class="sidebarRadioButtonContent sidebarRadioButtonContentTopLine">
+                        <input class="sidebarRadioButtonBox" type="radio" />
+                        <div class="sidebarSelectionBoxText">
+                            Skatītākie
+                        </div>
+                    </div>
+                    <div class="sidebarRadioButtonContent">
+                        <input class="sidebarRadioButtonBox" type="radio" />
+                        <div class="sidebarSelectionBoxText">
+                            Novērtētākie
+                        </div>
+                    </div>
+                    <div class="sidebarRadioButtonContent">
+                        <input class="sidebarRadioButtonBox" type="radio" />
+                        <div class="sidebarSelectionBoxText">
+                            Komentētākie
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebarRadioButtonSelection sideBarBlock">
+                <div class="sideBarHeader">
+                    <span class="sideBarHeaderText">
+                        Laika periods
+                    </span>
+                    <img class="arrowDown inverted" src="img/arrow_down.svg">
+                </div>
+                <div class="sideBarContent sideBarActive">
+                    <div class="sidebarRadioButtonContent sidebarRadioButtonContentTopLine">
+                        <input class="sidebarRadioButtonBox" type="radio" />
+                        <div class="sidebarSelectionBoxText">
+                            Šodien
+                        </div>
+                    </div>
+                    <div class="sidebarRadioButtonContent">
+                        <input class="sidebarRadioButtonBox" type="radio" />
+                        <div class="sidebarSelectionBoxText">
+                            Šonedēļ
+                        </div>
+                    </div>
+                    <div class="sidebarRadioButtonContent">
+                        <input class="sidebarRadioButtonBox" type="radio" />
+                        <div class="sidebarSelectionBoxText">
+                            Šomēnes
+                        </div>
+                    </div>
+                    <div class="sidebarRadioButtonContent">
+                        <input class="sidebarRadioButtonBox" type="radio" />
+                        <div class="sidebarSelectionBoxText">
+                            Visu laiku
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="mainContent8">
             <h4 class="allPublicationArticles">
                 <span>Dzirsktele ilustrētais žurnāls</span>
@@ -417,6 +481,7 @@
                 </span>
             </div>
         </div>
+
     </div>
 
 
@@ -424,6 +489,10 @@
         <div class="about">Par LNB digitālo bibliotēku</div>
         <img class="eraf" src="img/eraf-logo.svg">
     </div>
+
+    <script>
+        initSidebarBlocks();
+    </script>
 
 </body>
 
