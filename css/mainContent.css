@@ -63,6 +63,8 @@ h1{
 
 
 .articleL, .journalL {
+    display: grid;
+    place-items: center;
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #E0E0E0;
@@ -73,6 +75,7 @@ h1{
     display: grid;
     place-items: center;
     padding: 10px 0px;
+    margin:0px;
 }
 
 .imagearticleL {
